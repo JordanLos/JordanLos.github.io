@@ -1,0 +1,147 @@
+//Mixins for testing - remove later. 
+$test-color: gray;
+@mixin icon-size {
+	width: 72px;
+	height: 72px;
+}
+.icon {
+	@include icon-size;
+}
+//Section width will vary based on breakpoint
+
+//Mixing from internet to create a consistent vertical align
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+//Landing Panel
+//100% heigh ensures consistent landing panel experience
+.l-landing-panel {
+	height: 100%
+}
+//landing panel split into 3 sections along the golden ratio. 62% going to the logo and the 38% split between top and bottom icons
+.l-header {
+	height: 19%;
+	padding: 0;
+	img {
+		@include vertical-align;
+		padding: 0 15px;
+	}
+	img:first-of-type {
+		float: left;
+	}
+	img:last-of-type {
+		float: right;
+	}
+}
+#logo-wrap {
+	height: 62%;
+	img {
+		@include vertical-align;
+		display: block;
+		margin: 0 auto;
+		max-height: 100%;
+	}
+}
+.l-landing-footer {
+	height: 19%;
+	img {
+		@include vertical-align;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/*******SERVICE PANEL********
+****************************/
+//for mobile versions
+.l-header-wrapper {
+	display: none;
+}
+#large-screen-content {
+	div, em {
+		height: 30%;
+	}
+	div, h2 {
+		text-align: right;
+	}
+	div {
+		display: inline-block;
+		float: left;
+		width: 45%;
+		margin-right: 10%;
+	}
+	em {
+		font-size: 4em;
+	}
+}
+
+//Container Div allows JS function to scroll through services
+#l-service-window {
+	height: 56%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 94%;
+	margin: 4% auto;	
+}
+.l-service-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: hidden;
+	img {
+		display: block;
+		width: 100%;
+	}
+	div {
+		background-color: $test-color;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 62%;
+		padding: 0 15px;
+	}
+}
+//Alternate every other service description to right or left
+.l-service-wrapper:nth-child(2n) {
+	div {
+	right: 0;
+	}
+}
+
+
+
+
+/*****ABOUT US/CONTACT******
+****************************/
+#about {
+	padding: 5% 0 0 0;
+}
+#contact-div {
+	margin-top: 15%;
+}
+.icon-spread {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	div {
+		@include icon-size;
+		display: inline-block;
+		background-color: $test-color;
+		margin: 10%;
+	}
+}
+
+/*****ABOUT US/CONTACT******
+****************************/
+.footer {
+	background-color: $test-color;
+	height: 40px;
+	p {
+		@include vertical-align;
+	}
+}
