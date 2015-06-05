@@ -87,6 +87,9 @@ $test-color: gray;
 		width: 62%;
 		padding: 0 15px;
 	}
+	div p {
+		display: none;
+	}
 }
 //Alternate every other service description to right or left
 .l-service-wrapper:nth-child(2n-1) {

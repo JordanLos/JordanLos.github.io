@@ -305,31 +305,35 @@ a:hover {
     width: 62%;
     padding: 0 15px;
   }
+  /* line 90, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper div p {
+    display: none;
+  }
 
-  /* line 93, ../sass/_layout-mobile-landscape.scss */
+  /* line 96, ../sass/_layout-mobile-landscape.scss */
   .l-service-wrapper:nth-child(2n-1) div {
     right: 0;
   }
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 101, ../sass/_layout-mobile-landscape.scss */
+  /* line 104, ../sass/_layout-mobile-landscape.scss */
   #about {
     padding: 5% 0 0 0;
   }
 
-  /* line 104, ../sass/_layout-mobile-landscape.scss */
+  /* line 107, ../sass/_layout-mobile-landscape.scss */
   #contact-div {
     margin-top: 15%;
   }
 
-  /* line 107, ../sass/_layout-mobile-landscape.scss */
+  /* line 110, ../sass/_layout-mobile-landscape.scss */
   .icon-spread {
     width: 100%;
     text-align: center;
     position: relative;
   }
-  /* line 111, ../sass/_layout-mobile-landscape.scss */
+  /* line 114, ../sass/_layout-mobile-landscape.scss */
   .icon-spread div {
     height: 48px;
     width: 48px;
@@ -340,12 +344,12 @@ a:hover {
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 121, ../sass/_layout-mobile-landscape.scss */
+  /* line 124, ../sass/_layout-mobile-landscape.scss */
   .footer {
     background-color: gray;
     height: 40px;
   }
-  /* line 124, ../sass/_layout-mobile-landscape.scss */
+  /* line 127, ../sass/_layout-mobile-landscape.scss */
   .footer p {
     position: relative;
     top: 50%;
