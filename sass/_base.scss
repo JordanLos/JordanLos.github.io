@@ -6,7 +6,7 @@ html, body {
 	padding: 0px;
 	overflow: none;
 //Something is adding whitespace below the body to the HTML by about 13px. The following snippet addresses the problem but doesn't fix it.
-	body {
+	html, body {
 		height: 100%;
 	}
 }
