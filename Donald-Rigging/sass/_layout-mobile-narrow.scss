@@ -1,5 +1,6 @@
 //Mixins for testing - remove later. 
 $test-color: gray;
+//icon size different for each breakpoint
 @mixin icon-size {
 	height: 48px;
 	width: 48px;
@@ -8,7 +9,13 @@ $test-color: gray;
 	@include icon-size;
 
 }
-//Section width @100% for landscape
+#sprite-test {
+	  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+	height: 200px;
+}
+//Section width will vary based on breakpoint
+
 //Mixing from internet to create a consistent vertical align
 @mixin vertical-align {
 	position: relative;
@@ -22,11 +29,13 @@ $test-color: gray;
 //100% heigh ensures consistent landing panel experience
 .l-landing-panel {
 	height: 100%;
+	width: 320px;
+	margin: 0 auto;
 }
 //landing panel split into 3 sections along the golden ratio. 62% going to the logo and the 38% split between top and bottom icons
 .l-header {
 	height: 19%;
-	padding: 0 10px;
+	padding: 0;
 	img {
 		@include vertical-align;
 	}
@@ -42,8 +51,8 @@ $test-color: gray;
 	img {
 		@include vertical-align;
 		display: block;
+		max-width: 100%;
 		margin: 0 auto;
-		max-height: 100%;
 	}
 }
 .l-landing-footer {
@@ -55,54 +64,46 @@ $test-color: gray;
 	}
 }
 
+//Services
+.service-image {
+	width: 100%;
+	height: 400px;
+}
+
 /*******SERVICE PANEL********
 ****************************/
-
 #large-screen-content {
 	display: none;
 }
 .l-header-wrapper {
 	background-color: $test-color;
 	height: 3em;
-	h2 {
-		@include vertical-align;
-	}
 }
 
 .l-service-wrapper {
 	position: relative;
 	width: 100%;
-	height: 100vh;
-	overflow-y: hidden;
-//Images arent sizing properly to 100% for larger phone models (iphone 6 plus) Need to research respondize images.
 	img {
 		display: block;
-		height: 80%;
+		max-width: 100%;
+		padding-top: 40px;
 	}
 	div {
 		background-color: $test-color;
 		position: absolute;
 		top: 0;
-		height: 100%;
-		width: 62%;
-		padding: 0 15px;
+		padding: 0 15px 15px 15px;
 	}
 	div p {
 		display: none;
 	}
-}
-//Alternate every other service description to right or left
-.l-service-wrapper:nth-child(2n-1) {
-	div {
-	right: 0;
-	}
-}
 
+}
 
 /*****ABOUT US/CONTACT******
 ****************************/
 #about {
-	padding: 5% 0 0 0;
+	padding: 25% 0 0 0;
 }
 #contact-div {
 	margin-top: 15%;
@@ -115,7 +116,7 @@ $test-color: gray;
 		@include icon-size;
 		display: inline-block;
 		background-color: $test-color;
-		margin: 10%;
+		margin: 7%;
 	}
 }
 

@@ -1,0 +1,577 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Oxygen:700,400,300);
+/* line 4, ../sass/_base.scss */
+html, body {
+  margin: 0;
+  padding: 0px;
+  overflow: none;
+}
+/* line 9, ../sass/_base.scss */
+html body, body body {
+  height: 100%;
+}
+
+/* line 22, ../sass/_base.scss */
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+/*Color Variables 
+$primary-color: #8f6d50;
+$contrast-color: #0f3436;
+$compliment-color: #5a1a18;
+//Font Variables
+$oxygen: 'Oxygen', sans-serif;
+
+//Styles
+body {
+	margin: 0;
+	padding: 10px;
+	background-color: white;
+	font-family: $oxygen;
+	font-weight: 400;
+	color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+a:hover {
+	color: $contrast-color;
+}*/
+@media (max-width: 450px) {
+  /* line 8, ../sass/_layout-mobile-narrow.scss */
+  .icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  /* line 12, ../sass/_layout-mobile-narrow.scss */
+  #sprite-test {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+
+  /* line 30, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: 100%;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  /* line 36, ../sass/_layout-mobile-narrow.scss */
+  .l-header {
+    height: 19%;
+    padding: 0;
+  }
+  /* line 39, ../sass/_layout-mobile-narrow.scss */
+  .l-header img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* line 42, ../sass/_layout-mobile-narrow.scss */
+  .l-header img:first-of-type {
+    float: left;
+  }
+  /* line 45, ../sass/_layout-mobile-narrow.scss */
+  .l-header img:last-of-type {
+    float: right;
+  }
+
+  /* line 49, ../sass/_layout-mobile-narrow.scss */
+  #logo-wrap {
+    height: 62%;
+  }
+  /* line 51, ../sass/_layout-mobile-narrow.scss */
+  #logo-wrap img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 58, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-footer {
+    height: 19%;
+  }
+  /* line 60, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-footer img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 68, ../sass/_layout-mobile-narrow.scss */
+  .service-image {
+    width: 100%;
+    height: 400px;
+  }
+
+  /*******SERVICE PANEL********
+  ****************************/
+  /* line 75, ../sass/_layout-mobile-narrow.scss */
+  #large-screen-content {
+    display: none;
+  }
+
+  /* line 78, ../sass/_layout-mobile-narrow.scss */
+  .l-header-wrapper {
+    background-color: gray;
+    height: 3em;
+  }
+
+  /* line 83, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  /* line 86, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper img {
+    display: block;
+    max-width: 100%;
+    padding-top: 40px;
+  }
+  /* line 91, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper div {
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    padding: 0 15px 15px 15px;
+  }
+  /* line 97, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper div p {
+    display: none;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 105, ../sass/_layout-mobile-narrow.scss */
+  #about {
+    padding: 25% 0 0 0;
+  }
+
+  /* line 108, ../sass/_layout-mobile-narrow.scss */
+  #contact-div {
+    margin-top: 15%;
+  }
+
+  /* line 111, ../sass/_layout-mobile-narrow.scss */
+  .icon-spread {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  /* line 115, ../sass/_layout-mobile-narrow.scss */
+  .icon-spread div {
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    background-color: gray;
+    margin: 7%;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 125, ../sass/_layout-mobile-narrow.scss */
+  .footer {
+    background-color: gray;
+    height: 40px;
+  }
+  /* line 128, ../sass/_layout-mobile-narrow.scss */
+  .footer p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 450px) and (max-width: 750px) {
+  /* line 7, ../sass/_layout-mobile-landscape.scss */
+  .icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  /* line 23, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-panel {
+    height: 100%;
+  }
+
+  /* line 27, ../sass/_layout-mobile-landscape.scss */
+  .l-header {
+    height: 19%;
+    padding: 0 10px;
+  }
+  /* line 30, ../sass/_layout-mobile-landscape.scss */
+  .l-header img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* line 33, ../sass/_layout-mobile-landscape.scss */
+  .l-header img:first-of-type {
+    float: left;
+  }
+  /* line 36, ../sass/_layout-mobile-landscape.scss */
+  .l-header img:last-of-type {
+    float: right;
+  }
+
+  /* line 40, ../sass/_layout-mobile-landscape.scss */
+  #logo-wrap {
+    height: 62%;
+  }
+  /* line 42, ../sass/_layout-mobile-landscape.scss */
+  #logo-wrap img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+  }
+
+  /* line 49, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-footer {
+    height: 19%;
+  }
+  /* line 51, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-footer img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*******SERVICE PANEL********
+  ****************************/
+  /* line 61, ../sass/_layout-mobile-landscape.scss */
+  #large-screen-content {
+    display: none;
+  }
+
+  /* line 64, ../sass/_layout-mobile-landscape.scss */
+  .l-header-wrapper {
+    background-color: gray;
+    height: 3em;
+  }
+  /* line 67, ../sass/_layout-mobile-landscape.scss */
+  .l-header-wrapper h2 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* line 72, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  /* line 78, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper img {
+    display: block;
+    max-width: 100%;
+  }
+  /* line 82, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper div {
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 62%;
+    padding: 0 15px;
+  }
+
+  /* line 93, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper:nth-child(2n-1) div {
+    right: 0;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 101, ../sass/_layout-mobile-landscape.scss */
+  #about {
+    padding: 5% 0 0 0;
+  }
+
+  /* line 104, ../sass/_layout-mobile-landscape.scss */
+  #contact-div {
+    margin-top: 15%;
+  }
+
+  /* line 107, ../sass/_layout-mobile-landscape.scss */
+  .icon-spread {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  /* line 111, ../sass/_layout-mobile-landscape.scss */
+  .icon-spread div {
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    background-color: gray;
+    margin: 10%;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 121, ../sass/_layout-mobile-landscape.scss */
+  .footer {
+    background-color: gray;
+    height: 40px;
+  }
+  /* line 124, ../sass/_layout-mobile-landscape.scss */
+  .footer p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 750px) {
+  /* line 7, ../sass/_layout-large-screen.scss */
+  .icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  /* line 23, ../sass/_layout-large-screen.scss */
+  .l-landing-panel {
+    height: 100%;
+  }
+
+  /* line 27, ../sass/_layout-large-screen.scss */
+  .l-header {
+    height: 19%;
+    padding: 0;
+  }
+  /* line 30, ../sass/_layout-large-screen.scss */
+  .l-header img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 15px;
+  }
+  /* line 34, ../sass/_layout-large-screen.scss */
+  .l-header img:first-of-type {
+    float: left;
+  }
+  /* line 37, ../sass/_layout-large-screen.scss */
+  .l-header img:last-of-type {
+    float: right;
+  }
+
+  /* line 41, ../sass/_layout-large-screen.scss */
+  #logo-wrap {
+    height: 62%;
+  }
+  /* line 43, ../sass/_layout-large-screen.scss */
+  #logo-wrap img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+  }
+
+  /* line 50, ../sass/_layout-large-screen.scss */
+  .l-landing-footer {
+    height: 19%;
+  }
+  /* line 52, ../sass/_layout-large-screen.scss */
+  .l-landing-footer img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*******SERVICE PANEL********
+  ****************************/
+  /* line 62, ../sass/_layout-large-screen.scss */
+  .l-header-wrapper {
+    display: none;
+  }
+
+  /* line 66, ../sass/_layout-large-screen.scss */
+  #large-screen-content div, #large-screen-content em {
+    height: 30%;
+  }
+  /* line 69, ../sass/_layout-large-screen.scss */
+  #large-screen-content div, #large-screen-content h2 {
+    text-align: right;
+  }
+  /* line 72, ../sass/_layout-large-screen.scss */
+  #large-screen-content div {
+    display: inline-block;
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+  }
+  /* line 78, ../sass/_layout-large-screen.scss */
+  #large-screen-content em {
+    font-size: 4em;
+  }
+
+  /* line 84, ../sass/_layout-large-screen.scss */
+  #l-service-window {
+    height: 56%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 94%;
+    margin: 4% auto;
+  }
+
+  /* line 91, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  /* line 96, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper img {
+    display: block;
+    width: 100%;
+  }
+  /* line 100, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper div {
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 62%;
+    padding: 0 15px;
+  }
+
+  /* line 111, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-child(2n) div {
+    right: 0;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 121, ../sass/_layout-large-screen.scss */
+  #about {
+    padding: 5% 0 0 0;
+  }
+
+  /* line 124, ../sass/_layout-large-screen.scss */
+  #contact-div {
+    margin-top: 15%;
+  }
+
+  /* line 127, ../sass/_layout-large-screen.scss */
+  .icon-spread {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  /* line 131, ../sass/_layout-large-screen.scss */
+  .icon-spread div {
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    background-color: gray;
+    margin: 10%;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 141, ../sass/_layout-large-screen.scss */
+  .footer {
+    background-color: gray;
+    height: 40px;
+  }
+  /* line 144, ../sass/_layout-large-screen.scss */
+  .footer p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+/* line 104, icons/*.png */
+.icons-sprite, .icons-close, .icons-email, .icons-facebook, .icons-linkedin, .icons-map, .icons-phone, .icons-placeholder, .icons-safety {
+  background-image: url('/img/icons-s78f6176b7a.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-email {
+  background-position: 0 -620px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 -1240px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-linkedin {
+  background-position: 0 -1860px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-map {
+  background-position: 0 -2480px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-phone {
+  background-position: 0 -3100px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-placeholder {
+  background-position: 0 -3720px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-safety {
+  background-position: 0 -4340px;
+}

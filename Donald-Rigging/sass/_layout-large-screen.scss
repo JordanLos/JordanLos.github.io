@@ -1,14 +1,14 @@
 //Mixins for testing - remove later. 
 $test-color: gray;
 @mixin icon-size {
-	height: 48px;
-	width: 48px;
+	width: 72px;
+	height: 72px;
 }
 .icon {
 	@include icon-size;
-
 }
-//Section width @100% for landscape
+//Section width will vary based on breakpoint
+
 //Mixing from internet to create a consistent vertical align
 @mixin vertical-align {
 	position: relative;
@@ -21,14 +21,15 @@ $test-color: gray;
 //Landing Panel
 //100% heigh ensures consistent landing panel experience
 .l-landing-panel {
-	height: 100%;
+	height: 100%
 }
 //landing panel split into 3 sections along the golden ratio. 62% going to the logo and the 38% split between top and bottom icons
 .l-header {
 	height: 19%;
-	padding: 0 10px;
+	padding: 0;
 	img {
 		@include vertical-align;
+		padding: 0 15px;
 	}
 	img:first-of-type {
 		float: left;
@@ -57,27 +58,44 @@ $test-color: gray;
 
 /*******SERVICE PANEL********
 ****************************/
-
-#large-screen-content {
+//for mobile versions
+.l-header-wrapper {
 	display: none;
 }
-.l-header-wrapper {
-	background-color: $test-color;
-	height: 3em;
-	h2 {
-		@include vertical-align;
+#large-screen-content {
+	div, em {
+		height: 30%;
+	}
+	div, h2 {
+		text-align: right;
+	}
+	div {
+		display: inline-block;
+		float: left;
+		width: 45%;
+		margin-right: 10%;
+	}
+	em {
+		font-size: 4em;
 	}
 }
 
+//Container Div allows JS function to scroll through services
+#l-service-window {
+	height: 56%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 94%;
+	margin: 4% auto;	
+}
 .l-service-wrapper {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	overflow-y: hidden;
-//Images arent sizing properly to 100% for larger phone models (iphone 6 plus) Need to research respondize images.
 	img {
 		display: block;
-		height: 80%;
+		width: 100%;
 	}
 	div {
 		background-color: $test-color;
@@ -87,16 +105,15 @@ $test-color: gray;
 		width: 62%;
 		padding: 0 15px;
 	}
-	div p {
-		display: none;
-	}
 }
 //Alternate every other service description to right or left
-.l-service-wrapper:nth-child(2n-1) {
+.l-service-wrapper:nth-child(2n) {
 	div {
 	right: 0;
 	}
 }
+
+
 
 
 /*****ABOUT US/CONTACT******

@@ -77,7 +77,7 @@ $test-color: gray;
 //Images arent sizing properly to 100% for larger phone models (iphone 6 plus) Need to research respondize images.
 	img {
 		display: block;
-		height: 80%;
+		max-width: 100%;
 	}
 	div {
 		background-color: $test-color;
@@ -86,9 +86,6 @@ $test-color: gray;
 		height: 100%;
 		width: 62%;
 		padding: 0 15px;
-	}
-	div p {
-		display: none;
 	}
 }
 //Alternate every other service description to right or left
