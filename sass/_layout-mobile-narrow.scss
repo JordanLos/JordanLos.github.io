@@ -28,16 +28,16 @@ $test-color: gray;
 //Styles an element with full screen height and won't resize when the url bar dissapears on mobile browsers (i.e. a mixin that works the way the vh unit actually should). the four major aspect ratios, which must be listed from the largest ratio to the smallest (16:9, 16:10, 3:2, 4:3). 
 
 @mixin vh-fix {
-	@media (max-device--aspect-ratio: 3/4) {
+	@media (max-device-aspect-ratio: 3/4) {
 	height: calc(100vw * 1.333);
 	}
-	@media (max-device--aspect-ratio: 2/3) {
+	@media (max-device-aspect-ratio: 2/3) {
 	height: calc(100vw * 1.5);
 	}
-	@media (max-device--aspect-ratio: 10/16) {
+	@media (max-device-aspect-ratio: 10/16) {
 	height: calc(100vw * 1.6);
 	}
-	@media (max-device--aspect-ratio: 9/16) {
+	@media (max-device-aspect-ratio: 9/16) {
 		height: calc(100vw * 1.778);
 	}
 }
