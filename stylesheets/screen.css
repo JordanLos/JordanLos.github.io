@@ -10,7 +10,7 @@ html, body {
   overflow: none;
 }
 /* line 9, ../sass/_base.scss */
-html body, body body {
+html html, html body, body html, body body {
   height: 100%;
 }
 
@@ -57,19 +57,30 @@ a:hover {
     height: 200px;
   }
 
-  /* line 30, ../sass/_layout-mobile-narrow.scss */
+  /*
+  @mixin vh-fix(){
+  	@media (aspect)
+  }
+  
+  // 4 aspect ratios (largest ratio to smallest: 16:9, 16:10, 3:2, 4:3)
+  @media (min-device-aspect-ratio: 16/9) {
+  	height: calc(100vw * 1.6);
+  }
+  */
+  /* line 41, ../sass/_layout-mobile-narrow.scss */
   .l-landing-panel {
     height: 100%;
     width: 320px;
+    height: calc(100vw * 1.6);
     margin: 0 auto;
   }
 
-  /* line 36, ../sass/_layout-mobile-narrow.scss */
+  /* line 48, ../sass/_layout-mobile-narrow.scss */
   .l-header {
     height: 19%;
     padding: 0;
   }
-  /* line 39, ../sass/_layout-mobile-narrow.scss */
+  /* line 51, ../sass/_layout-mobile-narrow.scss */
   .l-header img {
     position: relative;
     top: 50%;
@@ -77,20 +88,20 @@ a:hover {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  /* line 42, ../sass/_layout-mobile-narrow.scss */
+  /* line 54, ../sass/_layout-mobile-narrow.scss */
   .l-header img:first-of-type {
     float: left;
   }
-  /* line 45, ../sass/_layout-mobile-narrow.scss */
+  /* line 57, ../sass/_layout-mobile-narrow.scss */
   .l-header img:last-of-type {
     float: right;
   }
 
-  /* line 49, ../sass/_layout-mobile-narrow.scss */
+  /* line 61, ../sass/_layout-mobile-narrow.scss */
   #logo-wrap {
     height: 62%;
   }
-  /* line 51, ../sass/_layout-mobile-narrow.scss */
+  /* line 63, ../sass/_layout-mobile-narrow.scss */
   #logo-wrap img {
     position: relative;
     top: 50%;
@@ -102,11 +113,11 @@ a:hover {
     margin: 0 auto;
   }
 
-  /* line 58, ../sass/_layout-mobile-narrow.scss */
+  /* line 70, ../sass/_layout-mobile-narrow.scss */
   .l-landing-footer {
     height: 19%;
   }
-  /* line 60, ../sass/_layout-mobile-narrow.scss */
+  /* line 72, ../sass/_layout-mobile-narrow.scss */
   .l-landing-footer img {
     position: relative;
     top: 50%;
@@ -117,7 +128,7 @@ a:hover {
     margin: 0 auto;
   }
 
-  /* line 68, ../sass/_layout-mobile-narrow.scss */
+  /* line 80, ../sass/_layout-mobile-narrow.scss */
   .service-image {
     width: 100%;
     height: 400px;
@@ -125,29 +136,29 @@ a:hover {
 
   /*******SERVICE PANEL********
   ****************************/
-  /* line 75, ../sass/_layout-mobile-narrow.scss */
+  /* line 87, ../sass/_layout-mobile-narrow.scss */
   #large-screen-content {
     display: none;
   }
 
-  /* line 78, ../sass/_layout-mobile-narrow.scss */
+  /* line 90, ../sass/_layout-mobile-narrow.scss */
   .l-header-wrapper {
     background-color: gray;
     height: 3em;
   }
 
-  /* line 83, ../sass/_layout-mobile-narrow.scss */
+  /* line 95, ../sass/_layout-mobile-narrow.scss */
   .l-service-wrapper {
     position: relative;
     width: 100%;
   }
-  /* line 86, ../sass/_layout-mobile-narrow.scss */
+  /* line 98, ../sass/_layout-mobile-narrow.scss */
   .l-service-wrapper img {
     display: block;
     max-width: 100%;
     padding-top: 40px;
   }
-  /* line 91, ../sass/_layout-mobile-narrow.scss */
+  /* line 103, ../sass/_layout-mobile-narrow.scss */
   .l-service-wrapper div {
     background-color: gray;
     position: absolute;
@@ -157,23 +168,23 @@ a:hover {
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 102, ../sass/_layout-mobile-narrow.scss */
+  /* line 114, ../sass/_layout-mobile-narrow.scss */
   #about {
     padding: 25% 0 0 0;
   }
 
-  /* line 105, ../sass/_layout-mobile-narrow.scss */
+  /* line 117, ../sass/_layout-mobile-narrow.scss */
   #contact-div {
     margin-top: 15%;
   }
 
-  /* line 108, ../sass/_layout-mobile-narrow.scss */
+  /* line 120, ../sass/_layout-mobile-narrow.scss */
   .icon-spread {
     width: 100%;
     text-align: center;
     position: relative;
   }
-  /* line 112, ../sass/_layout-mobile-narrow.scss */
+  /* line 124, ../sass/_layout-mobile-narrow.scss */
   .icon-spread div {
     height: 48px;
     width: 48px;
@@ -184,12 +195,12 @@ a:hover {
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 122, ../sass/_layout-mobile-narrow.scss */
+  /* line 134, ../sass/_layout-mobile-narrow.scss */
   .footer {
     background-color: gray;
     height: 40px;
   }
-  /* line 125, ../sass/_layout-mobile-narrow.scss */
+  /* line 137, ../sass/_layout-mobile-narrow.scss */
   .footer p {
     position: relative;
     top: 50%;
@@ -207,7 +218,7 @@ a:hover {
 
   /* line 23, ../sass/_layout-mobile-landscape.scss */
   .l-landing-panel {
-    height: 100%;
+    height: 100vh;
   }
 
   /* line 27, ../sass/_layout-mobile-landscape.scss */
@@ -294,7 +305,7 @@ a:hover {
   /* line 78, ../sass/_layout-mobile-landscape.scss */
   .l-service-wrapper img {
     display: block;
-    max-width: 100%;
+    height: 80%;
   }
   /* line 82, ../sass/_layout-mobile-landscape.scss */
   .l-service-wrapper div {

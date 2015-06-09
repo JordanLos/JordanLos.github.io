@@ -25,14 +25,26 @@ $test-color: gray;
   	transform: translateY(-50%);
 }
 
+/*
+@mixin vh-fix(){
+	@media (aspect)
+}
+
+// 4 aspect ratios (largest ratio to smallest: 16:9, 16:10, 3:2, 4:3)
+@media (min-device-aspect-ratio: 16/9) {
+	height: calc(100vw * 1.6);
+}
+*/
+
 //Landing Panel
 //100% heigh ensures consistent landing panel experience
 .l-landing-panel {
 	height: 100%;
 	width: 320px;
+	height: calc(100vw * 1.6);
 	margin: 0 auto;
 }
-//landing panel split into 3 sections along the golden ratio. 62% going to the logo and the 38% split between top and bottom icons
+//landing panel split into 3 vertical sections along the golden ratio. 62% going to the logo and the 38% split between top and bottom icons
 .l-header {
 	height: 19%;
 	padding: 0;
