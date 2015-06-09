@@ -25,18 +25,20 @@ $test-color: gray;
   	transform: translateY(-50%);
 }
 
-//Styles an element with full screen height and won't resize when the url bar dissapears on mobile browsers (i.e. a mixin that works the way the vh unit actually should)
-@mixin aspect-ratio-media($aspect-ratio) {
-	@media (min-device-aspect-ratio: $aspect-ratio) {
-		height: calc(100vw * ($aspect-ratio));
-	}
-}
-// Creates a fix for the four major aspect ratios, which must be listed from the largest ratio to the smallest (16:9, 16:10, 3:2, 4:3). 
+//Styles an element with full screen height and won't resize when the url bar dissapears on mobile browsers (i.e. a mixin that works the way the vh unit actually should). the four major aspect ratios, which must be listed from the largest ratio to the smallest (16:9, 16:10, 3:2, 4:3). 
 @mixin vh-fix {
-	@include aspect-ratio-media(16/9);
-	@include aspect-ratio-media(16/10);
-	@include aspect-ratio-media(3/2);
-	@include aspect-ratio-media(4/3);
+	@media (min-device-aspect-ratio: (16/9)) {
+		height: calc(100vw * (16/9));
+	}
+	@media (min-device-aspect-ratio: (16/10)) {
+	height: calc(100vw * (16/10));
+}
+	@media (min-device-aspect-ratio: (3/2)) {
+	height: calc(100vw * (3/2));
+}
+	@media (min-device-aspect-ratio: (4/3)) {
+	height: calc(100vw * (4/3));
+	}
 }
 
 //Landing Panel
