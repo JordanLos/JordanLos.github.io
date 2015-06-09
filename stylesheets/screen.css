@@ -66,25 +66,25 @@ a:hover {
 @media (max-width: 450px) and (max-device-aspect-ratio: 3 / 4) {
   /* line 47, ../sass/_layout-mobile-narrow.scss */
   .l-landing-panel {
-    height: calc(100vw * 1.333);
+    height: calc(100vw * 1.333 - 10%);
   }
 }
 @media (max-width: 450px) and (max-device-aspect-ratio: 2 / 3) {
   /* line 47, ../sass/_layout-mobile-narrow.scss */
   .l-landing-panel {
-    height: calc(100vw * 1.5);
+    height: calc(100vw * 1.5 - 10%);
   }
 }
 @media (max-width: 450px) and (max-device-aspect-ratio: 10 / 16) {
   /* line 47, ../sass/_layout-mobile-narrow.scss */
   .l-landing-panel {
-    height: calc(100vw * 1.6);
+    height: calc(100vw * 1.6 - 10%);
   }
 }
 @media (max-width: 450px) and (max-device-aspect-ratio: 9 / 16) {
   /* line 47, ../sass/_layout-mobile-narrow.scss */
   .l-landing-panel {
-    height: calc(100vw * 1.778);
+    height: calc(100vw * 1.778 - 10%);
   }
 }
 
