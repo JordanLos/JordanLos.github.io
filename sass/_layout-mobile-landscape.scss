@@ -17,11 +17,24 @@ $test-color: gray;
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
 }
-
+@mixin vh-fix {
+	@media (max-device-aspect-ratio: 3/4) {
+	height: calc(100vw * 1.333 - 65px);
+	}
+	@media (max-device-aspect-ratio: 2/3) {
+	height: calc(100vw * 1.5 - 65px);
+	}
+	@media (max-device-aspect-ratio: 10/16) {
+	height: calc(100vw * 1.6 - 65px);
+	}
+	@media (max-device-aspect-ratio: 9/16) {
+		height: calc(100vw * 1.778 - 65px);
+	}
+}
 //Landing Panel
 //100% heigh ensures consistent landing panel experience
 .l-landing-panel {
-	height: 100vh;
+	@include vh-fix;
 }
 //landing panel split into 3 sections along the golden ratio. 62% going to the logo and the 38% split between top and bottom icons
 .l-header {
@@ -72,12 +85,12 @@ $test-color: gray;
 .l-service-wrapper {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 320px;
 	overflow-y: hidden;
 //Images arent sizing properly to 100% for larger phone models (iphone 6 plus) Need to research respondize images.
 	img {
 		display: block;
-		height: 80%;
+		height: 100%;
 	}
 	div {
 		background-color: $test-color;
