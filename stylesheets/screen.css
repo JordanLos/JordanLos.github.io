@@ -234,25 +234,25 @@ a:hover {
 @media (min-width: 450px) and (max-width: 750px) and (max-device-aspect-ratio: 4 / 3) {
   /* line 36, ../sass/_layout-mobile-landscape.scss */
   .l-landing-panel {
-    height: calc(100vw * 0.75- 65px);
+    height: calc(100vw * 0.75- 70px);
   }
 }
 @media (min-width: 450px) and (max-width: 750px) and (max-device-aspect-ratio: 3 / 2) {
   /* line 36, ../sass/_layout-mobile-landscape.scss */
   .l-landing-panel {
-    height: calc(100vw * 0.667 - 65px);
+    height: calc(100vw * 0.667 - 70px);
   }
 }
 @media (min-width: 450px) and (max-width: 750px) and (max-device-aspect-ratio: 16 / 10) {
   /* line 36, ../sass/_layout-mobile-landscape.scss */
   .l-landing-panel {
-    height: calc(100vw * 0.625 - 65px);
+    height: calc(100vw * 0.625 - 70px);
   }
 }
 @media (min-width: 450px) and (max-width: 750px) and (max-device-aspect-ratio: 16 / 9) {
   /* line 36, ../sass/_layout-mobile-landscape.scss */
   .l-landing-panel {
-    height: calc(100vw * 0.563 - 65px);
+    height: calc(100vw * 0.563 - 70px);
   }
 }
 

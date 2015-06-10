@@ -19,16 +19,16 @@ $test-color: gray;
 }
 @mixin vh-fix-landscape {
 	@media (max-device-aspect-ratio: 4/3) {
-	height: calc(100vw * 0.75- 65px);
+	height: calc(100vw * 0.75- 70px);
 	}
 	@media (max-device-aspect-ratio: 3/2) {
-	height: calc(100vw * 0.667 - 65px);
+	height: calc(100vw * 0.667 - 70px);
 	}
 	@media (max-device-aspect-ratio: 16/10) {
-	height: calc(100vw * 0.625 - 65px);
+	height: calc(100vw * 0.625 - 70px);
 	}
 	@media (max-device-aspect-ratio: 16/9) {
-		height: calc(100vw * 0.563 - 65px);
+		height: calc(100vw * 0.563 - 70px);
 	}
 }
 //Landing Panel
