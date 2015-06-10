@@ -292,7 +292,7 @@ a:hover {
     transform: translateY(-50%);
     display: block;
     margin: 0 auto;
-    max-height: 100%;
+    max-width: 35%;
   }
 
   /* line 62, ../sass/_layout-mobile-landscape.scss */
