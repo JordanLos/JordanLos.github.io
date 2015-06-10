@@ -1,94 +1,623 @@
-/*
-Error: Undefined mixin 'vh-fix'.
-        on line 37 of /home/jordan/Projects/jordanlos.github.io/sass/_layout-mobile-landscape.scss, in `vh-fix'
-        from line 37 of /home/jordan/Projects/jordanlos.github.io/sass/_layout-mobile-landscape.scss
-        from line 13 of /home/jordan/Projects/jordanlos.github.io/sass/screen.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Oxygen:700,400,300);
+/* line 4, ../sass/_base.scss */
+html, body {
+  margin: 0;
+  padding: 0px;
+  overflow: none;
+}
+/* line 9, ../sass/_base.scss */
+html html, html body, body html, body body {
+  height: 100%;
+}
 
-Backtrace:
-/home/jordan/Projects/jordanlos.github.io/sass/_layout-mobile-landscape.scss:37:in `vh-fix'
-/home/jordan/Projects/jordanlos.github.io/sass/_layout-mobile-landscape.scss:37
-/home/jordan/Projects/jordanlos.github.io/sass/screen.scss:13
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `map'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:512:in `visit_media'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/home/jordan/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'vh-fix'.\A         on line 37 of /home/jordan/Projects/jordanlos.github.io/sass/_layout-mobile-landscape.scss, in `vh-fix'\A         from line 37 of /home/jordan/Projects/jordanlos.github.io/sass/_layout-mobile-landscape.scss\A         from line 13 of /home/jordan/Projects/jordanlos.github.io/sass/screen.scss"; }
+/* line 22, ../sass/_base.scss */
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+/*Color Variables 
+$primary-color: #8f6d50;
+$contrast-color: #0f3436;
+$compliment-color: #5a1a18;
+//Font Variables
+$oxygen: 'Oxygen', sans-serif;
+
+//Styles
+body {
+	margin: 0;
+	padding: 10px;
+	background-color: white;
+	font-family: $oxygen;
+	font-weight: 400;
+	color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+a:hover {
+	color: $contrast-color;
+}*/
+@media (max-width: 450px) {
+  /* line 8, ../sass/_layout-mobile-narrow.scss */
+  .icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  /* line 12, ../sass/_layout-mobile-narrow.scss */
+  #sprite-test {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+
+  /* line 47, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 450px) and (max-device-aspect-ratio: 3 / 4) {
+  /* line 47, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: calc(100vw * 1.333 - 65px);
+  }
+}
+@media (max-width: 450px) and (max-device-aspect-ratio: 2 / 3) {
+  /* line 47, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: calc(100vw * 1.5 - 65px);
+  }
+}
+@media (max-width: 450px) and (max-device-aspect-ratio: 10 / 16) {
+  /* line 47, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: calc(100vw * 1.6 - 65px);
+  }
+}
+@media (max-width: 450px) and (max-device-aspect-ratio: 9 / 16) {
+  /* line 47, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: calc(100vw * 1.778 - 65px);
+  }
+}
+
+@media (max-width: 450px) {
+  /* line 53, ../sass/_layout-mobile-narrow.scss */
+  .l-header {
+    height: 19%;
+    padding: 0;
+  }
+  /* line 56, ../sass/_layout-mobile-narrow.scss */
+  .l-header img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* line 59, ../sass/_layout-mobile-narrow.scss */
+  .l-header img:first-of-type {
+    float: left;
+  }
+  /* line 62, ../sass/_layout-mobile-narrow.scss */
+  .l-header img:last-of-type {
+    float: right;
+  }
+
+  /* line 66, ../sass/_layout-mobile-narrow.scss */
+  #logo-wrap {
+    height: 62%;
+  }
+  /* line 68, ../sass/_layout-mobile-narrow.scss */
+  #logo-wrap img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 76, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-footer {
+    height: 19%;
+  }
+  /* line 78, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-footer img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 86, ../sass/_layout-mobile-narrow.scss */
+  .service-image {
+    width: 100%;
+    height: 400px;
+  }
+
+  /*******SERVICE PANEL********
+  ****************************/
+  /* line 93, ../sass/_layout-mobile-narrow.scss */
+  #large-screen-content {
+    display: none;
+  }
+
+  /* line 96, ../sass/_layout-mobile-narrow.scss */
+  .l-header-wrapper {
+    background-color: gray;
+    height: 3em;
+  }
+
+  /* line 101, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  /* line 104, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper img {
+    display: block;
+    max-width: 100%;
+    padding-top: 40px;
+  }
+  /* line 109, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper div {
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    padding: 0 15px 15px 15px;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 120, ../sass/_layout-mobile-narrow.scss */
+  #about {
+    padding: 25% 0 0 0;
+  }
+
+  /* line 123, ../sass/_layout-mobile-narrow.scss */
+  #contact-div {
+    margin-top: 15%;
+  }
+
+  /* line 126, ../sass/_layout-mobile-narrow.scss */
+  .icon-spread {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  /* line 130, ../sass/_layout-mobile-narrow.scss */
+  .icon-spread div {
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    background-color: gray;
+    margin: 7%;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 140, ../sass/_layout-mobile-narrow.scss */
+  .footer {
+    background-color: gray;
+    height: 40px;
+  }
+  /* line 143, ../sass/_layout-mobile-narrow.scss */
+  .footer p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 450px) and (max-width: 750px) {
+  /* line 7, ../sass/_layout-mobile-landscape.scss */
+  .icon {
+    height: 48px;
+    width: 48px;
+  }
+}
+@media (min-width: 450px) and (max-width: 750px) and (max-device-aspect-ratio: 4 / 3) {
+  /* line 36, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-panel {
+    height: calc(100vw * 1.333 - 65px);
+  }
+}
+@media (min-width: 450px) and (max-width: 750px) and (max-device-aspect-ratio: 3 / 2) {
+  /* line 36, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-panel {
+    height: calc(100vw * 1.5 - 65px);
+  }
+}
+@media (min-width: 450px) and (max-width: 750px) and (max-device-aspect-ratio: 16 / 10) {
+  /* line 36, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-panel {
+    height: calc(100vw * 1.6 - 65px);
+  }
+}
+@media (min-width: 450px) and (max-width: 750px) and (max-device-aspect-ratio: 16 / 9) {
+  /* line 36, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-panel {
+    height: calc(100vw * 1.778 - 65px);
+  }
+}
+
+@media (min-width: 450px) and (max-width: 750px) {
+  /* line 40, ../sass/_layout-mobile-landscape.scss */
+  .l-header {
+    height: 19%;
+    padding: 0 10px;
+  }
+  /* line 43, ../sass/_layout-mobile-landscape.scss */
+  .l-header img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* line 46, ../sass/_layout-mobile-landscape.scss */
+  .l-header img:first-of-type {
+    float: left;
+  }
+  /* line 49, ../sass/_layout-mobile-landscape.scss */
+  .l-header img:last-of-type {
+    float: right;
+  }
+
+  /* line 53, ../sass/_layout-mobile-landscape.scss */
+  #logo-wrap {
+    height: 62%;
+  }
+  /* line 55, ../sass/_layout-mobile-landscape.scss */
+  #logo-wrap img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* line 61, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-footer {
+    height: 19%;
+  }
+  /* line 63, ../sass/_layout-mobile-landscape.scss */
+  .l-landing-footer img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*******SERVICE PANEL********
+  ****************************/
+  /* line 73, ../sass/_layout-mobile-landscape.scss */
+  #large-screen-content {
+    display: none;
+  }
+
+  /* line 76, ../sass/_layout-mobile-landscape.scss */
+  .l-header-wrapper {
+    background-color: gray;
+    height: 3em;
+  }
+  /* line 79, ../sass/_layout-mobile-landscape.scss */
+  .l-header-wrapper h2 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* line 84, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow-y: hidden;
+  }
+  /* line 90, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper img {
+    display: block;
+    height: 100%;
+  }
+  /* line 94, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper div {
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 62%;
+    padding: 0 15px;
+  }
+  /* line 102, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper div p {
+    display: none;
+  }
+
+  /* line 108, ../sass/_layout-mobile-landscape.scss */
+  .l-service-wrapper:nth-child(2n-1) div {
+    right: 0;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 116, ../sass/_layout-mobile-landscape.scss */
+  #about {
+    padding: 5% 0 0 0;
+  }
+
+  /* line 119, ../sass/_layout-mobile-landscape.scss */
+  #contact-div {
+    margin-top: 15%;
+  }
+
+  /* line 122, ../sass/_layout-mobile-landscape.scss */
+  .icon-spread {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  /* line 126, ../sass/_layout-mobile-landscape.scss */
+  .icon-spread div {
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    background-color: gray;
+    margin: 10%;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 136, ../sass/_layout-mobile-landscape.scss */
+  .footer {
+    background-color: gray;
+    height: 40px;
+  }
+  /* line 139, ../sass/_layout-mobile-landscape.scss */
+  .footer p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media (min-width: 750px) {
+  /* line 7, ../sass/_layout-large-screen.scss */
+  .icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  /* line 23, ../sass/_layout-large-screen.scss */
+  .l-landing-panel {
+    height: 100%;
+  }
+
+  /* line 27, ../sass/_layout-large-screen.scss */
+  .l-header {
+    height: 19%;
+    padding: 0;
+  }
+  /* line 30, ../sass/_layout-large-screen.scss */
+  .l-header img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 15px;
+  }
+  /* line 34, ../sass/_layout-large-screen.scss */
+  .l-header img:first-of-type {
+    float: left;
+  }
+  /* line 37, ../sass/_layout-large-screen.scss */
+  .l-header img:last-of-type {
+    float: right;
+  }
+
+  /* line 41, ../sass/_layout-large-screen.scss */
+  #logo-wrap {
+    height: 62%;
+  }
+  /* line 43, ../sass/_layout-large-screen.scss */
+  #logo-wrap img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+  }
+
+  /* line 50, ../sass/_layout-large-screen.scss */
+  .l-landing-footer {
+    height: 19%;
+  }
+  /* line 52, ../sass/_layout-large-screen.scss */
+  .l-landing-footer img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*******SERVICE PANEL********
+  ****************************/
+  /* line 62, ../sass/_layout-large-screen.scss */
+  .l-header-wrapper {
+    display: none;
+  }
+
+  /* line 66, ../sass/_layout-large-screen.scss */
+  #large-screen-content div, #large-screen-content em {
+    height: 30%;
+  }
+  /* line 69, ../sass/_layout-large-screen.scss */
+  #large-screen-content div, #large-screen-content h2 {
+    text-align: right;
+  }
+  /* line 72, ../sass/_layout-large-screen.scss */
+  #large-screen-content div {
+    display: inline-block;
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+  }
+  /* line 78, ../sass/_layout-large-screen.scss */
+  #large-screen-content em {
+    font-size: 4em;
+  }
+
+  /* line 84, ../sass/_layout-large-screen.scss */
+  #l-service-window {
+    height: 56%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 94%;
+    margin: 4% auto;
+  }
+
+  /* line 91, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  /* line 96, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper img {
+    display: block;
+    width: 100%;
+  }
+  /* line 100, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper div {
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 62%;
+    padding: 0 15px;
+  }
+
+  /* line 111, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-child(2n) div {
+    right: 0;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 121, ../sass/_layout-large-screen.scss */
+  #about {
+    padding: 5% 0 0 0;
+  }
+
+  /* line 124, ../sass/_layout-large-screen.scss */
+  #contact-div {
+    margin-top: 15%;
+  }
+
+  /* line 127, ../sass/_layout-large-screen.scss */
+  .icon-spread {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  /* line 131, ../sass/_layout-large-screen.scss */
+  .icon-spread div {
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    background-color: gray;
+    margin: 10%;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 141, ../sass/_layout-large-screen.scss */
+  .footer {
+    background-color: gray;
+    height: 40px;
+  }
+  /* line 144, ../sass/_layout-large-screen.scss */
+  .footer p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+/* line 104, icons/*.png */
+.icons-sprite, .icons-close, .icons-email, .icons-facebook, .icons-linkedin, .icons-map, .icons-phone, .icons-placeholder, .icons-safety {
+  background-image: url('/img/icons-s78f6176b7a.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-email {
+  background-position: 0 -620px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 -1240px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-linkedin {
+  background-position: 0 -1860px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-map {
+  background-position: 0 -2480px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-phone {
+  background-position: 0 -3100px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-placeholder {
+  background-position: 0 -3720px;
+}
+
+/* line 84, ../../../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-safety {
+  background-position: 0 -4340px;
+}
