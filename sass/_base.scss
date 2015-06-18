@@ -20,33 +20,33 @@ html, body {
 }
 //All h2 are vertical aligned, so this is included in the base
 h2 {
-	text-align: center;
 	margin: 0;
 }
 //Icon sizes
 
-/*Color Variables 
+//Color Variables 
 $primary-color: #8f6d50;
 $contrast-color: #0f3436;
 $compliment-color: #5a1a18;
 //Font Variables
-$oxygen: 'Oxygen', sans-serif;
+$oxygen: "Oxygen", sans-serif;
 
 //Styles
 body {
 	margin: 0;
-	padding: 10px;
 	background-color: white;
-	font-family: $oxygen;
-	font-weight: 400;
 	color: white;
+}
+h1, h2, h3, h4, h5, h6, p, em {
+	font-family: "Oxygen";
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
+p {
+	font-weight: 400;
+}
 
 a:hover {
 	color: $contrast-color;
-}*/
-
-
+}

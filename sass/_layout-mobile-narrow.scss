@@ -1,5 +1,3 @@
-//Mixins for testing - remove later. 
-$test-color: gray;
 //icon size different for each breakpoint
 @mixin icon-size {
 	height: 48px;
@@ -9,12 +7,6 @@ $test-color: gray;
 	@include icon-size;
 
 }
-#sprite-test {
-	  background-image: url('../img/logo.png');
-  background-repeat: no-repeat;
-	height: 200px;
-}
-//Section width will vary based on breakpoint
 
 //Creates a consistent vertical align
 @mixin vertical-align {
@@ -53,14 +45,10 @@ $test-color: gray;
 .l-header {
 	height: 19%;
 	padding: 0;
-	img {
-		@include vertical-align;
-	}
-	img:first-of-type {
-		float: left;
-	}
-	img:last-of-type {
+	p {
+		text-align: center;
 		float: right;
+		font-size: 1.5em;
 	}
 }
 #logo-wrap {
@@ -69,7 +57,6 @@ $test-color: gray;
 		@include vertical-align;
 		display: block;
 		max-width: 100%;
-		max-height: 100%;
 		margin: 0 auto;
 	}
 }
@@ -82,43 +69,56 @@ $test-color: gray;
 	}
 }
 
-//Services
-.service-image {
-	width: 100%;
-	height: 400px;
-}
-
 /*******SERVICE PANEL********
 ****************************/
 #large-screen-content {
 	display: none;
 }
+
 .l-header-wrapper {
-	background-color: $test-color;
 	height: 3em;
 }
-
 .l-service-wrapper {
-	position: relative;
-	width: 100%;
-	img {
-		display: block;
-		max-width: 100%;
-		padding-top: 40px;
-	}
-	div {
-		background-color: $test-color;
-		position: absolute;
-		top: 0;
-		padding: 0 15px 15px 15px;
-	}
-
+	overflow: hidden;
 }
+.l-service-description {
+	padding: 25px;
+	p {
+		margin: 0;
+		padding-top: 25px;
+	}
+	h2 {
+		text-align: center;
+	}
+}
+
+.l-service-images {
+	width: 100%;
+	position: relative;
+	img {
+		display: inline;
+		width: 100%;
+		float: left;
+		margin: 0 auto;
+	}
+	img:nth-of-type(2n) {
+		position: absolute;
+		right: -100%;
+	}
+}
+
 
 /*****ABOUT US/CONTACT******
 ****************************/
-#about {
-	padding: 25% 0 0 0;
+#safety {
+	padding: 5% 0 0 0;
+	background: url('../img/background.png') no-repeat;
+	background-size: cover;
+}
+.safety {
+	img {
+		max-width: 90%;
+	}
 }
 #contact-div {
 	margin-top: 15%;
@@ -130,17 +130,19 @@ $test-color: gray;
 	div {
 		@include icon-size;
 		display: inline-block;
-		background-color: $test-color;
-		margin: 7%;
+		margin: 5%;
+	}
+	img {
+		margin: 5%;
 	}
 }
 
 /*****ABOUT US/CONTACT******
 ****************************/
 .footer {
-	background-color: $test-color;
 	height: 40px;
 	p {
 		@include vertical-align;
+		padding-left: 2%;
 	}
 }

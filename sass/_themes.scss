@@ -1,0 +1,32 @@
+$primary-color: #8f6d50;
+$contrast-color: #0f3436;
+$compliment-color: #5a1a18;
+
+#large-screen-content {
+	h2, p, em {
+		color: $primary-color;
+	}
+}
+.l-header p {
+	color: $primary-color;
+}
+.l-service-wrapper:nth-child(3n) {
+	div {
+	background-color: $primary-color;
+	}
+}
+.l-service-wrapper:nth-child(3n-1) {
+	div {
+	background-color: $compliment-color;
+	}
+}
+.l-service-wrapper:nth-child(3n-2) {
+	div {
+	background-color: $contrast-color;
+	}
+}
+.footer {
+	background-color: $contrast-color;
+}
+
+

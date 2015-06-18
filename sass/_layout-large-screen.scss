@@ -1,5 +1,3 @@
-//Mixins for testing - remove later. 
-$test-color: gray;
 @mixin icon-size {
 	width: 72px;
 	height: 72px;
@@ -7,8 +5,6 @@ $test-color: gray;
 .icon {
 	@include icon-size;
 }
-//Section width will vary based on breakpoint
-
 //Mixing from internet to create a consistent vertical align
 @mixin vertical-align {
 	position: relative;
@@ -17,7 +13,10 @@ $test-color: gray;
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
 }
-
+#wide-screen {
+	max-width: 980px;
+	margin: 0 auto;
+}
 //Landing Panel
 //100% heigh ensures consistent landing panel experience
 .l-landing-panel {
@@ -27,15 +26,19 @@ $test-color: gray;
 .l-header {
 	height: 19%;
 	padding: 0;
-	img {
-		@include vertical-align;
-		padding: 0 15px;
+	p {
+		display: none;
 	}
-	img:first-of-type {
-		float: left;
-	}
-	img:last-of-type {
-		float: right;
+}
+//Add bottom social/contact icons to top of page
+#contact-div {
+	position: absolute;
+	top: 0;
+	max-width: 980px;
+	.icon {
+		display: inline-block;
+		margin: 2.5% 5%;
+		background-color: grey;
 	}
 }
 #logo-wrap {
@@ -58,14 +61,13 @@ $test-color: gray;
 
 /*******SERVICE PANEL********
 ****************************/
-//for mobile versions
+//.l-header-wrapper from mobile versions
 .l-header-wrapper {
 	display: none;
 }
 #large-screen-content {
-	div, em {
-		height: 30%;
-	}
+	height: 30vh;
+	margin: 1vh 0;
 	div, h2 {
 		text-align: right;
 	}
@@ -80,68 +82,73 @@ $test-color: gray;
 	}
 }
 
-//Container Div allows JS function to scroll through services
-#l-service-window {
-	height: 56%;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	width: 94%;
-	margin: 4% auto;	
-}
 .l-service-wrapper {
+	overflow: hidden;
+	height: 359px;
 	position: relative;
-	width: 100%;
-	height: 100%;
-	overflow-y: hidden;
+	width: 99%;
+}
+
+.l-service-description {
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	width: calc(38% -  60px);
+	height: 344px;
+	padding: 15px 30px 0 30px;
+	p, h2 {
+		text-align: right;
+	}
+}
+
+.l-service-images {
+	position: relative;
+	width: 124%;
+	margin-left: 38%;
 	img {
-		display: block;
-		width: 100%;
+		display: inline;
+		width: 50%;
+		float: left;
 	}
-	div {
-		background-color: $test-color;
+	img:nth-of-type(2n) {
 		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 62%;
-		padding: 0 15px;
+		right: 0;
 	}
 }
-//Alternate every other service description to right or left
-.l-service-wrapper:nth-child(2n) {
-	div {
-	right: 0;
+//Alternates position of Service Descriptions 
+.l-service-wrapper:nth-of-type(2n) {
+	.l-service-description {
+		right: 0;
+		p, h2 {
+			text-align: left;
+		}
+	}
+	.l-service-images {
+		margin-left: 0;
 	}
 }
-
-
-
-
 /*****ABOUT US/CONTACT******
 ****************************/
-#about {
+#safety {
 	padding: 5% 0 0 0;
+	background: url('../img/background.png') no-repeat;
+	background-size: cover;
 }
-#contact-div {
-	margin-top: 15%;
-}
+
 .icon-spread {
 	width: 100%;
 	text-align: center;
-	position: relative;
-	div {
-		@include icon-size;
-		display: inline-block;
-		background-color: $test-color;
-		margin: 10%;
+	img {
+		margin: 5%;
 	}
 }
 
 /*****ABOUT US/CONTACT******
 ****************************/
 .footer {
-	background-color: $test-color;
 	height: 40px;
 	p {
 		@include vertical-align;
+		padding-left: 2%;
 	}
 }
