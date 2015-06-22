@@ -10,21 +10,18 @@ $compliment-color: #5a1a18;
 .l-header p {
 	color: $primary-color;
 }
-.l-service-wrapper:nth-child(3n) {
-	div {
-	background-color: $primary-color;
-	}
-}
-.l-service-wrapper:nth-child(3n-1) {
-	div {
-	background-color: $compliment-color;
-	}
-}
-.l-service-wrapper:nth-child(3n-2) {
-	div {
+.l-service-description.service-style-1 {
 	background-color: $contrast-color;
-	}
 }
+.l-service-description.service-style-2 {
+	background-color: $compliment-color;
+}
+.l-service-description.service-style-3 {
+	background-color: $primary-color;
+}
+
+
+
 .footer {
 	background-color: $contrast-color;
 }

@@ -2,6 +2,20 @@
 	width: 72px;
 	height: 72px;
 }
+//No-brainer CSS triangle mixin
+@mixin triangle($points-to, $height, $width, $x, $x-position, $y, $y-position) {
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	z-index: 99;
+	border-style: solid;
+	border-color: transparent;
+	border-width: $height $width;
+	border-#{$points-to}: none;
+	#{$x}: $x-position;
+	#{$y}: $y-position;
+}
 .icon {
 	@include icon-size;
 }
@@ -127,6 +141,35 @@
 		margin-left: 0;
 	}
 }
+//CSS Triangles - Colors are added in _themes.scss
+.l-service-description::after {
+	@include triangle(right, 25px, 40px, left, 100%, bottom, 35px);
+}
+.l-service-description.service-style-1::after {
+	border-left-color: $contrast-color;
+}
+.l-service-description.service-style-2::after {
+	border-left-color: $compliment-color;
+}
+.l-service-description.service-style-3::after {
+	border-left-color: $primary-color;
+}
+
+//Alternates between left side & right side triangle
+/*.l-service-wrapper:nth-child(odd) {
+	.l-service-description::after {
+		left: 75%;
+	}
+}
+.l-service-description.service-style-1::after {
+	border-left-color: $contrast-color;
+}
+.l-service-description.service-style-2::after {
+	border-left-color: $compliment-color;
+}
+.l-service-description.service-style-3::after {
+	border-left-color: $primary-color;
+}*/
 /*****ABOUT US/CONTACT******
 ****************************/
 #safety {
