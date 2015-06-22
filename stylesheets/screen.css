@@ -46,32 +46,46 @@ a:hover {
   color: #0f3436;
 }
 
-/* line 6, ../sass/_themes.scss */
+/* line 5, ../sass/_themes.scss */
+body {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");
+}
+
+/* line 8, ../sass/_themes.scss */
+#wide-screen {
+  background-color: white;
+}
+
+/* line 12, ../sass/_themes.scss */
+#large-screen-content {
+  background-color: white;
+}
+/* line 13, ../sass/_themes.scss */
 #large-screen-content h2, #large-screen-content p, #large-screen-content em {
   color: #8f6d50;
 }
 
-/* line 10, ../sass/_themes.scss */
+/* line 19, ../sass/_themes.scss */
 .l-header p {
   color: #8f6d50;
 }
 
-/* line 13, ../sass/_themes.scss */
+/* line 22, ../sass/_themes.scss */
 .l-service-description.service-style-1 {
   background-color: #0f3436;
 }
 
-/* line 16, ../sass/_themes.scss */
+/* line 25, ../sass/_themes.scss */
 .l-service-description.service-style-2 {
   background-color: #5a1a18;
 }
 
-/* line 19, ../sass/_themes.scss */
+/* line 28, ../sass/_themes.scss */
 .l-service-description.service-style-3 {
   background-color: #8f6d50;
 }
 
-/* line 25, ../sass/_themes.scss */
+/* line 32, ../sass/_themes.scss */
 .footer {
   background-color: #0f3436;
 }
@@ -405,7 +419,7 @@ a:hover {
     overflow: hidden;
     height: 359px;
     position: relative;
-    width: 99%;
+    width: 980px;
   }
 
   /* line 106, ../sass/_layout-large-screen.scss */
@@ -453,8 +467,8 @@ a:hover {
     margin-left: 0;
   }
 
-  /* line 145, ../sass/_layout-large-screen.scss */
-  .l-service-description::after {
+  /* line 146, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+1) .l-service-description::after {
     content: '';
     position: absolute;
     height: 0;
@@ -466,23 +480,100 @@ a:hover {
     border-right: none;
     left: 100%;
     bottom: 35px;
-  }
-
-  /* line 148, ../sass/_layout-large-screen.scss */
-  .l-service-description.service-style-1::after {
     border-left-color: #0f3436;
   }
 
-  /* line 151, ../sass/_layout-large-screen.scss */
-  .l-service-description.service-style-2::after {
-    border-left-color: #5a1a18;
+  /* line 150, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+2) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 99;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-left: none;
+    right: 100%;
+    bottom: 35px;
+    border-right-color: #5a1a18;
   }
 
   /* line 154, ../sass/_layout-large-screen.scss */
-  .l-service-description.service-style-3::after {
+  .l-service-wrapper:nth-of-type(0n+3) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 99;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-right: none;
+    left: 100%;
+    bottom: 35px;
     border-left-color: #8f6d50;
   }
 
+  /* line 158, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+4) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 99;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-eft: none;
+    right: 100%;
+    bottom: 35px;
+    border-right-color: #0f3436;
+  }
+
+  /* line 162, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+5) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 99;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-right: none;
+    left: 100%;
+    bottom: 35px;
+    border-left-color: #5a1a18;
+  }
+
+  /* line 166, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+6) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 99;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-left: none;
+    right: 100%;
+    bottom: 35px;
+    border-right-color: #8f6d50;
+  }
+
+  /*
+  .l-service-description.service-style-1::after {
+  	border-left-color: $contrast-color;
+  }
+  .l-service-description.service-style-2::after {
+  	border-left-color: $compliment-color;
+  }
+  .l-service-description.service-style-3::after {
+  	border-left-color: $primary-color;
+  }
+  */
   /*.l-service-wrapper:nth-child(odd) {
   	.l-service-description::after {
   		left: 75%;
@@ -499,30 +590,30 @@ a:hover {
   }*/
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 175, ../sass/_layout-large-screen.scss */
+  /* line 199, ../sass/_layout-large-screen.scss */
   #safety {
     padding: 5% 0 0 0;
     background: url("../img/background.png") no-repeat;
     background-size: cover;
   }
 
-  /* line 181, ../sass/_layout-large-screen.scss */
+  /* line 205, ../sass/_layout-large-screen.scss */
   .icon-spread {
     width: 100%;
     text-align: center;
   }
-  /* line 184, ../sass/_layout-large-screen.scss */
+  /* line 208, ../sass/_layout-large-screen.scss */
   .icon-spread img {
     margin: 5%;
   }
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 191, ../sass/_layout-large-screen.scss */
+  /* line 215, ../sass/_layout-large-screen.scss */
   .footer {
     height: 40px;
   }
-  /* line 193, ../sass/_layout-large-screen.scss */
+  /* line 217, ../sass/_layout-large-screen.scss */
   .footer p {
     position: relative;
     top: 50%;

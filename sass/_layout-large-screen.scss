@@ -100,7 +100,7 @@
 	overflow: hidden;
 	height: 359px;
 	position: relative;
-	width: 99%;
+	width: 980px;
 }
 
 .l-service-description {
@@ -141,10 +141,34 @@
 		margin-left: 0;
 	}
 }
-//CSS Triangles - Colors are added in _themes.scss
-.l-service-description::after {
-	@include triangle(right, 25px, 40px, left, 100%, bottom, 35px);
+//Must select .l-service-description as nth child .l-service-wrapper to add different ::after styles
+//Adds a triangle after each .l-service-description. Since the direction of the triangles changes on 2n and the color on 3n, each triangle requires unique styling. Adding border-*-color by .l-service-wrapper.l-service-style-*::after won't change the transparent border color in the triangle mixin.
+.l-service-wrapper:nth-of-type(0n+1) .l-service-description::after {
+		@include triangle(right, 25px, 40px, left, 100%, bottom, 35px);
+		border-left-color: $contrast-color;
 }
+.l-service-wrapper:nth-of-type(0n+2) .l-service-description::after {
+		@include triangle(left, 25px, 40px, right, 100%, bottom, 35px);
+		border-right-color: $compliment-color;
+}
+.l-service-wrapper:nth-of-type(0n+3) .l-service-description::after {
+		@include triangle(right, 25px, 40px, left, 100%, bottom, 35px);
+		border-left-color: $primary-color;
+}
+.l-service-wrapper:nth-of-type(0n+4) .l-service-description::after {
+		@include triangle(eft, 25px, 40px, right, 100%, bottom, 35px);
+		border-right-color: $contrast-color;
+}
+.l-service-wrapper:nth-of-type(0n+5) .l-service-description::after {
+		@include triangle(right, 25px, 40px, left, 100%, bottom, 35px);
+		border-left-color: $compliment-color;
+}
+.l-service-wrapper:nth-of-type(0n+6) .l-service-description::after {
+		@include triangle(left, 25px, 40px, right, 100%, bottom, 35px);
+		border-right-color: $primary-color;
+}
+//CSS Triangles - Colors are added in _themes.scss
+/*
 .l-service-description.service-style-1::after {
 	border-left-color: $contrast-color;
 }
@@ -154,7 +178,7 @@
 .l-service-description.service-style-3::after {
 	border-left-color: $primary-color;
 }
-
+*/
 //Alternates between left side & right side triangle
 /*.l-service-wrapper:nth-child(odd) {
 	.l-service-description::after {
