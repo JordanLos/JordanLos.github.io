@@ -15,7 +15,9 @@ body {
 	}
 	background-color: white;
 }
-
+.l-header-wrapper {
+	background-color: $primary-color;
+}
 .l-header p {
 	color: $primary-color;
 }

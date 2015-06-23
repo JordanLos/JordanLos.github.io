@@ -93,13 +93,17 @@ $compliment-color: #5a1a18;
 
 .l-header-wrapper {
 	height: 3em;
+	h2 {
+		@include vertical-align;
+		text-align: center;
+	}
 }
 .l-service-wrapper {
 	overflow: hidden;
 }
 .l-service-description {
 	position: relative;
-	padding: 25px;
+	padding: 10px 25px 25px 25px;
 	p {
 		margin: 0;
 		padding-top: 25px;

@@ -2,8 +2,13 @@
 <html>
 <head>
 	<title>Donald Rigging</title>
-	 <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js"></script> 
 </head>
 <body>
   <div id="wide-screen">
@@ -12,10 +17,10 @@
   			<p class="landing-anim">Contact</p>
    		</div>
    		<div id="logo-wrap">
-   			<img src="img/Placeholder/logo.png" alt="Logo" id="logo"/>
+   			<img src="img/logo.png" alt="Logo" id="logo"/>
    		</div>
    		<div class='l-landing-footer'>
-    		<img src="img/Placeholder/down.png" alt="down" class='icon landing-anim'/>
+    		<img src="img/down.png" alt="down" class='icon landing-anim'/>
   		</div>
   </section>
     <div class="l-header-wrapper">
@@ -40,8 +45,20 @@
         <p>Donald Rigging is equipped to handle all on-site service needs including heavy lift rigging, common service rigging, skid steers, telehandlers, front end loaders, tractor trailers, boom trucks, water pumping, snow removal, dirt work, crane pad construction and warehousing servcies. </p>
       </div>
       <div class="l-service-images">
-        <img src="img/Placeholder/site-service-1.jpg" alt="Site Services" />
-        <img src="img/Placeholder/site-service-2.jpg" alt="Site Services"/>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/site-service-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/site-service-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/site-service-1-desktop.jpg"alt="Example of Site Services">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/site-service-2-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/site-service-2-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/site-service-2-desktop.jpg" alt="Example of Site Services">
+        </picture>
       </div>
     </div>
     <div class="l-service-wrapper">
@@ -50,8 +67,20 @@
         <p>Donald Rigging has a division that specializes in moving commodities with weights varying from 500lbs to 1,500,000lbs. We have 3 full jack & slide crews, all equpped with unified jacking pumps for multi-point lifts, as well as 300 ton push pull track for moving loads under control without the aid of winch cables. We also have multiple other pieces of specialized moving equipment designed to meet our customer's specific needs. </p>
       </div>
       <div class="l-service-images">
-        <img src="img/Placeholder/jack-slide-1.jpg" alt="Jack & Slide"/>
-        <img src="img/Placeholder/jack-slide-2.jpg" alt="Jack & Slide"/>
+      	<picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/jack-slide-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/jack-slide-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/jack-slide-1-desktop.jpg" alt="Example of Jack and Sliding">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/jack-slide-2-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/jack-slide-2-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/jack-slide-2-desktop.jpg" alt="Example of Jack and Sliding">
+        </picture>
       </div>
     </div>
     <div class="l-service-wrapper">
@@ -60,8 +89,20 @@
         <p>Donald Rigging Utilizes multiple boom trucks for day to day operations ranging from 23 ton to 45 ton. We use National Crane, Manitex, and Hydra Lift Weldco branded boom trucks. All of our boom trucks are capable of hauling a trailer and traveling between provinces. Our operators are ticketed, which gives our customers the confidence that their lift will be done ina  safe and professional matter. </p>
       </div>
       <div class="l-service-images">
-        <img src="img/Placeholder/picker-1.jpg" alt="Picker Services"/>
-        <img src="img/Placeholder/picker-2.jpg" alt="Picker Services"/>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/picker-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/picker-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/picker-1-desktop.jpg" alt="Example of Picker Truck">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/picker-2-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/picker-2-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/picker-2-desktop.jpg" alt="Example of a Picker Truck">
+        </picture>
       </div>
     </div>
     <div class="l-service-wrapper">
@@ -70,8 +111,20 @@
         <p>Donald Rigging has a fleet of winch & highway tractors, along with a trailer fleet that consists of hi-boys, low-boys and double drop trailers. All of our drivers have many years of experience moving freight in Alberta and throughout Western Canada.</p>
       </div>
       <div class="l-service-images">
-        <img src="img/Placeholder/transport-1.jpg" alt="Transportation"/>
-        <img src="img/Placeholder/transport-2.jpg" alt="Transportation"/>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/transport-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/transport-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/transport-1-desktop.jpg" alt="Example of tranport vehicles">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/transport-2-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/transport-2-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/transport-2-desktop.jpg" alt="Example of transport vehicles">
+        </picture>
       </div>
     </div>
     <div class="l-service-wrapper">    
@@ -80,8 +133,20 @@
         <p>In 2008, Donald Rigging purchased "Brutus" our 60 ton lift truck from Rigger Lift in the USA. IT still stands as one of the largest lift trucks in Western Canada and is 8'W and will fit insde a 10'H door. This machine utlizes removable counter-weight slabs allowing us to transport it on smaller trailers, keeping the cost down for our custoemrs. It is equipped with forks for low loads, along with aboom attachment for lifting commodities from above. This machine is available for a single lift, or for long term rent (with or without operator)</p>
       </div>
       <div class="l-service-images">
-        <img src="img/Placeholder/forklift-1.jpg" alt="60 Ton Forklift"/>
-        <img src="img/Placeholder/forklift-2.jpg" alt="60 Ton Forklift"/>
+      	<picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/forklift-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/forklift-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/forklift-1-desktop.jpg" alt="Example of forklift capabilities">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/forklift-2-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/forklift-2-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/forklift-2-desktop.jpg" alt="Example of forklift capabilities">
+        </picture>
       </div>
     </div>
     <div class="l-service-wrapper">
@@ -90,8 +155,20 @@
         <p>Donald Rigging is based in Calgary with a full service 15,000 sq/ft shop. This shop is utilized for rigging up on our own equipemnt, along with providing custom work for our customers. We have a welding bay fully equipped with an overhead crane for fabrication, along with licensed mechanics to meet all of our customer's truck and trailer needs</p>
       </div>
       <div class="l-service-images">
-        <img src='img/Placeholder/rig-1.jpg' alt="Rig Ups and Mechanics"/>
-        <img src='img/Placeholder/rig-2.jpg' alt="Rig Ups and Mechanics"/>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/rig-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/rig-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/rig-1-desktop.jpg" alt="Example of rigged truck">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/rig-2-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/rig-2-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/rig-2-desktop.jpg" alt="Example of Rigged Truck">
+        </picture>
       </div>
     </div>
   </section>
