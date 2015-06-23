@@ -1,10 +1,10 @@
 // Imports
-@import url(http://fonts.googleapis.com/css?family=Oxygen:700,400,300);
 
 html, body {
 	margin: 0;
 	padding: 0px;
 	overflow: none;
+	font-family: 'Oxygen', sans-serif;
 //Something is adding whitespace below the body to the HTML by about 13px. The following snippet addresses the problem but doesn't fix it.
 	html, body {
 		height: 100%;
