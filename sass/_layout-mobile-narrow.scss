@@ -61,11 +61,10 @@ $compliment-color: #5a1a18;
 .l-header {
 	height: 19%;
 	padding: 0;
-	p {
-		text-align: center;
-		float: right;
-		font-size: 1.5em;
-	}
+}
+.l-header-images {
+	float: right;
+	@include vertical-align;
 }
 #logo-wrap {
 	height: 62%;
@@ -114,21 +113,12 @@ $compliment-color: #5a1a18;
 }
 
 .l-service-images {
-	width: 100%;
-	position: relative;
 	img {
-		display: inline;
 		width: 100%;
-		float: left;
-		margin: 0 auto;
-	}
-	img:nth-of-type(2n) {
-		position: absolute;
-		right: -100%;
 	}
 }
 .l-service-description::after {
-	@include triangle(bottom, 35px, 25px, top, 100%, left, 5%);
+	@include triangle(bottom, 35px, 25px, top, 99%, left, 5%);
 }
 //Alternates between left side & right side triangle
 .l-service-wrapper:nth-child(even) {
@@ -161,28 +151,30 @@ $compliment-color: #5a1a18;
 	}
 }
 #contact-div {
-	margin-top: 15%;
+	margin: 15% 0;
 }
 .icon-spread {
 	width: 100%;
 	text-align: center;
 	position: relative;
-	div {
-		@include icon-size;
-		display: inline-block;
-		margin: 5%;
-	}
-	img {
-		margin: 5%;
-	}
 }
+.safety-icon {
+	margin: 5%;
+}
+.contact-icon {
+	width: calc(100vw/2.5);
+	padding: 5% 0;
+	display: inline-block;
+	vertical-align: top;
+	p {
+		font-size: 11;
+	}
 
+}
 /*****ABOUT US/CONTACT******
 ****************************/
 .footer {
 	height: 40px;
-	p {
-		@include vertical-align;
-		padding-left: 2%;
-	}
+	padding: 2%;
+	font-size: 15;
 }

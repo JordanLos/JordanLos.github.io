@@ -4,10 +4,6 @@ $test-color: gray;
 	height: 48px;
 	width: 48px;
 }
-.icon {
-	@include icon-size;
-
-}
 //Section width @100% for landscape
 //Mixing from internet to create a consistent vertical align
 @mixin vertical-align {
@@ -40,16 +36,13 @@ $test-color: gray;
 .l-header {
 	height: 19%;
 	padding: 0 10px;
-	img {
-		@include vertical-align;
-	}
-	img:first-of-type {
-		float: left;
-	}
-	img:last-of-type {
-		float: right;
-	}
 }
+.l-header-images {
+	display: inline-block;
+	@include vertical-align;
+	background-color: yellow;
+}
+
 #logo-wrap {
 	height: 62%;
 	img {
