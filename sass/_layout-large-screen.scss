@@ -34,6 +34,7 @@
 //Landing Panel
 //100% heigh ensures consistent landing panel experience
 .l-landing-panel {
+	display: hidden;
 	height: 100%;
 }
 //landing panel split into 3 sections along the golden ratio. 62% going to the logo and the 38% split between top and bottom icons
