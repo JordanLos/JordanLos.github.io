@@ -91,11 +91,26 @@ $compliment-color: #5a1a18;
 }
 
 .l-header-wrapper {
-	height: 3em;
+	background: url("../img/barbell.svg") no-repeat center;
+	background-color: $primary-color;
+	background-size: 19em;
+	height: 7em; 
+	text-align: center;
 	h2 {
 		@include vertical-align;
-		text-align: center;
 	}
+}
+//triange mixin requires relative div wrapper
+.l-relative-div {
+ position: relative;
+}
+.l-header-wrapper::after {
+	@include triangle(bottom, 35px, 25px, top, 100%, left, 5%);
+	border-top-color: $primary-color;
+}
+.l-header-wrapper::before {
+	@include triangle(bottom, 35px, 25px, top, 100%, right, 5%);
+	border-top-color: $primary-color;
 }
 .l-service-wrapper {
 	overflow: hidden;

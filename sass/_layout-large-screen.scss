@@ -54,14 +54,20 @@
 	//width 100vw ensures .contact-icon is spread evenly below 980px
 	width: 100vw;
 	max-width: 980px;
-	.contact-icon {
+}
+.contact-icon {
 		width: 72px;
 		display: inline-block;
 		vertical-align: top;
 		font-size: 12;
 		float: left;
 		padding: 1% calc((100% - 360px)/10);
-	}
+}
+.contact-icon-text {
+	margin: 0 -50%;
+}
+.icon-with-text {
+	text-align: center;
 }
 #logo-wrap {
 	height: 62%;
@@ -83,27 +89,28 @@
 
 /*******SERVICE PANEL********
 ****************************/
-//.l-header-wrapper from mobile versions
 .l-header-wrapper {
-	display: none;
-}
-#large-screen-content {
-	height: 30vh;
-	margin: 1vh 0;
-	div, h2 {
-		text-align: right;
-	}
-	div {
-		display: inline-block;
-		float: left;
-		width: 45%;
-		margin-right: 10%;
-	}
-	em {
-		font-size: 4em;
+	background: url("../img/barbell.svg") no-repeat center;
+	background-color: $primary-color;
+	background-size: 25em;
+	height: 8em; 
+	text-align: center;
+	h2 {
+		@include vertical-align;
 	}
 }
-
+//triange mixin requires relative div wrapper
+.l-relative-div {
+ position: relative;
+}
+.l-header-wrapper::after {
+	@include triangle(bottom, 35px, 25px, top, 100%, left, 5%);
+	border-top-color: $primary-color;
+}
+.l-header-wrapper::before {
+	@include triangle(bottom, 35px, 25px, top, 100%, right, 5%);
+	border-top-color: $primary-color;
+}
 .l-service-wrapper {
 	overflow: hidden;
 	height: 359px;
@@ -113,7 +120,7 @@
 
 .l-service-description {
 	position: absolute;
-	z-index: 99;
+	z-index: 98;
 	top: 0;
 	width: calc(38% -  60px);
 	height: 344px;
