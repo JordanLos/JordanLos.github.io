@@ -53,6 +53,7 @@ $compliment-color: #5a1a18;
 //Landing Panel
 //100% heigh ensures consistent landing panel experience
 .l-landing-panel {
+	display: none;
 	width: 320px;
 	margin: 0 auto;
 	@include vh-fix;
