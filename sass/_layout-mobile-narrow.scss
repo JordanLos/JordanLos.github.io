@@ -20,6 +20,32 @@ $compliment-color: #5a1a18;
 	height: 48px;
 	width: 48px;
 }
+//Styles the individual thumbails
+@mixin thumbnail($img-name) {
+	height: 100%;
+	width: 50px;
+	margin: 0 15px;
+	border: 2px solid transparent;
+	display: inline-block;	
+	background: url("../img/#{$img-name}-thumb.jpg") no-repeat 100%;
+}
+//Styles the thumbnail for each service
+@mixin thumbnail-selector($service-name) {
+	.service-thumb-1 {
+		@include thumbnail(#{$service-name}-1);
+		border-color: white;
+	}
+	.service-thumb-2 {
+		@include thumbnail(#{$service-name}-2);
+	}
+	.l-relative-div {
+		position: static;
+		height: 50px;
+		bottom: 15px;
+		width: 100%;
+		text-align: center;
+	}
+}
 .icon {
 	@include icon-size;
 
@@ -119,9 +145,10 @@ $compliment-color: #5a1a18;
 .l-service-description {
 	position: relative;
 	padding: 10px 25px 25px 25px;
+	height: auto;
 	p {
 		margin: 0;
-		padding-top: 25px;
+		padding: 25px 0;
 	}
 	h2 {
 		text-align: center;
@@ -129,9 +156,14 @@ $compliment-color: #5a1a18;
 }
 
 .l-service-images {
+	position: relative;
 	img {
 		width: 100%;
 	}
+}
+.service-image-2 {
+	position: absolute;
+	top: 0%;
 }
 .l-service-description::after {
 	@include triangle(bottom, 35px, 25px, top, 99%, left, 5%);
@@ -154,6 +186,24 @@ $compliment-color: #5a1a18;
 	border-top-color: $primary-color;
 }
 
+.l-service-wrapper:nth-of-type(0n+1) {
+	@include thumbnail-selector(site-service);
+}
+.l-service-wrapper:nth-of-type(0n+2) {
+	@include thumbnail-selector(jack-slide);
+}
+.l-service-wrapper:nth-of-type(0n+3) {
+	@include thumbnail-selector(picker);
+}
+.l-service-wrapper:nth-of-type(0n+4) {
+	@include thumbnail-selector(transport);
+}
+.l-service-wrapper:nth-of-type(0n+5) {
+	@include thumbnail-selector(forklift);
+}
+.l-service-wrapper:nth-of-type(0n+6) {
+	@include thumbnail-selector(rig);
+}
 /*****ABOUT US/CONTACT******
 ****************************/
 #safety {

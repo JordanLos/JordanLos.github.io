@@ -16,6 +16,33 @@
 	#{$x}: $x-position;
 	#{$y}: $y-position;
 }
+//Styles the individual thumbails
+@mixin thumbnail($img-name) {
+	height: 100%;
+	width: 50px;
+	margin: 0 15px;
+	border: 2px solid transparent;
+	display: inline-block;	
+	background: url("../img/#{$img-name}-thumb.jpg") no-repeat 100%;
+}
+//Styles the thumbnail for each service
+@mixin thumbnail-selector($service-name) {
+	.service-thumb-1 {
+		@include thumbnail(#{$service-name}-1);
+		border-color: white;
+	}
+	.service-thumb-2 {
+		@include thumbnail(#{$service-name}-2);
+	}
+	.l-relative-div {
+		position: absolute;
+		height: 50px;
+		bottom: 15px;
+		width: 90%;
+		text-align: center;
+	}
+}
+
 .icon {
 	@include icon-size;
 }
@@ -131,18 +158,42 @@
 	}
 }
 
+
+.l-service-wrapper:nth-of-type(0n+1) {
+	@include thumbnail-selector(site-service);
+}
+.l-service-wrapper:nth-of-type(0n+2) {
+	@include thumbnail-selector(jack-slide);
+}
+.l-service-wrapper:nth-of-type(0n+3) {
+	@include thumbnail-selector(picker);
+}
+.l-service-wrapper:nth-of-type(0n+4) {
+	@include thumbnail-selector(transport);
+}
+.l-service-wrapper:nth-of-type(0n+5) {
+	@include thumbnail-selector(forklift);
+}
+.l-service-wrapper:nth-of-type(0n+6) {
+	@include thumbnail-selector(rig);
+}
+
+
+
+
+
 .l-service-images {
 	position: relative;
 	width: 124%;
 	margin-left: 38%;
 	img {
-		display: inline;
 		width: 50%;
-		float: left;
-	}
-	img:nth-of-type(2n) {
 		position: absolute;
-		right: 0;
+		top: 0;
+		z-index: 4;
+	}
+	.service-image-2 {
+		z-index: 5;
 	}
 }
 //Alternates position of Service Descriptions 

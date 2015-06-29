@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Donald Rigging</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" async></script>
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
@@ -10,15 +11,10 @@
     document.createElement( "picture" );
   </script>
   <script>
-  window.onload = function() {
-var icon = document.getElementsByClassName("landing-anim");
-var logo = document.getElementById("logo")
-TweenLite.from(logo, 1, {opacity:0, top:"150px"});
-TweenLite.from(icon, 1.5, {opacity:0, top:"-15px", delay:1.5});
-}
-function moveToSide(e, side) {
-  TweenLite.to(e, 1, {side:"0px"});
-}
+		window.onload = function() {
+			TweenLite.from("#logo", 1, {opacity:0, top:"150px"});
+			TweenLite.from(".landing-anim", 1.5, {opacity:0, top:"-15px", delay:1.5});
+		}
 </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script> 
 </head>
@@ -47,21 +43,25 @@ function moveToSide(e, side) {
       <div class="l-service-description service-style-1">
         <h2>Site Services</h2>
         <p>Donald Rigging is equipped to handle all on-site service needs including heavy lift rigging, common service rigging, skid steers, telehandlers, front end loaders, tractor trailers, boom trucks, water pumping, snow removal, dirt work, crane pad construction and warehousing servcies. </p>
+        <div class="l-relative-div">
+	        <div class="service-thumb-1"></div>
+	        <div class="service-thumb-2"></div>
+        </div>
       </div>
       <div class="l-service-images">
+        <picture >
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/site-service-2-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/site-service-2-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/site-service-2-desktop.jpg"alt="Example of Site Services" class="service-image-1">
+        </picture>
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/site-service-1-desktop.jpg" media="(min-width: 800px)">
           <source srcset="img/site-service-1-mobile.jpg" media="(max-width: 800px)">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/site-service-1-desktop.jpg"alt="Example of Site Services">
-        </picture>
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="img/site-service-2-desktop.jpg" media="(min-width: 800px)">
-          <source srcset="img/site-service-2-mobile.jpg" media="(max-width: 800px)">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/site-service-2-desktop.jpg" alt="Example of Site Services">
+          <img srcset="img/site-service-1-desktop.jpg" alt="Example of Site Services" class="service-image-2">
         </picture>
       </div>
     </div>
@@ -69,21 +69,25 @@ function moveToSide(e, side) {
       <div class="l-service-description service-style-2">
         <h2>Jack & Slide</h2>
         <p>Donald Rigging has a division that specializes in moving commodities with weights varying from 500lbs to 1,500,000lbs. We have 3 full jack & slide crews, all equpped with unified jacking pumps for multi-point lifts, as well as 300 ton push pull track for moving loads under control without the aid of winch cables. We also have multiple other pieces of specialized moving equipment designed to meet our customer's specific needs. </p>
+        <div class="l-relative-div">
+        	<div class="service-thumb-1"></div>
+        	<div class="service-thumb-2"></div>
+      	</div>
       </div>
       <div class="l-service-images">
       	<picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="img/jack-slide-1-desktop.jpg" media="(min-width: 800px)">
-          <source srcset="img/jack-slide-1-mobile.jpg" media="(max-width: 800px)">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/jack-slide-1-desktop.jpg" alt="Example of Jack and Sliding">
-        </picture>
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/jack-slide-2-desktop.jpg" media="(min-width: 800px)">
           <source srcset="img/jack-slide-2-mobile.jpg" media="(max-width: 800px)">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/jack-slide-2-desktop.jpg" alt="Example of Jack and Sliding">
+          <img srcset="img/jack-slide-2-desktop.jpg" alt="Example of Jack and Sliding" class="service-image-1">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/jack-slide-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/jack-slide-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/jack-slide-1-desktop.jpg" alt="Example of Jack and Sliding" class="service-image-2">
         </picture>
       </div>
     </div>
@@ -91,21 +95,25 @@ function moveToSide(e, side) {
       <div class="l-service-description service-style-3">
         <h2>Picker Services</h2>
         <p>Donald Rigging Utilizes multiple boom trucks for day to day operations ranging from 23 ton to 45 ton. We use National Crane, Manitex, and Hydra Lift Weldco branded boom trucks. All of our boom trucks are capable of hauling a trailer and traveling between provinces. Our operators are ticketed, which gives our customers the confidence that their lift will be done ina  safe and professional matter. </p>
+        <div class="l-relative-div">
+       		<div class="service-thumb-1"></div>
+        	<div class="service-thumb-2"></div>
+      	</div>
       </div>
       <div class="l-service-images">
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="img/picker-1-desktop.jpg" media="(min-width: 800px)">
-          <source srcset="img/picker-1-mobile.jpg" media="(max-width: 800px)">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/picker-1-desktop.jpg" alt="Example of Picker Truck">
-        </picture>
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/picker-2-desktop.jpg" media="(min-width: 800px)">
           <source srcset="img/picker-2-mobile.jpg" media="(max-width: 800px)">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/picker-2-desktop.jpg" alt="Example of a Picker Truck">
+          <img srcset="img/picker-2-desktop.jpg" alt="Example of Picker Truck" class="service-image-1">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/picker-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/picker-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/picker-1-desktop.jpg" alt="Example of a Picker Truck" class="service-image-2">
         </picture>
       </div>
     </div>
@@ -113,43 +121,51 @@ function moveToSide(e, side) {
       <div class="l-service-description service-style-1">
         <h2>Transportation</h2>
         <p>Donald Rigging has a fleet of winch & highway tractors, along with a trailer fleet that consists of hi-boys, low-boys and double drop trailers. All of our drivers have many years of experience moving freight in Alberta and throughout Western Canada.</p>
+      	<div class="l-relative-div">
+        	<div class="service-thumb-1"></div>
+        	<div class="service-thumb-2"></div>
+      	</div>
       </div>
       <div class="l-service-images">
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="img/transport-1-desktop.jpg" media="(min-width: 800px)">
-          <source srcset="img/transport-1-mobile.jpg" media="(max-width: 800px)">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/transport-1-desktop.jpg" alt="Example of tranport vehicles">
-        </picture>
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/transport-2-desktop.jpg" media="(min-width: 800px)">
           <source srcset="img/transport-2-mobile.jpg" media="(max-width: 800px)">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/transport-2-desktop.jpg" alt="Example of transport vehicles">
+          <img srcset="img/transport-2-desktop.jpg" alt="Example of tranport vehicles" class="service-image-1">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/transport-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/transport-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/transport-1-desktop.jpg" alt="Example of transport vehicles" class="service-image-2">
         </picture>
       </div>
     </div>
     <div class="l-service-wrapper">    
       <div class="l-service-description service-style-2">
         <h2>60 Ton Forklift</h2>
-        <p>In 2008, Donald Rigging purchased "Brutus" our 60 ton lift truck from Rigger Lift in the USA. IT still stands as one of the largest lift trucks in Western Canada and is 8'W and will fit insde a 10'H door. This machine utlizes removable counter-weight slabs allowing us to transport it on smaller trailers, keeping the cost down for our custoemrs. It is equipped with forks for low loads, along with aboom attachment for lifting commodities from above. This machine is available for a single lift, or for long term rent (with or without operator)</p>
+        <p>"Brutus", our 60 ton lift truck, stands as one of the largest lift trucks in Western Canada and is 8'W and will fit insde a 10'H door. This machine utlizes removable counter-weight slabs allowing us to transport it on smaller trailers, keeping the cost down for our custoemrs. It is equipped with forks for low loads, along with aboom attachment for lifting commodities from above. This machine is available for a single lift, or for long term rent (with or without operator)</p>
+        <div class="l-relative-div">
+        	<div class="service-thumb-1"></div>
+       		<div class="service-thumb-2"></div>
+       	</div>
       </div>
       <div class="l-service-images">
       	<picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="img/forklift-1-desktop.jpg" media="(min-width: 800px)">
-          <source srcset="img/forklift-1-mobile.jpg" media="(max-width: 800px)">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/forklift-1-desktop.jpg" alt="Example of forklift capabilities">
-        </picture>
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/forklift-2-desktop.jpg" media="(min-width: 800px)">
           <source srcset="img/forklift-2-mobile.jpg" media="(max-width: 800px)">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/forklift-2-desktop.jpg" alt="Example of forklift capabilities">
+          <img srcset="img/forklift-2-desktop.jpg" alt="Example of forklift capabilities" class="service-image-1">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/forklift-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/forklift-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/forklift-1-desktop.jpg" alt="Example of forklift capabilities" class="service-image-2">
         </picture>
       </div>
     </div>
@@ -157,21 +173,25 @@ function moveToSide(e, side) {
       <div class="l-service-description service-style-3">
         <h2>Rigs Ups and Mechanics</h2>
         <p>Donald Rigging is based in Calgary with a full service 15,000 sq/ft shop. This shop is utilized for rigging up on our own equipemnt, along with providing custom work for our customers. We have a welding bay fully equipped with an overhead crane for fabrication, along with licensed mechanics to meet all of our customer's truck and trailer needs</p>
+        <div class="l-relative-div">
+        	<div class="service-thumb-1"></div>
+        	<div class="service-thumb-2"></div>
+        </div>
       </div>
       <div class="l-service-images">
-        <picture>
-          <!--[if IE 9]><video style="display: none;"><![endif]-->
-          <source srcset="img/rig-1-desktop.jpg" media="(min-width: 800px)">
-          <source srcset="img/rig-1-mobile.jpg" media="(max-width: 800px)">
-          <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/rig-1-desktop.jpg" alt="Example of rigged truck">
-        </picture>
         <picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/rig-2-desktop.jpg" media="(min-width: 800px)">
           <source srcset="img/rig-2-mobile.jpg" media="(max-width: 800px)">
           <!--[if IE 9]></video><![endif]-->
-          <img srcset="img/rig-2-desktop.jpg" alt="Example of Rigged Truck">
+          <img srcset="img/rig-2-desktop.jpg" alt="Example of rigged truck" class="service-image-1">
+        </picture>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/rig-1-desktop.jpg" media="(min-width: 800px)">
+          <source srcset="img/rig-1-mobile.jpg" media="(max-width: 800px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img srcset="img/rig-1-desktop.jpg" alt="Example of Rigged Truck" class="service-image-2">
         </picture>
       </div>
     </div>
@@ -219,8 +239,8 @@ function moveToSide(e, side) {
   </section>
   </div>
   <script src="js/TweenLite.min.js" async></script>
-   <script src="js/CSSRulePlugin.min.js" async></script>
-   <script src="js/CSSPlugin.min.js" async></script>
-   <script src="js/animations.js" async></script>
+  <script src="js/TimelineLite.min.js" async></script>
+  <script src="js/CSSPlugin.min.js" async></script>
+  <script src="js/animations.js" async></script>
 </body>
 </html>
