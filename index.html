@@ -8,7 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css' />
 	<style>
 		#logo, .landing-anim {
-			display: none;
+			opacity: 0;
 		}
 	</style>
   <script>
@@ -17,8 +17,10 @@
   </script>
   <script>
 		window.onload = function() {
-			TweenLite.from("#logo", 1, {opacity:0, top:"150px"});
-			TweenLite.from(".landing-anim", 1.5, {opacity:0, top:"-15px", delay:1.5});
+			TweenLite.to("#logo", 1, {opacity:1});
+			TweenLite.from("#logo", 1, {top:"150px"});
+			TweenLite.to(".landing-anim", 1.5, {opacity:1, delay:1.5});
+			TweenLite.from(".landing-anim", 1.5, {top:"-15px", delay:1.5});
 		}
 	</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script> 
