@@ -10,19 +10,19 @@ $(document).ready(function(){
 
 	//Fades front image out and back image in for the selected service
 	function fadeToBack(serviceIndex) {
-		TweenLite.to($(".service-image-2").eq( serviceIndex ), 0.2, {opacity: 0});
+		TweenLite.to($(".service-image-1").eq( serviceIndex ), 0.2, {opacity: 0});
 		TweenLite.to($(".service-thumb-1").eq ( serviceIndex ), 0, {borderColor: "transparent"});
 		TweenLite.to($(".service-thumb-2").eq ( serviceIndex ), 0, {borderColor: "white"});
 	}
 	//Fades back image out and front image in for the selected service
 	function fadeToFront(serviceIndex) {	
-		TweenLite.to($(".service-image-2").eq( serviceIndex ), 0.2, {opacity: 1});
+		TweenLite.to($(".service-image-1").eq( serviceIndex ), 0.2, {opacity: 1});
 		TweenLite.to($(".service-thumb-2").eq ( serviceIndex ), 0, {borderColor: "transparent"});
 		TweenLite.to($(".service-thumb-1").eq ( serviceIndex ), 0, {borderColor: "white"});
 	}
 	//Selects which of the 2 "fadeTo" functions to run based on which image was last clicked in the selected service
 	function toggleFade(arrayIndex) {
-		$( ".service-image-2" ).eq( arrayIndex ).click(function() {
+		$( ".service-image-1" ).eq( arrayIndex ).click(function() {
 			if (clickCount[arrayIndex] == 0) {
 				clickCount[arrayIndex] = 1;
 				return fadeToBack(arrayIndex);

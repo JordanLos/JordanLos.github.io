@@ -163,10 +163,10 @@ $compliment-color: #5a1a18;
 	}
 }
 .service-image-1 {
-}
-.service-image-2 {
 	position: absolute;
 	top: 0;
+}
+.service-image-2 {
 }
 .l-service-description::after {
 	@include triangle(bottom, 35px, 25px, top, 99%, left, 5%);
