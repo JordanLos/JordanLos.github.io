@@ -3,24 +3,45 @@
 <head>
 	<title>Donald Rigging</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" async></script>
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css' />
+   <script src="js/jquery-2.1.4.min.js" async></script>	
+		<!--Opacity at 0 for above-fold animation -->
 	<style>
-		#logo, .landing-anim {
+		#logo, .landing-anim, #contact-div {
 			opacity: 0;
 		}
 	</style>
+	<noscript>
+		<!-- resets Opacity to 1 if js not available -->
+		<style>
+			#logo, .landing-anim, #contact-div {
+				opacity: 1;
+			}
+		</style>
+	</noscript>
   <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
   <script>
 		window.onload = function() {
+  			//Animation for the contact-div only occuring beyond 800px
+	  		function contactAnimation() {
+				TweenLite.to("#contact-div", 1.5, {opacity:1, delay:1.5});
+				 TweenLite.from("#contact-div", 0.5, {marginTop:"-=5px", delay:1.5});
+	  		}
+  			//Animations for all breakpoints
 			TweenLite.to("#logo", 1, {opacity:1});
-			TweenLite.from("#logo", 1, {top:"150px"});
+			TweenLite.from("#logo", 1, {top:"-=20px"});
 			TweenLite.to(".landing-anim", 1.5, {opacity:1, delay:1.5});
-			TweenLite.from(".landing-anim", 1.5, {top:"-15px", delay:1.5});
+			TweenLite.from(".landing-anim", 0.5, {marginTop:"-=5px", delay:1.5});
+			//Calls #contact-div animation beyond 800px. Since the margin creates the #contact-div movement, if the animation runs below 800px the position of the #contact-div will be incorrect when if the page is resized beyond 800px.
+			if ($(window).width() > 800) {
+				return contactAnimation();
+			} else {
+				$( "#contact-div" ).css("opacity", 1);
+			}
 		}
 	</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script> 
@@ -101,7 +122,7 @@
     <div class="l-service-wrapper">
       <div class="l-service-description service-style-3">
         <h2>Picker Services</h2>
-        <p>Donald Rigging Utilizes multiple boom trucks for day to day operations ranging from 23 ton to 45 ton. We use National Crane, Manitex, and Hydra Lift Weldco branded boom trucks. All of our boom trucks are capable of hauling a trailer and traveling between provinces. Our operators are ticketed, which gives our customers the confidence that their lift will be done ina  safe and professional matter. </p>
+        <p>Donald Rigging Utilizes multiple boom trucks for day to day operations ranging from 23 ton to 45 ton. We use National Crane, Manitex, and Hydra Lift Weldco branded boom trucks. All of our boom trucks are capable of hauling a trailer and traveling between provinces. Our operators are ticketed, which gives our customers the confidence that their lift will be done in a safe and professional matter. </p>
         <div class="l-relative-div">
        		<div class="service-thumb-1"></div>
         	<div class="service-thumb-2"></div>
@@ -153,7 +174,7 @@
     <div class="l-service-wrapper">    
       <div class="l-service-description service-style-2">
         <h2>60 Ton Forklift</h2>
-        <p>"Brutus", our 60 ton lift truck, stands as one of the largest lift trucks in Western Canada and is 8'W and will fit insde a 10'H door. This machine utlizes removable counter-weight slabs allowing us to transport it on smaller trailers, keeping the cost down for our custoemrs. It is equipped with forks for low loads, along with aboom attachment for lifting commodities from above. This machine is available for a single lift, or for long term rent (with or without operator)</p>
+        <p>"Brutus", our 60 ton lift truck, stands as one of the largest lift trucks in Western Canada and is 8'W and will fit insde a 10'H door. This machine utlizes removable counter-weight slabs allowing us to transport it on smaller trailers, keeping the cost down for our customers. It is equipped with forks for low loads, along with a boom attachment for lifting commodities from above. This machine is available for a single lift, or for long term rent (with or without operator)</p>
         <div class="l-relative-div">
         	<div class="service-thumb-1"></div>
        		<div class="service-thumb-2"></div>
@@ -221,7 +242,7 @@
         <img class="safety-icon" src="img/ISN_Logo_Fullsize.png" />
       </a>
     </div>
-    <div id="contact-div" class='icon-spread landing-anim'>
+    <div id="contact-div" class='icon-spread'>
       <a class="contact-icon" href="tel:4032616888" class='icon'>
       	<img src="img/phone.svg" alt="Phone Number" class=''>
       	<p class='contact-icon-text'>403.261.6888</p>
@@ -245,6 +266,8 @@
     <div>Icons made by <a href="http://www.flaticon.com/authors/google" target="_blank" title="Google">Google</a> from <a href="http://www.flaticon.com" target="_blank" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
   </section>
   </div>
-  <script src="js/output.min.js" async></script>
+  <script src="js/animations.js" async></script>
+  <script src="js/CSSPlugin.min.js" async></script>
+  <script src="js/TweenLite.min.js" async></script>
 </body>
 </html>

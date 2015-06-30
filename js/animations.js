@@ -38,8 +38,9 @@ $(document).ready(function(){
 	for (i = 0; i < clickCount.length; i++) {
 		toggleFade(i);
 	}
-
-
+if (window.matchMedia("(min-width: 800px)").matches) {
+	$( "#contact-div" ).css("margin", 0);
+}
 
 //Need code to run when screen starts larger than 800
 //if width > 800

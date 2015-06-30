@@ -228,7 +228,7 @@ a:hover {
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 35px 25px;
@@ -244,7 +244,7 @@ a:hover {
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 35px 25px;
@@ -296,7 +296,7 @@ a:hover {
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 35px 25px;
@@ -589,9 +589,10 @@ a:hover {
     top: 0;
     width: 100vw;
     max-width: 980px;
+    margin-top: 0;
   }
 
-  /* line 86, ../sass/_layout-large-screen.scss */
+  /* line 87, ../sass/_layout-large-screen.scss */
   .contact-icon {
     width: 72px;
     display: inline-block;
@@ -601,21 +602,21 @@ a:hover {
     padding: 1% calc((100% - 360px)/10);
   }
 
-  /* line 94, ../sass/_layout-large-screen.scss */
+  /* line 95, ../sass/_layout-large-screen.scss */
   .contact-icon-text {
     margin: 0 -50%;
   }
 
-  /* line 97, ../sass/_layout-large-screen.scss */
+  /* line 98, ../sass/_layout-large-screen.scss */
   .icon-with-text {
     text-align: center;
   }
 
-  /* line 100, ../sass/_layout-large-screen.scss */
+  /* line 101, ../sass/_layout-large-screen.scss */
   #logo-wrap {
     height: 62%;
   }
-  /* line 102, ../sass/_layout-large-screen.scss */
+  /* line 103, ../sass/_layout-large-screen.scss */
   #logo-wrap img {
     position: relative;
     top: 50%;
@@ -627,11 +628,11 @@ a:hover {
     max-height: 100%;
   }
 
-  /* line 109, ../sass/_layout-large-screen.scss */
+  /* line 110, ../sass/_layout-large-screen.scss */
   .l-landing-footer {
     height: 19%;
   }
-  /* line 111, ../sass/_layout-large-screen.scss */
+  /* line 112, ../sass/_layout-large-screen.scss */
   .l-landing-footer img {
     position: relative;
     top: 50%;
@@ -644,7 +645,7 @@ a:hover {
 
   /*******SERVICE PANEL********
   ****************************/
-  /* line 120, ../sass/_layout-large-screen.scss */
+  /* line 121, ../sass/_layout-large-screen.scss */
   .l-header-wrapper {
     background: url("../img/barbell.svg") no-repeat center;
     background-color: #8f6d50;
@@ -652,7 +653,7 @@ a:hover {
     height: 8em;
     text-align: center;
   }
-  /* line 126, ../sass/_layout-large-screen.scss */
+  /* line 127, ../sass/_layout-large-screen.scss */
   .l-header-wrapper h2 {
     position: relative;
     top: 50%;
@@ -661,18 +662,18 @@ a:hover {
     transform: translateY(-50%);
   }
 
-  /* line 131, ../sass/_layout-large-screen.scss */
+  /* line 132, ../sass/_layout-large-screen.scss */
   .l-relative-div {
     position: relative;
   }
 
-  /* line 134, ../sass/_layout-large-screen.scss */
+  /* line 135, ../sass/_layout-large-screen.scss */
   .l-header-wrapper::after {
     content: '';
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 35px 25px;
@@ -682,13 +683,13 @@ a:hover {
     border-top-color: #8f6d50;
   }
 
-  /* line 138, ../sass/_layout-large-screen.scss */
+  /* line 139, ../sass/_layout-large-screen.scss */
   .l-header-wrapper::before {
     content: '';
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 35px 25px;
@@ -698,7 +699,7 @@ a:hover {
     border-top-color: #8f6d50;
   }
 
-  /* line 142, ../sass/_layout-large-screen.scss */
+  /* line 143, ../sass/_layout-large-screen.scss */
   .l-service-wrapper {
     overflow: hidden;
     height: 359px;
@@ -706,16 +707,16 @@ a:hover {
     width: 980px;
   }
 
-  /* line 149, ../sass/_layout-large-screen.scss */
+  /* line 150, ../sass/_layout-large-screen.scss */
   .l-service-description {
     position: absolute;
-    z-index: 98;
+    z-index: 1;
     top: 0;
     width: calc(38% -  60px);
     height: 344px;
     padding: 15px 30px 0 30px;
   }
-  /* line 156, ../sass/_layout-large-screen.scss */
+  /* line 157, ../sass/_layout-large-screen.scss */
   .l-service-description p, .l-service-description h2 {
     text-align: right;
   }
@@ -888,44 +889,44 @@ a:hover {
     text-align: center;
   }
 
-  /* line 185, ../sass/_layout-large-screen.scss */
+  /* line 186, ../sass/_layout-large-screen.scss */
   .l-service-images {
     position: relative;
     width: 124%;
     margin-left: 38%;
   }
-  /* line 189, ../sass/_layout-large-screen.scss */
+  /* line 190, ../sass/_layout-large-screen.scss */
   .l-service-images img {
     width: 50%;
     position: absolute;
     top: 0;
-    z-index: 4;
+    z-index: 1;
   }
-  /* line 195, ../sass/_layout-large-screen.scss */
+  /* line 196, ../sass/_layout-large-screen.scss */
   .l-service-images .service-image-2 {
-    z-index: 5;
+    z-index: 2;
   }
 
-  /* line 201, ../sass/_layout-large-screen.scss */
+  /* line 202, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(2n) .l-service-description {
     right: 0;
   }
-  /* line 203, ../sass/_layout-large-screen.scss */
+  /* line 204, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(2n) .l-service-description p, .l-service-wrapper:nth-of-type(2n) .l-service-description h2 {
     text-align: left;
   }
-  /* line 207, ../sass/_layout-large-screen.scss */
+  /* line 208, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(2n) .l-service-images {
     margin-left: 0;
   }
 
-  /* line 213, ../sass/_layout-large-screen.scss */
+  /* line 214, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(0n+1) .l-service-description::after {
     content: '';
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 25px 40px;
@@ -935,13 +936,13 @@ a:hover {
     border-left-color: #0f3436;
   }
 
-  /* line 217, ../sass/_layout-large-screen.scss */
+  /* line 218, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(0n+2) .l-service-description::after {
     content: '';
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 25px 40px;
@@ -951,13 +952,13 @@ a:hover {
     border-right-color: #5a1a18;
   }
 
-  /* line 221, ../sass/_layout-large-screen.scss */
+  /* line 222, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(0n+3) .l-service-description::after {
     content: '';
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 25px 40px;
@@ -967,13 +968,13 @@ a:hover {
     border-left-color: #8f6d50;
   }
 
-  /* line 225, ../sass/_layout-large-screen.scss */
+  /* line 226, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(0n+4) .l-service-description::after {
     content: '';
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 25px 40px;
@@ -983,13 +984,13 @@ a:hover {
     border-right-color: #0f3436;
   }
 
-  /* line 229, ../sass/_layout-large-screen.scss */
+  /* line 230, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(0n+5) .l-service-description::after {
     content: '';
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 25px 40px;
@@ -999,13 +1000,13 @@ a:hover {
     border-left-color: #5a1a18;
   }
 
-  /* line 233, ../sass/_layout-large-screen.scss */
+  /* line 234, ../sass/_layout-large-screen.scss */
   .l-service-wrapper:nth-of-type(0n+6) .l-service-description::after {
     content: '';
     position: absolute;
     height: 0;
     width: 0;
-    z-index: 99;
+    z-index: 3;
     border-style: solid;
     border-color: transparent;
     border-width: 25px 40px;
@@ -1017,26 +1018,26 @@ a:hover {
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 240, ../sass/_layout-large-screen.scss */
+  /* line 241, ../sass/_layout-large-screen.scss */
   #safety {
     padding: 5% 0 0 0;
     background: url("../img/background.png") no-repeat;
     background-size: cover;
   }
 
-  /* line 246, ../sass/_layout-large-screen.scss */
+  /* line 247, ../sass/_layout-large-screen.scss */
   .icon-spread {
     width: 100%;
     text-align: center;
   }
-  /* line 249, ../sass/_layout-large-screen.scss */
+  /* line 250, ../sass/_layout-large-screen.scss */
   .icon-spread img {
     margin: 5%;
   }
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 256, ../sass/_layout-large-screen.scss */
+  /* line 257, ../sass/_layout-large-screen.scss */
   .footer {
     height: 20px;
     padding: 1%;
