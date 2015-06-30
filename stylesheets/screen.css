@@ -282,15 +282,17 @@ a:hover {
   /* line 160, ../sass/_layout-mobile-narrow.scss */
   .l-service-images img {
     width: 100%;
+    z-index: 1;
   }
 
-  /* line 164, ../sass/_layout-mobile-narrow.scss */
+  /* line 165, ../sass/_layout-mobile-narrow.scss */
   .service-image-2 {
     position: absolute;
     top: 0%;
+    z-index: 2;
   }
 
-  /* line 168, ../sass/_layout-mobile-narrow.scss */
+  /* line 170, ../sass/_layout-mobile-narrow.scss */
   .l-service-description::after {
     content: '';
     position: absolute;
@@ -305,22 +307,22 @@ a:hover {
     left: 5%;
   }
 
-  /* line 173, ../sass/_layout-mobile-narrow.scss */
+  /* line 175, ../sass/_layout-mobile-narrow.scss */
   .l-service-wrapper:nth-child(even) .l-service-description::after {
     left: 83%;
   }
 
-  /* line 179, ../sass/_layout-mobile-narrow.scss */
+  /* line 181, ../sass/_layout-mobile-narrow.scss */
   .l-service-description.service-style-1::after {
     border-top-color: #0f3436;
   }
 
-  /* line 182, ../sass/_layout-mobile-narrow.scss */
+  /* line 184, ../sass/_layout-mobile-narrow.scss */
   .l-service-description.service-style-2::after {
     border-top-color: #5a1a18;
   }
 
-  /* line 185, ../sass/_layout-mobile-narrow.scss */
+  /* line 187, ../sass/_layout-mobile-narrow.scss */
   .l-service-description.service-style-3::after {
     border-top-color: #8f6d50;
   }
@@ -495,50 +497,50 @@ a:hover {
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 209, ../sass/_layout-mobile-narrow.scss */
+  /* line 211, ../sass/_layout-mobile-narrow.scss */
   #safety {
     padding: 5% 0 0 0;
     background: url("../img/background.png") no-repeat;
     background-size: cover;
   }
 
-  /* line 215, ../sass/_layout-mobile-narrow.scss */
+  /* line 217, ../sass/_layout-mobile-narrow.scss */
   .safety img {
     max-width: 90%;
   }
 
-  /* line 219, ../sass/_layout-mobile-narrow.scss */
+  /* line 221, ../sass/_layout-mobile-narrow.scss */
   #contact-div {
     margin: 15% 0;
   }
 
-  /* line 222, ../sass/_layout-mobile-narrow.scss */
+  /* line 224, ../sass/_layout-mobile-narrow.scss */
   .icon-spread {
     width: 100%;
     text-align: center;
     position: relative;
   }
 
-  /* line 227, ../sass/_layout-mobile-narrow.scss */
+  /* line 229, ../sass/_layout-mobile-narrow.scss */
   .safety-icon {
     margin: 5%;
   }
 
-  /* line 230, ../sass/_layout-mobile-narrow.scss */
+  /* line 232, ../sass/_layout-mobile-narrow.scss */
   .contact-icon {
     width: calc(100vw/2.5);
     padding: 5% 0;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 235, ../sass/_layout-mobile-narrow.scss */
+  /* line 237, ../sass/_layout-mobile-narrow.scss */
   .contact-icon p {
     font-size: 11;
   }
 
   /*****ABOUT US/CONTACT******
   ****************************/
-  /* line 242, ../sass/_layout-mobile-narrow.scss */
+  /* line 244, ../sass/_layout-mobile-narrow.scss */
   .footer {
     height: 40px;
     padding: 2%;
