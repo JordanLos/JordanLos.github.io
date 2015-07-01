@@ -1,1 +1,1034 @@
-html,body{margin:0;padding:0px;font-family:'Oxygen', sans-serif;background-color:black;color:white}h2{margin:0}h1,h2,h3,h4,h5,h6{font-weight:700}p{font-weight:400}a:hover{color:#0f3436}a img{border:0}body{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=")}#wide-screen{background-color:white}a{text-decoration:none;color:#8f6d50}a:hover{color:black}#large-screen-content{background-color:white}#large-screen-content h2,#large-screen-content p,#large-screen-content em{color:#8f6d50}.l-header-wrapper{background-color:#8f6d50}.l-header p{color:#8f6d50}.l-service-description.service-style-1{background-color:#0f3436}.l-service-description.service-style-2{background-color:#5a1a18}.l-service-description.service-style-3{background-color:#8f6d50}.footer{background-color:#0f3436}@media (max-width: 800px){.icon{height:48px;width:48px}.l-landing-panel{display:hidden;width:320px;margin:0 auto}}@media (max-width: 800px) and (max-device-aspect-ratio: 3 / 4){.l-landing-panel{height:calc(100 * 1.333 - 65px)}}@media (max-width: 800px) and (max-device-aspect-ratio: 2 / 3){.l-landing-panel{height:calc(100 * 1.5 - 65px)}}@media (max-width: 800px) and (max-device-aspect-ratio: 10 / 16){.l-landing-panel{height:calc(100 * 1.6 - 65px)}}@media (max-width: 800px) and (max-device-aspect-ratio: 9 / 16){.l-landing-panel{height:calc(100* 1.778 - 65px)}}@media (max-width: 800px){.l-header{height:19%;padding:0}.l-header-images{float:right;position:relative;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}#logo-wrap{height:62%}#logo-wrap img{position:relative;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);display:block;max-width:100%;margin:0 auto}.l-landing-footer{height:19%}.l-landing-footer img{position:relative;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);display:block;margin:0 auto}#large-screen-content{display:none}.l-header-wrapper{background:url("../img/barbell.svg") no-repeat center;background-color:#8f6d50;background-size:19em;height:7em;text-align:center}.l-header-wrapper h2{position:relative;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.l-relative-div{position:relative}.l-header-wrapper::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:35px 25px;border-bottom:none;top:100%;left:5%;border-top-color:#8f6d50}.l-header-wrapper::before{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:35px 25px;border-bottom:none;top:100%;right:5%;border-top-color:#8f6d50}.l-service-wrapper{overflow:hidden}.l-service-description{position:relative;padding:10px 25px 25px 25px;height:auto}.l-service-description p{margin:0;padding:25px 0}.l-service-description h2{text-align:center}.l-service-images{position:relative}.l-service-images img{width:100%;height:auto}.service-image-1{position:absolute;top:0}.l-service-description::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:35px 25px;border-bottom:none;top:99%;left:5%}.l-service-wrapper:nth-child(even) .l-service-description::after{left:83%}.l-service-description.service-style-1::after{border-top-color:#0f3436}.l-service-description.service-style-2::after{border-top-color:#5a1a18}.l-service-description.service-style-3::after{border-top-color:#8f6d50}.l-service-wrapper:nth-of-type(0n+1) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/site-service-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+1) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/site-service-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+1) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+2) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/jack-slide-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+2) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/jack-slide-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+2) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+3) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/picker-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+3) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/picker-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+3) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+4) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/transport-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+4) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/transport-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+4) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+5) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/forklift-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+5) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/forklift-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+5) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+6) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/rig-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+6) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/rig-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+6) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}#safety{padding:5% 0 0 0;background:url("../img/background.png") no-repeat;background-size:cover}.safety img{max-width:90%}#contact-div{margin:15% 0}.icon-spread{width:100%;text-align:center;position:relative}.safety-icon{margin:5%}.contact-icon{width:calc(100vw/2.5);padding:5% 0;display:inline-block;vertical-align:top}.contact-icon p{font-size:11}.footer{height:40px;padding:2%;font-size:15}}@media (min-width: 800px){.icon{width:72px;height:72px}#wide-screen{max-width:980px;margin:0 auto}.l-landing-panel{display:hidden;height:100%}.l-header{height:19%;padding:0}.l-header p{display:none}.l-header-images{display:none}#contact-div{position:absolute;top:0;width:100vw;max-width:980px;margin-top:0}.contact-icon{width:72px;display:inline-block;vertical-align:top;font-size:12;float:left;padding:1% calc((100% - 360px)/10)}.contact-icon-text{margin:0 -50%}.icon-with-text{text-align:center}#logo-wrap{height:62%}#logo-wrap img{position:relative;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);display:block;margin:0 auto;max-height:100%}.l-landing-footer{height:19%}.l-landing-footer img{position:relative;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);display:block;margin:0 auto}.l-header-wrapper{background:url("../img/barbell.svg") no-repeat center;background-color:#8f6d50;background-size:25em;height:8em;text-align:center}.l-header-wrapper h2{position:relative;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.l-relative-div{position:relative}.l-header-wrapper::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:35px 25px;border-bottom:none;top:100%;left:5%;border-top-color:#8f6d50}.l-header-wrapper::before{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:35px 25px;border-bottom:none;top:100%;right:5%;border-top-color:#8f6d50}.l-service-wrapper{overflow:hidden;height:359px;position:relative;width:980px}.l-service-description{position:absolute;top:0;width:calc(38% -  60px);height:344px;padding:15px 30px 0 30px}.l-service-description p,.l-service-description h2{text-align:right}.l-service-wrapper:nth-of-type(0n+1) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/site-service-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+1) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/site-service-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+1) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+2) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/jack-slide-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+2) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/jack-slide-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+2) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+3) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/picker-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+3) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/picker-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+3) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+4) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/transport-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+4) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/transport-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+4) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+5) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/forklift-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+5) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/forklift-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+5) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-wrapper:nth-of-type(0n+6) .service-thumb-1{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/rig-1-thumb.jpg") no-repeat 100%;border-color:white}.l-service-wrapper:nth-of-type(0n+6) .service-thumb-2{height:100%;width:50px;margin:0 15px;border:2px solid transparent;display:inline-block;background:url("../img/rig-2-thumb.jpg") no-repeat 100%}.l-service-wrapper:nth-of-type(0n+6) .l-relative-div{position:static;height:50px;bottom:15px;width:100%;text-align:center}.l-service-images{position:relative;width:124%;margin-left:38%}.l-service-images img{width:50%;position:absolute;top:0;z-index:1}.l-service-images .service-image-1{z-index:2}.l-service-wrapper:nth-of-type(2n) .l-service-description{right:0}.l-service-wrapper:nth-of-type(2n) .l-service-description p,.l-service-wrapper:nth-of-type(2n) .l-service-description h2{text-align:left}.l-service-wrapper:nth-of-type(2n) .l-service-images{margin-left:0}.l-service-wrapper:nth-of-type(0n+1) .l-service-description::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:25px 40px;border-right:none;left:100%;bottom:35px;border-left-color:#0f3436}.l-service-wrapper:nth-of-type(0n+2) .l-service-description::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:25px 40px;border-left:none;right:100%;bottom:35px;border-right-color:#5a1a18}.l-service-wrapper:nth-of-type(0n+3) .l-service-description::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:25px 40px;border-right:none;left:100%;bottom:35px;border-left-color:#8f6d50}.l-service-wrapper:nth-of-type(0n+4) .l-service-description::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:25px 40px;border-eft:none;right:100%;bottom:35px;border-right-color:#0f3436}.l-service-wrapper:nth-of-type(0n+5) .l-service-description::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:25px 40px;border-right:none;left:100%;bottom:35px;border-left-color:#5a1a18}.l-service-wrapper:nth-of-type(0n+6) .l-service-description::after{content:'';position:absolute;height:0;width:0;z-index:999;border-style:solid;border-color:transparent;border-width:25px 40px;border-left:none;right:100%;bottom:35px;border-right-color:#8f6d50}#safety{padding:5% 0 0 0;background:url("../img/background.png") no-repeat;background-size:cover}.icon-spread{width:100%;text-align:center}.icon-spread img{margin:5%}.footer{height:20px;padding:1%}}
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/****VARIABLES**********/
+/******ELEMENT STYLES*******/
+/* line 8, ../sass/_base.scss */
+html, body {
+  margin: 0;
+  padding: 0px;
+  font-family: 'Oxygen', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* line 15, ../sass/_base.scss */
+h2 {
+  margin: 0;
+}
+
+/* line 19, ../sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* line 22, ../sass/_base.scss */
+p {
+  font-weight: 400;
+}
+
+/* line 25, ../sass/_base.scss */
+a:hover {
+  color: #0f3436;
+}
+
+/* line 29, ../sass/_base.scss */
+a img {
+  border: 0;
+}
+
+/****MIXINS******/
+/* line 4, ../sass/_themes.scss */
+body {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");
+}
+
+/* line 8, ../sass/_themes.scss */
+#wide-screen {
+  background-color: white;
+}
+
+/* line 11, ../sass/_themes.scss */
+a {
+  text-decoration: none;
+  color: #8f6d50;
+}
+
+/* line 15, ../sass/_themes.scss */
+a:hover {
+  color: black;
+}
+
+/* line 18, ../sass/_themes.scss */
+#large-screen-content {
+  background-color: white;
+}
+/* line 19, ../sass/_themes.scss */
+#large-screen-content h2, #large-screen-content p, #large-screen-content em {
+  color: #8f6d50;
+}
+
+/* line 24, ../sass/_themes.scss */
+.l-header-wrapper {
+  background-color: #8f6d50;
+}
+
+/* line 27, ../sass/_themes.scss */
+.l-header p {
+  color: #8f6d50;
+}
+
+/* line 30, ../sass/_themes.scss */
+.l-service-description.service-style-1 {
+  background-color: #0f3436;
+}
+
+/* line 33, ../sass/_themes.scss */
+.l-service-description.service-style-2 {
+  background-color: #5a1a18;
+}
+
+/* line 36, ../sass/_themes.scss */
+.l-service-description.service-style-3 {
+  background-color: #8f6d50;
+}
+
+/* line 40, ../sass/_themes.scss */
+.footer {
+  background-color: #0f3436;
+}
+
+@media (max-width: 800px) {
+  /* line 3, ../sass/_layout-mobile-narrow.scss */
+  .icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  /* line 9, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    display: hidden;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) and (max-device-aspect-ratio: 3 / 4) {
+  /* line 9, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: calc(100 * 1.333 - 65px);
+  }
+}
+@media (max-width: 800px) and (max-device-aspect-ratio: 2 / 3) {
+  /* line 9, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: calc(100 * 1.5 - 65px);
+  }
+}
+@media (max-width: 800px) and (max-device-aspect-ratio: 10 / 16) {
+  /* line 9, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: calc(100 * 1.6 - 65px);
+  }
+}
+@media (max-width: 800px) and (max-device-aspect-ratio: 9 / 16) {
+  /* line 9, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-panel {
+    height: calc(100* 1.778 - 65px);
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 16, ../sass/_layout-mobile-narrow.scss */
+  .l-header {
+    height: 19%;
+    padding: 0;
+  }
+
+  /* line 20, ../sass/_layout-mobile-narrow.scss */
+  .l-header-images {
+    float: right;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* line 24, ../sass/_layout-mobile-narrow.scss */
+  #logo-wrap {
+    height: 62%;
+  }
+  /* line 26, ../sass/_layout-mobile-narrow.scss */
+  #logo-wrap img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* line 33, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-footer {
+    height: 19%;
+  }
+  /* line 35, ../sass/_layout-mobile-narrow.scss */
+  .l-landing-footer img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*******SERVICE PANEL********
+  ****************************/
+  /* line 44, ../sass/_layout-mobile-narrow.scss */
+  #large-screen-content {
+    display: none;
+  }
+
+  /* line 48, ../sass/_layout-mobile-narrow.scss */
+  .l-header-wrapper {
+    background: url("../img/barbell.svg") no-repeat center;
+    background-color: #8f6d50;
+    background-size: 19em;
+    height: 7em;
+    text-align: center;
+  }
+  /* line 54, ../sass/_layout-mobile-narrow.scss */
+  .l-header-wrapper h2 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* line 59, ../sass/_layout-mobile-narrow.scss */
+  .l-relative-div {
+    position: relative;
+  }
+
+  /* line 62, ../sass/_layout-mobile-narrow.scss */
+  .l-header-wrapper::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 35px 25px;
+    border-bottom: none;
+    top: 100%;
+    left: 5%;
+    border-top-color: #8f6d50;
+  }
+
+  /* line 66, ../sass/_layout-mobile-narrow.scss */
+  .l-header-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 35px 25px;
+    border-bottom: none;
+    top: 100%;
+    right: 5%;
+    border-top-color: #8f6d50;
+  }
+
+  /* line 70, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper {
+    overflow: hidden;
+  }
+
+  /* line 73, ../sass/_layout-mobile-narrow.scss */
+  .l-service-description {
+    position: relative;
+    padding: 10px 25px 25px 25px;
+    height: auto;
+  }
+  /* line 77, ../sass/_layout-mobile-narrow.scss */
+  .l-service-description p {
+    margin: 0;
+    padding: 25px 0;
+  }
+  /* line 81, ../sass/_layout-mobile-narrow.scss */
+  .l-service-description h2 {
+    text-align: center;
+  }
+
+  /* line 86, ../sass/_layout-mobile-narrow.scss */
+  .l-service-images {
+    position: relative;
+  }
+  /* line 88, ../sass/_layout-mobile-narrow.scss */
+  .l-service-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 93, ../sass/_layout-mobile-narrow.scss */
+  .service-image-1 {
+    position: absolute;
+    top: 0;
+  }
+
+  /* line 99, ../sass/_layout-mobile-narrow.scss */
+  .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 35px 25px;
+    border-bottom: none;
+    top: 99%;
+    left: 5%;
+  }
+
+  /* line 104, ../sass/_layout-mobile-narrow.scss */
+  .l-service-wrapper:nth-child(even) .l-service-description::after {
+    left: 83%;
+  }
+
+  /* line 110, ../sass/_layout-mobile-narrow.scss */
+  .l-service-description.service-style-1::after {
+    border-top-color: #0f3436;
+  }
+
+  /* line 113, ../sass/_layout-mobile-narrow.scss */
+  .l-service-description.service-style-2::after {
+    border-top-color: #5a1a18;
+  }
+
+  /* line 116, ../sass/_layout-mobile-narrow.scss */
+  .l-service-description.service-style-3::after {
+    border-top-color: #8f6d50;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+1) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/site-service-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+1) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/site-service-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+1) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+2) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/jack-slide-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+2) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/jack-slide-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+2) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+3) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/picker-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+3) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/picker-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+3) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+4) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/transport-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+4) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/transport-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+4) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+5) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/forklift-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+5) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/forklift-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+5) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+6) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/rig-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+6) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/rig-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+6) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 140, ../sass/_layout-mobile-narrow.scss */
+  #safety {
+    padding: 5% 0 0 0;
+    background: url("../img/background.png") no-repeat;
+    background-size: cover;
+  }
+
+  /* line 146, ../sass/_layout-mobile-narrow.scss */
+  .safety img {
+    max-width: 90%;
+  }
+
+  /* line 150, ../sass/_layout-mobile-narrow.scss */
+  #contact-div {
+    margin: 15% 0;
+  }
+
+  /* line 153, ../sass/_layout-mobile-narrow.scss */
+  .icon-spread {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  /* line 158, ../sass/_layout-mobile-narrow.scss */
+  .safety-icon {
+    margin: 5%;
+  }
+
+  /* line 161, ../sass/_layout-mobile-narrow.scss */
+  .contact-icon {
+    width: calc(100vw/2.5);
+    padding: 5% 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 166, ../sass/_layout-mobile-narrow.scss */
+  .contact-icon p {
+    font-size: 11;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 173, ../sass/_layout-mobile-narrow.scss */
+  .footer {
+    height: 40px;
+    padding: 2%;
+    font-size: 15;
+  }
+}
+@media (min-width: 800px) {
+  /* line 3, ../sass/_layout-large-screen.scss */
+  .icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  /* line 9, ../sass/_layout-large-screen.scss */
+  #wide-screen {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  /* line 15, ../sass/_layout-large-screen.scss */
+  .l-landing-panel {
+    display: hidden;
+    height: 100%;
+  }
+
+  /* line 20, ../sass/_layout-large-screen.scss */
+  .l-header {
+    height: 19%;
+    padding: 0;
+  }
+  /* line 23, ../sass/_layout-large-screen.scss */
+  .l-header p {
+    display: none;
+  }
+
+  /* line 27, ../sass/_layout-large-screen.scss */
+  .l-header-images {
+    display: none;
+  }
+
+  /* line 31, ../sass/_layout-large-screen.scss */
+  #contact-div {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    max-width: 980px;
+    margin-top: 0;
+  }
+
+  /* line 39, ../sass/_layout-large-screen.scss */
+  .contact-icon {
+    width: 72px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12;
+    float: left;
+    padding: 1% calc((100% - 360px)/10);
+  }
+
+  /* line 47, ../sass/_layout-large-screen.scss */
+  .contact-icon-text {
+    margin: 0 -50%;
+  }
+
+  /* line 50, ../sass/_layout-large-screen.scss */
+  .icon-with-text {
+    text-align: center;
+  }
+
+  /* line 53, ../sass/_layout-large-screen.scss */
+  #logo-wrap {
+    height: 62%;
+  }
+  /* line 55, ../sass/_layout-large-screen.scss */
+  #logo-wrap img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+  }
+
+  /* line 62, ../sass/_layout-large-screen.scss */
+  .l-landing-footer {
+    height: 19%;
+  }
+  /* line 64, ../sass/_layout-large-screen.scss */
+  .l-landing-footer img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*******SERVICE PANEL********
+  ****************************/
+  /* line 73, ../sass/_layout-large-screen.scss */
+  .l-header-wrapper {
+    background: url("../img/barbell.svg") no-repeat center;
+    background-color: #8f6d50;
+    background-size: 25em;
+    height: 8em;
+    text-align: center;
+  }
+  /* line 79, ../sass/_layout-large-screen.scss */
+  .l-header-wrapper h2 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* line 84, ../sass/_layout-large-screen.scss */
+  .l-relative-div {
+    position: relative;
+  }
+
+  /* line 87, ../sass/_layout-large-screen.scss */
+  .l-header-wrapper::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 35px 25px;
+    border-bottom: none;
+    top: 100%;
+    left: 5%;
+    border-top-color: #8f6d50;
+  }
+
+  /* line 91, ../sass/_layout-large-screen.scss */
+  .l-header-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 35px 25px;
+    border-bottom: none;
+    top: 100%;
+    right: 5%;
+    border-top-color: #8f6d50;
+  }
+
+  /* line 95, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper {
+    overflow: hidden;
+    height: 359px;
+    position: relative;
+    width: 980px;
+  }
+
+  /* line 102, ../sass/_layout-large-screen.scss */
+  .l-service-description {
+    position: absolute;
+    top: 0;
+    width: calc(38% -  60px);
+    height: 344px;
+    padding: 15px 30px 0 30px;
+  }
+  /* line 108, ../sass/_layout-large-screen.scss */
+  .l-service-description p, .l-service-description h2 {
+    text-align: right;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+1) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/site-service-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+1) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/site-service-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+1) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+2) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/jack-slide-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+2) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/jack-slide-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+2) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+3) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/picker-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+3) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/picker-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+3) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+4) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/transport-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+4) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/transport-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+4) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+5) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/forklift-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+5) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/forklift-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+5) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 82, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+6) .service-thumb-1 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/rig-1-thumb.jpg") no-repeat 100%;
+    border-color: white;
+  }
+  /* line 86, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+6) .service-thumb-2 {
+    height: 100%;
+    width: 50px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    display: inline-block;
+    background: url("../img/rig-2-thumb.jpg") no-repeat 100%;
+  }
+  /* line 89, ../sass/_base.scss */
+  .l-service-wrapper:nth-of-type(0n+6) .l-relative-div {
+    position: static;
+    height: 50px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 134, ../sass/_layout-large-screen.scss */
+  .l-service-images {
+    position: relative;
+    width: 124%;
+    margin-left: 38%;
+  }
+  /* line 138, ../sass/_layout-large-screen.scss */
+  .l-service-images img {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  /* line 144, ../sass/_layout-large-screen.scss */
+  .l-service-images .service-image-1 {
+    z-index: 2;
+  }
+
+  /* line 150, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(2n) .l-service-description {
+    right: 0;
+  }
+  /* line 152, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(2n) .l-service-description p, .l-service-wrapper:nth-of-type(2n) .l-service-description h2 {
+    text-align: left;
+  }
+  /* line 156, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(2n) .l-service-images {
+    margin-left: 0;
+  }
+
+  /* line 162, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+1) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-right: none;
+    left: 100%;
+    bottom: 35px;
+    border-left-color: #0f3436;
+  }
+
+  /* line 166, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+2) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-left: none;
+    right: 100%;
+    bottom: 35px;
+    border-right-color: #5a1a18;
+  }
+
+  /* line 170, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+3) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-right: none;
+    left: 100%;
+    bottom: 35px;
+    border-left-color: #8f6d50;
+  }
+
+  /* line 174, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+4) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-eft: none;
+    right: 100%;
+    bottom: 35px;
+    border-right-color: #0f3436;
+  }
+
+  /* line 178, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+5) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-right: none;
+    left: 100%;
+    bottom: 35px;
+    border-left-color: #5a1a18;
+  }
+
+  /* line 182, ../sass/_layout-large-screen.scss */
+  .l-service-wrapper:nth-of-type(0n+6) .l-service-description::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    z-index: 999;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 25px 40px;
+    border-left: none;
+    right: 100%;
+    bottom: 35px;
+    border-right-color: #8f6d50;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 189, ../sass/_layout-large-screen.scss */
+  #safety {
+    padding: 5% 0 0 0;
+    background: url("../img/background.png") no-repeat;
+    background-size: cover;
+  }
+
+  /* line 195, ../sass/_layout-large-screen.scss */
+  .icon-spread {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 198, ../sass/_layout-large-screen.scss */
+  .icon-spread img {
+    margin: 5%;
+  }
+
+  /*****ABOUT US/CONTACT******
+  ****************************/
+  /* line 205, ../sass/_layout-large-screen.scss */
+  .footer {
+    height: 20px;
+    padding: 1%;
+  }
+}
