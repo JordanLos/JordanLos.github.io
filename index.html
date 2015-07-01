@@ -4,9 +4,8 @@
 	<title>Donald Rigging</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css' />
-   <script src="js/jquery-2.1.4.min.js" async></script>	
-		<!--Opacity at 0 for above-fold animation -->
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css' />	
+	<!--Opacity at 0 for above-fold animation -->
 	<style>
 		#logo, .landing-anim, #contact-div {
 			opacity: 0;
@@ -37,11 +36,11 @@
 			TweenLite.to(".landing-anim", 1.5, {opacity:1, delay:1.5});
 			TweenLite.from(".landing-anim", 0.5, {marginTop:"-=5px", delay:1.5});
 			//Calls #contact-div animation beyond 800px. Since the margin creates the #contact-div movement, if the animation runs below 800px the position of the #contact-div will be incorrect when if the page is resized beyond 800px.
-			if ($(window).width() > 800) {
-				return contactAnimation();
-			} else {
-				$( "#contact-div" ).css("opacity", 1);
-			}
+			if (window.matchMedia("(min-width: 800px)").matches) {
+        return contactAnimation();
+      } else {
+        $( "#contact-div" ).css("opacity", 1);
+      }
 		}
 	</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/2.3.1/picturefill.min.js" async></script> 
@@ -266,7 +265,7 @@
     <div>Icons made by <a href="http://www.flaticon.com/authors/google" target="_blank" title="Google">Google</a> from <a href="http://www.flaticon.com" target="_blank" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
   </section>
   </div>
-  <script src="js/animations.js" async></script>
+  <script src="js/nojq-animations.js" async></script>
   <script src="js/CSSPlugin.min.js" async></script>
   <script src="js/TweenLite.min.js" async></script>
 </body>

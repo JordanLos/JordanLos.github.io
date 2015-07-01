@@ -8,15 +8,6 @@
 @media  (max-width: 800px) {
 	@import 'layout-mobile-narrow';
 }
-//Leaving out based on Jonah's recommendation
-/*@media 
-	(min-width: 450px) and (max-width: 750px) {
-		@import 'layout-mobile-landscape';
-}*/
 @media (min-width: 800px) {
 	@import 'layout-large-screen'
 }
-
-@import 'compass/utilities/sprites';
-@import 'icons/*.png';
-@include all-icons-sprites;

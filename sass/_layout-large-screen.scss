@@ -1,59 +1,11 @@
-@mixin icon-size {
+@import "base";
+
+.icon {
 	width: 72px;
 	height: 72px;
 }
-//No-brainer CSS triangle mixin
-@mixin triangle($points-to, $height, $width, $x, $x-position, $y, $y-position) {
-	content: '';
-	position: absolute;
-	height: 0;
-	width: 0;
-	z-index: 3;
-	border-style: solid;
-	border-color: transparent;
-	border-width: $height $width;
-	border-#{$points-to}: none;
-	#{$x}: $x-position;
-	#{$y}: $y-position;
-}
-//Styles the individual thumbails
-@mixin thumbnail($img-name) {
-	height: 100%;
-	width: 50px;
-	margin: 0 15px;
-	border: 2px solid transparent;
-	display: inline-block;	
-	background: url("../img/#{$img-name}-thumb.jpg") no-repeat 100%;
-}
-//Styles the thumbnail for each service
-@mixin thumbnail-selector($service-name) {
-	.service-thumb-1 {
-		@include thumbnail(#{$service-name}-1);
-		border-color: white;
-	}
-	.service-thumb-2 {
-		@include thumbnail(#{$service-name}-2);
-	}
-	.l-relative-div {
-		position: absolute;
-		height: 50px;
-		bottom: 15px;
-		width: 90%;
-		text-align: center;
-	}
-}
 
-.icon {
-	@include icon-size;
-}
-//Mixing from internet to create a consistent vertical align
-@mixin vertical-align {
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-  	-ms-transform: translateY(-50%);
-  	transform: translateY(-50%);
-}
+
 #wide-screen {
 	max-width: 980px;
 	margin: 0 auto;
@@ -149,7 +101,6 @@
 
 .l-service-description {
 	position: absolute;
-	z-index: 1;
 	top: 0;
 	width: calc(38% -  60px);
 	height: 344px;
@@ -159,7 +110,7 @@
 	}
 }
 
-
+//Adds thumbnails to each service
 .l-service-wrapper:nth-of-type(0n+1) {
 	@include thumbnail-selector(site-service);
 }
@@ -179,10 +130,7 @@
 	@include thumbnail-selector(rig);
 }
 
-
-
-
-
+//Images are stacked on top of each other to allow a click to fade in/out
 .l-service-images {
 	position: relative;
 	width: 124%;
