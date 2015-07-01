@@ -1,5 +1,47 @@
 @import "base";
 
+/********CRITICAL***********/
+.icon {
+	height: 48px;
+	width: 48px;
+}
+/********CRITICAL***********/
+//Landing Panel
+//100% heigh ensures consistent landing panel experience
+.l-landing-panel {
+	display: hidden;
+	width: 320px;
+	margin: 0 auto;
+	@include vh-fix(100);
+}
+/********CRITICAL*****Down*****/
+//landing panel split into 3 vertical sections along the golden ratio. 62% going to the logo and the 38% split between top and bottom icons
+.l-header {
+	height: 19%;
+	padding: 0;
+}
+.l-header-images {
+	float: right;
+	@include vertical-align;
+}
+#logo-wrap {
+	height: 62%;
+	img {
+		@include vertical-align;
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+.l-landing-footer {
+	height: 19%;
+	img {
+		@include vertical-align;
+		display: block;
+		margin: 0 auto;
+	}
+}
+/********CRITICAL********UP***/
 
 /*******SERVICE PANEL********
 ****************************/
@@ -109,11 +151,30 @@
 		max-width: 90%;
 	}
 }
-
+/********CRITICAL***********/
+#contact-div {
+	margin: 15% 0;
+}
+/********CRITICAL***********/
+.icon-spread {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
 .safety-icon {
 	margin: 5%;
 }
+/********CRITICAL***********/
+.contact-icon {
+	width: calc(100vw/2.5);
+	padding: 5% 0;
+	display: inline-block;
+	vertical-align: top;
+	p {
+		font-size: 11;
+	}
 
+}
 /*****ABOUT US/CONTACT******
 ****************************/
 .footer {
