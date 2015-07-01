@@ -55,25 +55,25 @@ a {
 @media (max-width: 800px) and (max-device-aspect-ratio: 3 / 4) {
   
   .l-landing-panel {
-    height: calc(100 * 1.333 - 65px);
+    height: calc(100vw * 1.333 - 65px);
   }
 }
 @media (max-width: 800px) and (max-device-aspect-ratio: 2 / 3) {
   
   .l-landing-panel {
-    height: calc(100 * 1.5 - 65px);
+    height: calc(100vw * 1.5vw - 65px);
   }
 }
 @media (max-width: 800px) and (max-device-aspect-ratio: 10 / 16) {
   
   .l-landing-panel {
-    height: calc(100 * 1.6 - 65px);
+    height: calc(100vw * 1.6 - 65px);
   }
 }
 @media (max-width: 800px) and (max-device-aspect-ratio: 9 / 16) {
   
   .l-landing-panel {
-    height: calc(100* 1.778 - 65px);
+    height: calc(100vw * 1.778 - 65px);
   }
 }
 
