@@ -1,47 +1,12 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Donald Rigging</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	<script src="js/fontfaceobserver.js" async></script>
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<!--Opacity at 0 for above-fold animation -->
 	<style>
-    /*stylesheet from google font included to reduce requests*/
-    /* latin-ext */
-    @font-face {
-      font-family: 'Oxygen';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Oxygen'), local('Oxygen-Regular'), url(http://fonts.gstatic.com/s/oxygen/v5/IIPDrwV5KNJo5-LaFlLy2fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-      font-family: 'Oxygen';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Oxygen'), local('Oxygen-Regular'), url(http://fonts.gstatic.com/s/oxygen/v5/78wGxsHfFBzG7bRkpfRnCQ.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-    /* latin-ext */
-    @font-face {
-      font-family: 'Oxygen';
-      font-style: normal;
-      font-weight: 700;
-      src: local('Oxygen Bold'), local('Oxygen-Bold'), url(http://fonts.gstatic.com/s/oxygen/v5/fSUtikcZd7PHZK0t2hzTeRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-    }
-    /* latin */
-    @font-face {
-      font-family: 'Oxygen';
-      font-style: normal;
-      font-weight: 700;
-      src: local('Oxygen Bold'), local('Oxygen-Bold'), url(http://fonts.gstatic.com/s/oxygen/v5/yVHpdQrmTj9Kax1tmFSx2ltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    };
-  </style>
-  <style>
 		#logo, .landing-anim, #contact-div {
 			opacity: 0;
 		}
@@ -300,25 +265,19 @@
     <div>Icons made by <a href="http://www.flaticon.com/authors/google" target="_blank" title="Google">Google</a> from <a href="http://www.flaticon.com" target="_blank" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
   </section>
   </div>
-  <script src="js/output.min.js" async></script> 
-  <script src="js/fontfaceobserver.js"></script>
+  <script src="js/output.min.js" async></script>
+
   <script>
-    (function( w ){
-    if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
-        return;
-    }
-    var font1 = new w.FontFaceObserver( "Oxygen", {
-        weight: 400
-    });
-    var font2 = new w.FontFaceObserver( "Oxygen", {
-        weight: 700
-    });
-    w.Promise
-        .all([font1.check(), font2.check()])
-        .then(function(){
-            w.document.documentElement.className += " fonts-loaded";
-        });
-    }( this ));
-  </script> 
+	var observer = new FontFaceObserver('Oxygen', {
+	  weight: 400,
+	  weight: 700
+	});
+
+	observer.check().then(function () {
+	  observer.documentElement.className += " fonts-loaded";
+	});
+
+
+  </script>
 </body>
 </html>

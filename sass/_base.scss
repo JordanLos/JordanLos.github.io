@@ -2,15 +2,22 @@
 $primary-color: #8f6d50;
 $contrast-color: #0f3436;
 $compliment-color: #5a1a18;
-$oxygen: "Oxygen", sans-serif;
 
 /******ELEMENT STYLES*******/
+
 html, body {
 	margin: 0;
 	padding: 0px;
-	font-family: 'Oxygen', sans-serif;
 	background-color: black;
 	color: white;
+}
+//Sets Default font to sans-serif
+body {
+	font-family: sans-serif;
+}
+//A class to add to body for fontObserver Polyfill
+.fonts-loaded body {
+	font-family: Oxygen, sans-serif;
 }
 h2 {
 	margin: 0;

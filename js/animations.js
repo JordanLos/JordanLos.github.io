@@ -10,7 +10,6 @@ document.onreadystatechange = function () {
 	var image1 = document.getElementsByClassName('service-image-1');
 	var thumb1 = document.getElementsByClassName('service-thumb-1');
 	var thumb2 = document.getElementsByClassName('service-thumb-2');
-	console.log(image1[ 5 ]);
 
 	//Fades front image out and back image in for the selected service when clicking 'image1'
 	function fadeToBack(serviceIndex) {
