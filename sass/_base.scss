@@ -26,16 +26,16 @@ a:hover {
 //Styles an element with full screen height and won't resize when the url bar dissapears on mobile browsers (i.e. a mixin that works the way the vh unit actually should). the four major aspect ratios, which must be listed from the largest ratio to the smallest (16:9, 16:10, 3:2, 4:3). 
 @mixin vh-fix($height) {
 	@media (max-device-aspect-ratio: 3/4) {
-	height: calc(#{$height} * 1.333 - 65px);
+	height: calc(#{$height}vw * 1.333 - 65px);
 	}
 	@media (max-device-aspect-ratio: 2/3) {
-	height: calc(#{$height} * 1.5 - 65px);
+	height: calc(#{$height}vw * 1.5 - 65px);
 	}
 	@media (max-device-aspect-ratio: 10/16) {
-	height: calc(#{$height} * 1.6 - 65px);
+	height: calc(#{$height}vw * 1.6 - 65px);
 	}
 	@media (max-device-aspect-ratio: 9/16) {
-		height: calc(#{$height}* 1.778 - 65px);
+		height: calc(#{$height}vw * 1.778 - 65px);
 	}
 }
 //No-brainer CSS triangle mixin
