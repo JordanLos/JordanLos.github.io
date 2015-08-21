@@ -1,0 +1,204 @@
+@import "global-variables";
+/*TODO*/
+hr {
+	margin: 0;
+}
+@mixin full-bleed {
+	width: 100vw;
+	transform: translateX( calc(-4% - 20px) );
+}
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+/*=====Objects=====*/
+.banner {
+	@include full-bleed;
+	> p { margin-bottom: 0; }
+	padding: 0.6rem 0;
+	background-color: red;
+}
+.banner--img {
+	padding: 1.2rem 0;
+}
+.island {
+	position: absolute;
+	padding: 4% 0;
+}	
+.wrapper {
+	width: 100%;
+	position: relative;
+}
+.media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	> p {
+		margin: 0;
+	}
+}
+.card {
+	border-radius: 5px;
+	background-color: #eee;
+	padding: 24px;
+	margin-bottom: 24px;
+	color: #444;
+}
+.card--tabbed {
+	@extend .card;
+	border-radius: 0 5px 5px 5px;
+}	
+.tab {
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	background-color: #888;
+	height: 4rem;
+	color: #444;
+	margin-bottom: 0;
+	padding-top: 0.5rem;
+}
+.tab.focus {
+	background-color: #eee;
+}
+.mod {
+}
+.mod--img {
+	> img {
+		max-width: 100%;
+	}
+}
+.mod--text {
+	text-align: center;
+}
+.mod--features {
+	height: 36rem;
+	text-align: center;
+	padding-top: 2.4rem;
+	position: relative;
+}
+.price {
+	padding: 5% 0;
+	strong {
+		font-size: 3.6rem;
+	}
+	sup {
+		vertical-align: 2rem;
+		font-size: 1.2rem;
+	}
+}
+.feature {
+	position: absolute;
+	bottom: 2.4rem;
+}
+.wrapper--hero {
+	@extend .wrapper;
+	height: 420px;
+	margin: 2.4rem 0;
+	background: url('../img/govt.jpg') no-repeat center center fixed;
+	background-size: auto 100%;
+	@include full-bleed;
+}
+/*=====Layout=====*/
+#landing {
+	background: url('../img/landing-mobile.jpg') no-repeat center center;
+	background-size: cover;
+	height: calc(100vh - 72px);
+	width: 100vw;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+	
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+#landing  .island {
+	left: calc(-4% - 20px);
+	padding-left: calc(4% + 20px);
+	top: 55%;
+	background-color: rgba(10,10,190,0.25);
+}
+.substance--header {
+	margin: 3.6rem 0;
+	> h4 {	margin-bottom: 0.6rem;
+			text-align: center; }
+	> img { margin: 0 auto 0.6rem auto; }
+}
+
+.parallax {
+	transform: translateY(25%);
+}
+.activity > img {
+	position: relative;
+	display: block;
+	@include full-bleed;
+}
+.island--primary {
+	@extend .island ;
+	@include full-bleed;
+	height: 90px;
+	background-color: rgba(10,10,190,0.25);
+	bottom: 0px;
+}
+.bottom > img {
+	height: 48px;
+	width: auto;
+}
+#park {
+	display: none;
+}
+#beach {
+	display: none;
+}
+#tues {
+	display: none;
+}
+#wed {
+	display: none;
+}
+/*======POST======*/
+.post {
+	text-align: justify;
+	margin-bottom: 2.4rem;
+}
+
+.cal :first-child {
+	text-align: right;
+}
+.cal {
+	padding: 1.2rem 0;
+}
+
+footer {
+	background-color: #333;
+}
+.contact {
+	text-align: center;
+	background-color: rgba(120,15,15,1);
+	padding-top: 3.6rem;
+	padding-bottom: 3.6rem;
+	margin-bottom: 6.0rem;
+}
+.circle {
+	@extend .media;
+	img{ max-height: 48px;}
+	position: absolute;
+	top: -3.6rem;
+	left: calc(50% - 36px);
+	height: 72px;
+	width: 72px;
+	border-radius: 50%;
+	background-color: rgba(120,15,15,1);
+}	
+footer {
+	p { font-size: 1.2rem;
+		margin-bottom: 0; }
+	hr { @include full-bleed; 
+		 padding-bottom: 1.2rem; }				
+	padding-bottom: 1.2rem;
+}

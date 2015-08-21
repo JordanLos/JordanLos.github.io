@@ -1,0 +1,15 @@
+//- Image location
+- var img = '../img/'
+
+//- mixin for picture fill element
+mixin picture(large,small,className,id)
+	picture
+		<!--[if IE 9]><video style="display: none;"><![endif]-->
+		source(srcset=img +'#{large}' media='(min-width: 800px')
+		source(srcset=img + '#{small}' media='(max-width: 800px')
+		<!--[if IE 9]></video><![endif]-->
+		img( srcset=img + '#{large}' class='#{className}' id ='#{id}')
+//- Mixin for h2 headers
+mixin level2(heading, text) 
+	h2 #{heading}
+	p #{text}

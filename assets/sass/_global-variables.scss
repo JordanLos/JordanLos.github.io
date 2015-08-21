@@ -1,0 +1,31 @@
+/*\______VERTICAL RHYTHM________\*/
+$mgc-nmb: 1.8rem; //magic-number: 18px
+//My custom function for font-sizing
+@function ms($ms-number, $ms-ratio){ 
+  $ms-store: 1;
+  @for $i from 1 to $ms-number{
+    $ms-store: $ms-store * $ms-ratio}
+  @return $ms-store * 1rem;
+}
+
+//Linear Gradiant at $line-height pixels (e.g. line every 12 pixels)
+@mixin vertical-rhythm($line-height) {
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.3))); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 95%,rgba(0,0,0,0.3) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, rgba(0,0,0,0) 95%, rgba(0,0,0,0.3) 50%); /* Opera11.10+ */
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 95%,rgba(0,0,0,0.3) 100%); /* IE10+ */
+	background-image: linear-gradient(top, rgba(0,0,0,0.3) 95%,rgba(0,0,0,0.3) 100%); /* W3C */
+	-webkit-background-size: 100% $line-height;  
+	-o-background-size: 100% $line-height;
+	background-size: 100% $line-height;
+}
+
+//Vertical Align Placeholder
+%vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
