@@ -8,20 +8,21 @@ html
         meta(name='viewport' content='width=device-width, initial-scale=1')
 
     body
-        header.container
-            .row.banner
-                p.seven.columns.offset-by-one Foundations Dayhome
-                a.four.columns(href='tel:5874364584') 587.436.4584
-            .row
-                img.banner--img.two.columns(src='assets/img/baby.png')
+        .section.header
+            .container
+                .row.banner
+                    p.eight.columns Foundations Dayhome
+                    a.four.columns(href='tel:5874364584') 587.436.4584
+                .row
+                    img.banner--img.two.columns(src='assets/img/baby.png')
 
 
         | {{ content}}
 
 
-        footer
+       .section.footer
             .container
-                .wrapper.contact 
+                .contact 
                     .row.circle
                         a(href='tel:5874364584')
                             img(src='assets/img/phone.png')
@@ -29,14 +30,17 @@ html
                         h2 Contact
                     .row
                         a(href='tel:5874364584') 587.436.458
-                .wrapper.contact
+                .contact
                     .row.circle
                         a(href='mailto:meaghanlos@gmail.com')
                             img(src='assets/img/mail.svg')
-                    .row.mod.text
+                    .row
                         h2 Email
                         a(href='mailto:meaghanlos@gmail.com') meaghanlos@gmail.com
-                hr
-                p icons by Google;  www.flaticon.com is liscensed by CC BY 3.0
-                p &copy Jordan Los 2015
+            hr
+            .container
+                .row
+                    p.copyright icons by Google;  www.flaticon.com is liscensed by CC BY 3.0
+                .row
+                    p.copyright &copy Jordan Los 2015
 

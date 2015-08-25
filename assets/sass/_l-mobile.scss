@@ -1,33 +1,54 @@
 @import "global-variables";
 /*TODO*/
 hr {
-	margin: 0;
+	margin: 1;
 }
 @mixin full-bleed {
-	width: 100vw;
-	transform: translateX( calc(-4% - 20px) );
 }
+
 body {
-	width: 100vw;
 	overflow-x: hidden;
 }
 /*=====Objects=====*/
+.section {
+	padding: 0;
+}
+.header {
+	background: linear-gradient( to bottom, red, red 3.0rem, white 3.0rem);
+}
 .banner {
-	@include full-bleed;
-	> p { margin-bottom: 0; }
-	padding: 0.6rem 0;
-	background-color: red;
+	> p {	margin-bottom: 0;
+			padding-top: 0.6rem; }
 }
 .banner--img {
 	padding: 1.2rem 0;
 }
-.island {
+.hero {
+	background: url('../img/landing-mobile.jpg') no-repeat center center;
+	background-size: cover;
+	height: calc(100vh - 72px);
+	color: white;
+}
+.island--hero {
+	padding: 1rem 3rem;
 	position: absolute;
-	padding: 4% 0;
-}	
-.wrapper {
-	width: 100%;
+	bottom: 12% ;
+	left: 0;
+	background-color: rgba(15,15,100,0.25);
+}
+.info {
+	color: black;
+}
+.wrapper--parallax {
 	position: relative;
+	height: 420px;
+	margin: 2.4rem 0;
+	padding: 0 3rem;
+	background: url('../img/govt.jpg') no-repeat center center fixed;
+	background-size: auto 100%;
+}
+.parallax {
+	transform: translateY(25%);
 }
 .media {
 	display: flex;
@@ -38,15 +59,14 @@ body {
 	}
 }
 .card {
+}
+.card--tabbed {
+	border-radius: 0 5px 5px 5px;
 	border-radius: 5px;
 	background-color: #eee;
 	padding: 24px;
-	margin-bottom: 24px;
+	margin-bottom: 3rem;
 	color: #444;
-}
-.card--tabbed {
-	@extend .card;
-	border-radius: 0 5px 5px 5px;
 }	
 .tab {
 	text-align: center;
@@ -60,8 +80,6 @@ body {
 .tab.focus {
 	background-color: #eee;
 }
-.mod {
-}
 .mod--img {
 	> img {
 		max-width: 100%;
@@ -71,13 +89,11 @@ body {
 	text-align: center;
 }
 .mod--features {
-	height: 36rem;
 	text-align: center;
 	padding-top: 2.4rem;
 	position: relative;
 }
 .price {
-	padding: 5% 0;
 	strong {
 		font-size: 3.6rem;
 	}
@@ -87,26 +103,8 @@ body {
 	}
 }
 .feature {
-	position: absolute;
-	bottom: 2.4rem;
-}
-.wrapper--hero {
-	@extend .wrapper;
-	height: 420px;
-	margin: 2.4rem 0;
-	background: url('../img/govt.jpg') no-repeat center center fixed;
-	background-size: auto 100%;
-	@include full-bleed;
 }
 /*=====Layout=====*/
-#landing {
-	background: url('../img/landing-mobile.jpg') no-repeat center center;
-	background-size: cover;
-	height: calc(100vh - 72px);
-	width: 100vw;
-	margin-left: 0;
-	padding-left: 0;
-}
 
 	
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -123,24 +121,22 @@ html {
 	top: 55%;
 	background-color: rgba(10,10,190,0.25);
 }
-.substance--header {
+.section--header {
 	margin: 3.6rem 0;
 	> h4 {	margin-bottom: 0.6rem;
 			text-align: center; }
 	> img { margin: 0 auto 0.6rem auto; }
 }
 
-.parallax {
-	transform: translateY(25%);
-}
-.activity > img {
+.activity {
 	position: relative;
-	display: block;
-	@include full-bleed;
+	> img { max-width: 100%; 
+			display: block; }
+	color: white;
+	border-radius: 5px;
 }
 .island--primary {
-	@extend .island ;
-	@include full-bleed;
+	position: absolute;
 	height: 90px;
 	background-color: rgba(10,10,190,0.25);
 	bottom: 0px;
@@ -174,7 +170,7 @@ html {
 	padding: 1.2rem 0;
 }
 
-footer {
+.footer {
 	background-color: #333;
 }
 .contact {
@@ -182,7 +178,8 @@ footer {
 	background-color: rgba(120,15,15,1);
 	padding-top: 3.6rem;
 	padding-bottom: 3.6rem;
-	margin-bottom: 6.0rem;
+	margin-bottom: 5rem;
+	position: relative;
 }
 .circle {
 	@extend .media;
@@ -196,9 +193,12 @@ footer {
 	background-color: rgba(120,15,15,1);
 }	
 footer {
-	p { font-size: 1.2rem;
-		margin-bottom: 0; }
-	hr { @include full-bleed; 
-		 padding-bottom: 1.2rem; }				
-	padding-bottom: 1.2rem;
+}
+.copyright {
+	margin-bottom: 0.5rem; 
+	font-size: 1.2rem;
+	color: white;
+}
+hr {
+	margin: 0.25rem;
 }
