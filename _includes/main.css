@@ -670,62 +670,81 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 /*\______VERTICAL RHYTHM________\*/
+/* line 2, ../sass/_l-mobile.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/_l-mobile.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /*TODO*/
-/* line 3, ../sass/_l-mobile.scss */
+/* line 9, ../sass/_l-mobile.scss */
 hr {
   margin: 1;
 }
 
-/* line 9, ../sass/_l-mobile.scss */
+/* line 13, ../sass/_l-mobile.scss */
 body {
   overflow-x: hidden;
 }
 
 /*=====Objects=====*/
-/* line 13, ../sass/_l-mobile.scss */
+/* line 17, ../sass/_l-mobile.scss */
 .section {
   padding: 0;
 }
 
-/* line 16, ../sass/_l-mobile.scss */
-.header {
-  background: linear-gradient(to bottom, #ff0000, #ff0000 3rem, #ffffff 3rem);
-}
-
-/* line 20, ../sass/_l-mobile.scss */
+/* line 21, ../sass/_l-mobile.scss */
 .banner > p {
   margin-bottom: 0;
   padding-top: 0.6rem;
 }
 
-/* line 23, ../sass/_l-mobile.scss */
+/* line 24, ../sass/_l-mobile.scss */
 .banner--img {
   padding: 1.2rem 0;
 }
 
-/* line 26, ../sass/_l-mobile.scss */
+/* line 27, ../sass/_l-mobile.scss */
 .hero {
   background: url("../img/landing-mobile.jpg") no-repeat center center;
   background-size: cover;
   height: calc(100vh - 72px);
-  color: white;
 }
 
 /* line 32, ../sass/_l-mobile.scss */
 .island--hero {
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
   position: absolute;
   bottom: 12%;
   left: 0;
-  background-color: rgba(15, 15, 100, 0.25);
+}
+/* line 37, ../sass/_l-mobile.scss */
+.island--hero > h5 {
+  margin-left: -1rem;
+  margin-bottom: 0rem;
+  width: 110%;
+  text-align: justify;
+}
+/* line 43, ../sass/_l-mobile.scss */
+.island--hero hr {
+  margin: 1.0rem 0;
+}
+/* line 46, ../sass/_l-mobile.scss */
+.island--hero > p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* line 39, ../sass/_l-mobile.scss */
-.info {
-  color: black;
+/* line 51, ../sass/_l-mobile.scss */
+#learn-more > img {
+  border-radius: 50%;
 }
 
-/* line 42, ../sass/_l-mobile.scss */
+/* line 54, ../sass/_l-mobile.scss */
 .wrapper--parallax {
   position: relative;
   height: 420px;
@@ -735,188 +754,160 @@ body {
   background-size: auto 100%;
 }
 
-/* line 50, ../sass/_l-mobile.scss */
+/* line 62, ../sass/_l-mobile.scss */
 .parallax {
   transform: translateY(25%);
 }
 
-/* line 53, ../sass/_l-mobile.scss */
+/* line 65, ../sass/_l-mobile.scss */
 .media, .circle {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* line 57, ../sass/_l-mobile.scss */
+/* line 69, ../sass/_l-mobile.scss */
 .media > p, .circle > p {
   margin: 0;
 }
 
-/* line 63, ../sass/_l-mobile.scss */
+/* line 75, ../sass/_l-mobile.scss */
 .card--tabbed {
   border-radius: 0 5px 5px 5px;
   border-radius: 5px;
   background-color: #eee;
   padding: 24px;
   margin-bottom: 3rem;
-  color: #444;
 }
 
-/* line 71, ../sass/_l-mobile.scss */
+/* line 82, ../sass/_l-mobile.scss */
 .tab {
   text-align: center;
   border-radius: 5px 5px 0 0;
   background-color: #888;
   height: 4rem;
-  color: #444;
   margin-bottom: 0;
   padding-top: 0.5rem;
 }
 
-/* line 80, ../sass/_l-mobile.scss */
-.tab.focus {
-  background-color: #eee;
-}
-
-/* line 84, ../sass/_l-mobile.scss */
+/* line 91, ../sass/_l-mobile.scss */
 .mod--img > img {
   max-width: 100%;
 }
 
-/* line 88, ../sass/_l-mobile.scss */
+/* line 95, ../sass/_l-mobile.scss */
 .mod--text {
   text-align: center;
 }
 
-/* line 91, ../sass/_l-mobile.scss */
+/* line 98, ../sass/_l-mobile.scss */
 .mod--features {
   text-align: center;
   padding-top: 2.4rem;
   position: relative;
 }
 
-/* line 97, ../sass/_l-mobile.scss */
+/* line 104, ../sass/_l-mobile.scss */
 .price strong {
   font-size: 3.6rem;
 }
-/* line 100, ../sass/_l-mobile.scss */
+/* line 107, ../sass/_l-mobile.scss */
 .price sup {
   vertical-align: 2rem;
   font-size: 1.2rem;
 }
 
-/*=====Layout=====*/
-/* apply a natural box layout model to all elements, but allowing components to change */
-/* line 112, ../sass/_l-mobile.scss */
-html {
-  box-sizing: border-box;
-}
-
-/* line 115, ../sass/_l-mobile.scss */
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* line 118, ../sass/_l-mobile.scss */
+/* line 113, ../sass/_l-mobile.scss */
 #landing .island {
   left: calc(-4% - 20px);
   padding-left: calc(4% + 20px);
   top: 55%;
-  background-color: rgba(10, 10, 190, 0.25);
 }
 
-/* line 124, ../sass/_l-mobile.scss */
+/* line 118, ../sass/_l-mobile.scss */
 .section--header {
   margin: 3.6rem 0;
 }
-/* line 126, ../sass/_l-mobile.scss */
+/* line 120, ../sass/_l-mobile.scss */
 .section--header > h4 {
   margin-bottom: 0.6rem;
   text-align: center;
 }
-/* line 128, ../sass/_l-mobile.scss */
+/* line 122, ../sass/_l-mobile.scss */
 .section--header > img {
   margin: 0 auto 0.6rem auto;
 }
 
-/* line 131, ../sass/_l-mobile.scss */
+/* line 125, ../sass/_l-mobile.scss */
 .activity {
   position: relative;
-  color: white;
   border-radius: 5px;
 }
-/* line 133, ../sass/_l-mobile.scss */
+/* line 127, ../sass/_l-mobile.scss */
 .activity > img {
   max-width: 100%;
   display: block;
 }
 
-/* line 138, ../sass/_l-mobile.scss */
+/* line 131, ../sass/_l-mobile.scss */
 .island--primary {
   position: absolute;
   height: 90px;
-  background-color: rgba(10, 10, 190, 0.25);
   bottom: 0px;
 }
 
-/* line 144, ../sass/_l-mobile.scss */
+/* line 136, ../sass/_l-mobile.scss */
 .bottom > img {
   height: 48px;
   width: auto;
 }
 
-/* line 148, ../sass/_l-mobile.scss */
+/* line 140, ../sass/_l-mobile.scss */
 #park {
   display: none;
 }
 
-/* line 151, ../sass/_l-mobile.scss */
+/* line 143, ../sass/_l-mobile.scss */
 #beach {
   display: none;
 }
 
-/* line 154, ../sass/_l-mobile.scss */
+/* line 146, ../sass/_l-mobile.scss */
 #tues {
   display: none;
 }
 
-/* line 157, ../sass/_l-mobile.scss */
+/* line 149, ../sass/_l-mobile.scss */
 #wed {
   display: none;
 }
 
 /*======POST======*/
-/* line 161, ../sass/_l-mobile.scss */
+/* line 153, ../sass/_l-mobile.scss */
 .post {
   text-align: justify;
   margin-bottom: 2.4rem;
 }
 
-/* line 166, ../sass/_l-mobile.scss */
+/* line 158, ../sass/_l-mobile.scss */
 .cal :first-child {
   text-align: right;
 }
 
-/* line 169, ../sass/_l-mobile.scss */
+/* line 161, ../sass/_l-mobile.scss */
 .cal {
   padding: 1.2rem 0;
 }
 
-/* line 173, ../sass/_l-mobile.scss */
-.footer {
-  background-color: #333;
-}
-
-/* line 176, ../sass/_l-mobile.scss */
+/* line 165, ../sass/_l-mobile.scss */
 .contact {
   text-align: center;
-  background-color: #780f0f;
   padding-top: 3.6rem;
   padding-bottom: 3.6rem;
   margin-bottom: 5rem;
   position: relative;
 }
 
-/* line 184, ../sass/_l-mobile.scss */
+/* line 172, ../sass/_l-mobile.scss */
 .circle {
   position: absolute;
   top: -3.6rem;
@@ -924,21 +915,19 @@ html {
   height: 72px;
   width: 72px;
   border-radius: 50%;
-  background-color: #780f0f;
 }
-/* line 186, ../sass/_l-mobile.scss */
+/* line 174, ../sass/_l-mobile.scss */
 .circle img {
   max-height: 48px;
 }
 
-/* line 197, ../sass/_l-mobile.scss */
+/* line 184, ../sass/_l-mobile.scss */
 .copyright {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-  color: white;
 }
 
-/* line 202, ../sass/_l-mobile.scss */
+/* line 188, ../sass/_l-mobile.scss */
 hr {
   margin: 0.25rem;
 }
@@ -1379,4 +1368,75 @@ table {
 td,
 th {
   padding: 0;
+}
+
+/* line 13, ../sass/_themes.scss */
+body {
+  background-color: #f7f9f9;
+}
+
+/* line 16, ../sass/_themes.scss */
+.header {
+  background: linear-gradient(to bottom, #d4dcff, #d4dcff 3rem, #ffffff 3rem);
+}
+
+/* line 19, ../sass/_themes.scss */
+.button.button-primary {
+  background-color: #ff1654;
+  border-color: #ff1654;
+}
+
+/* line 23, ../sass/_themes.scss */
+.button.button-primary:hover {
+  background-color: #af002f;
+}
+
+/* line 26, ../sass/_themes.scss */
+.island--hero {
+  background-color: rgba(20, 141, 186, 0.5);
+}
+
+/* line 36, ../sass/_themes.scss */
+.island--primary {
+  background-color: rgba(255, 82, 84, 0.45);
+}
+
+/* line 40, ../sass/_themes.scss */
+.contact {
+  background-color: #780f0f;
+}
+
+/* line 43, ../sass/_themes.scss */
+.circle {
+  background-color: #780f0f;
+}
+
+/* line 46, ../sass/_themes.scss */
+.copyright {
+  color: #f7f9f9;
+}
+
+/* line 49, ../sass/_themes.scss */
+.wrapper--parallax {
+  filter: blur(10px) opacity(0.2);
+}
+
+/* line 55, ../sass/_themes.scss */
+.header, .hero, .island--hero > h5, a, .button, .parallax, .parallax > h3, .activity, .footer, .footer h2 {
+  color: #f7f9f9;
+}
+
+/* line 58, ../sass/_themes.scss */
+.info, .info .example, .pricing, .blog {
+  color: #330036;
+}
+
+/* line 61, ../sass/_themes.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 64, ../sass/_themes.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #330036;
 }

@@ -1,0 +1,87 @@
+@import "compass";
+//color pallete from: http://paletton.com/#uid=33s0u0kesVS00++5BZDlZS-vsRH
+$dark-text: #011722;//deep color of primary color
+$light-text: #f3fafe;//brightest 'bright pastel'
+$primary-color: #89cef0;
+$primary-light: #D1edfb;
+$primary-dark: #0F9EE4;
+$contrast-color: #ff7450;
+$contrast-light: #FFDCD2;
+$contrast-dark: #FF3904;
+$compliment-color: #ffdf8c; 
+$primary-grey-dark: #505F66;
+$primary-grey-light: #C3B2AE;
+
+.header {
+	background: linear-gradient( to bottom, $primary-color, $primary-color 3.0rem, white 3.0rem);
+}
+.button.button-primary {
+	background-color: $contrast-color;
+	border-color: $contrast-color;
+}
+.button.button-primary:hover {
+	background-color: darken($contrast-color, 10%); 
+}
+
+.island--hero:before {
+	content: "";
+	background-color: rgba($primary-color, 0.5);
+	display: block;
+	height: 100%;
+	z-index: -1;
+	top: 0;
+	margin-left: -1500px;
+	padding-left: calc(1500px + 91.33333333%);
+	position: absolute;
+}
+
+.island.primary {
+	background-color: rgba($primary-color, 0.5);
+}
+.island.contrast {
+	background-color: rgba($contrast-color, 0.5);
+}
+.island.compliment {
+	background-color: rgba($compliment-color, 0.5);
+}
+
+
+.card--tabbed {
+	background-color: $primary-light;
+}
+.card--tabbed.focus {
+	background-color: $contrast-light;
+}
+.tab {
+	background-color: $primary-dark;
+}
+.tab.focus {
+	background-color: $contrast-dark;
+}
+.footer {
+	background-color: $primary-grey-dark;
+}
+.contact {
+	background-color: $contrast-dark;
+}
+.circle {
+	background-color: $contrast-dark;
+}
+.copyright {
+	color: $light-text;
+}
+
+
+
+.header, .hero, .island--hero h5, a, .button, .parallax, .parallax h3, .activity, .footer, .footer h2 {
+	color: $light-text;
+}
+.info, .info .example, .pricing, .blog  {
+	color: $dark-text;
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: $dark-text;
+}

@@ -7,9 +7,14 @@ include mixins.jade
 
 .section.hero
     .island--hero.container
-            h4 #[strong Childcare Begins with Trust]
-            p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id.
-            a.button(href='#learn-more') Learn More
+        .row
+            h5.eleven.columns #[strong CHILDCARE BEGINS WITH TRUST]
+        .row
+            hr.nine.offset-by-one.columns
+        .row
+            p.ten.columns Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id.
+        .row
+            a.button.button-primary(href='#learn-more') Learn More
 .section.info
     .container 
         .row.section--header
@@ -35,11 +40,13 @@ include mixins.jade
             .nine.columns.offset-by-one
                 h3 Trust
                 p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
-    .wrapper--parallax
-        .parallax
+    //TODO: change parallax and add :before for picture and blue
+    .parallax
+        .container
+            .row
                 h3 Government Approved Dayhome
                 p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
-                a(class='button') Learn 
+                a.button.button-primary Learn 
 
 .section.activities
     .row.section--header
@@ -47,22 +54,22 @@ include mixins.jade
         img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
     .activity
         img(src='assets/img/art.jpg')
-        .row.island--primary.media
+        .row.island.primary.media
                 img.two.columns(src='assets/img/art.png')
                 p.eight.columns.offset-by-one "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
     .activity
         img(src='assets/img/play.jpg')
-        .row.island--primary.media
+        .row.island.contrast.media
                 img(src='assets/img/play.png' class='two columns')
                 p(class='eight columns offset-by-one') "Play is not a luxury. Play is a necessity." Kay Redfield Jamison
     .activity
         img(src='assets/img/dress-up.jpg')
-        .row.island--primary.media
+        .row.island.compliment.media
                 img(src='assets/img/dress-up.png' class='two columns')
                 p(class='eight columns offset-by-one') "Pretend play allows the ability to integrate emotion with cognition" Psychology Today 
     .activity
         img(src='assets/img/learning.jpg')
-        .row.island--primary.media
+        .row.island.primary.media
                 img(src='assets/img/learning.png' class='two columns')
                 p(class='eight columns offset-by-one') "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
 .section.example    
@@ -144,15 +151,15 @@ include mixins.jade
                 hr
                 p Education Activities
         .row
-            h4(class='u-full-width tab highlight') Full-Time
-        .row.card--tabbed.mod--features
+            h4.u-full-width.tab.focus Full-Time
+        .row.card--tabbed.mod--features.focus
             p.price #[strong $920#[sup 00]]/month
                 p Field Trips
                 hr
                 p Best value!
                 hr
                 p Subsidies Available
-                a.button(href='#') Subsidy Info
+                a.button.button-primary(href='#') Subsidy Info
 .section.blog
     .container
         .row.section--header
