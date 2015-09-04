@@ -40,7 +40,6 @@ include mixins.jade
             .nine.columns.offset-by-one
                 h3 Trust
                 p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
-    //TODO: change parallax and add :before for picture and blue
     .parallax
         .container
             .row
@@ -48,10 +47,10 @@ include mixins.jade
                 p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
                 a.button.button-primary Learn 
 
-.section--header
-    h4 #[strong Growth and Development]
-    img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
 .section.activities
+    .section--header
+        h4 #[strong Growth and Development]
+        img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
     .activity
         img(src='assets/img/art.jpg')
         .island.primary
@@ -100,30 +99,30 @@ include mixins.jade
         img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
     .container
         .row
-            h4.two.columns.tab.focus Park
-            h4.two.columns.tab Beach
-            h4.two.columns.tab Zoo
+            h4.two.columns.tab.focus.clickTab Park
+            h4.two.columns.tab.clickTab Beach
+            h4.two.columns.tab.clickTab Zoo
 
-            h4.two.columns.tab.focus.is-hidden--mobile Mon
-            h4.two.columns.tab.is-hidden--mobile Tue
-            h4.two.columns.tab.is-hidden--mobile  Wed
+            h4.two.columns.tab.focus.is-hidden--mobile.clickTab Mon
+            h4.two.columns.tab.is-hidden--mobile.clickTab Tue
+            h4.two.columns.tab.is-hidden--mobile.clickTab  Wed
         .row
             .card.six.columns
-                #park.mod--img
-                    img(src='assets/img/playground.jpg')
+                #park.clickTarget
+                    img.mod--img(src='assets/img/playground.jpg')
                     p Lorem ipsum dolor sit amet, zril postulant ea per, ut quo rebum denique adversarium. Ne placerat efficiantur vix, eu integre perpetua intellegat nec, accumsan quaerendum vim ad. Mea an viris tibique liberavisse, in pro delenit persecuti. Ea qui saepe ceteros urbanitas. An ipsum reprimique vim, est te nostro adolescens adipiscing
-                #beach.mod--img
-                    img(src='assets/img/auburn.jpg')
+                #beach.clickTarget
+                    img.mod--img(src='assets/img/auburn.jpg')
                     p Libris mediocritatem at usu. Ad simul phaedrum nec. Te animal eligendi vim, virtute utroque contentiones mel ex. Eos doctus scripserit ei, hinc dicit ne vel. Scripta assentior eu sea.
-                #zoo.mod--img
-                    img(src='assets/img/zoo.jpg')
+                #zoo.clickTarget
+                    img.mod--img(src='assets/img/zoo.jpg')
                     p Probatus vituperata in ius. Dictas voluptaria instructior eum in, omnis vocent latine cum ex, te mei tritani mandamus. Vis clita doming reprimique id, vim ad dolorem ceteros referrentur. 
 
             h4.two.columns.tab.focus.is-hidden--desktop Mon
             h4.two.columns.tab.is-hidden--desktop Tue
             h4.two.columns.tab.is-hidden--desktop  Wed
             .card.six.columns
-                #mon.mod--text
+                #mon.mod--text.clickTarget
                     h3 Morning Snack
                     p Yogurt and Blueberries 
                     hr
@@ -132,7 +131,7 @@ include mixins.jade
                     hr
                     h3 Afternoon Snack
                     p Carrot sticks with dip
-                #tues.mod--text
+                #tues.mod--text.clickTarget
                     h3 Morning Snack
                     p Cheese and apples
                     hr
@@ -141,7 +140,7 @@ include mixins.jade
                     hr
                     h3 Afternoon Snack
                     p Peanut butter raisin celery sticks
-                #wed.mod--text
+                #wed.mod--text.clickTarget
                     h3 Morning Snack
                     p Fruit salad
                     hr
@@ -155,12 +154,8 @@ include mixins.jade
     .section--header
         h4 #[strong Pricing]
         img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
-    .container
-        h4.tab--large.is-hidden--desktop Part Time
-        .row
-            h4.four.columns.tab.is-hidden--mobile Part Time
-            h4.four.columns.tab.is-hidden--mobile School Age
-            h4.four.columns.tab.is-hidden--mobile.focus Full-Time
+    .container.is-hidden--desktop
+        h4.tab--large Part Time
         .row
             .card.mod--features.four.columns
                 .price             
@@ -171,7 +166,8 @@ include mixins.jade
                     p Snacks and Lunch Provided
                     hr
                     p Flexible Hours
-            h4.tab--large.is-hidden--desktop School Age
+        h4.tab--large School Age
+        .row
             .card.mod--features.four.columns
                 p.price #[strong $10#[sup 40]]/hr
                     p Drop-in Spots Available
@@ -179,7 +175,39 @@ include mixins.jade
                     p Close to Bus Routes
                     hr
                     p Education Activities
-            h4.tab--large.focus.is-hidden--desktop Full-Time
+        h4.tab--large.focus Full-Time
+        .row
+            .card.mod--features.focus.four.columns
+                p.price #[strong $920#[sup 00]]/month
+                    p Field Trips
+                    hr
+                    p Best value!
+                    hr
+                    p Subsidies Available
+                    a.button.button-primary(href='#') Subsidy Info
+    .container.is-hidden--mobile
+        h4.tab--large.is-hidden--desktop Part Time
+        .row
+            h4.four.columns.tab Part Time
+            h4.four.columns.tab School Age
+            h4.four.columns.tab Full-Time
+        .row
+            .card.mod--features.four.columns
+                .price             
+                    p #[strong $10#[sup 40]] /hr
+                    p #[strong $65#[sup 00]] /day
+                    p Drop-in Spots Available
+                    hr
+                    p Snacks and Lunch Provided
+                    hr
+                    p Flexible Hours
+            .card.mod--features.four.columns
+                p.price #[strong $10#[sup 40]]/hr
+                    p Drop-in Spots Available
+                    hr
+                    p Close to Bus Routes
+                    hr
+                    p Education Activities
             .card.mod--features.focus.four.columns
                 p.price #[strong $920#[sup 00]]/month
                     p Field Trips

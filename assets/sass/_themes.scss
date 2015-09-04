@@ -12,7 +12,12 @@ $compliment-color: #ffdf8c;
 $primary-grey-dark: #505F66;
 $primary-grey-light: #C3B2AE;
 
-
+body {
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSI5Ij4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjkiIGZpbGw9IiNmMmYyZjIiPjwvcmVjdD4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIiIGZpbGw9IiNlN2U3ZTciPjwvcmVjdD4KPHJlY3QgeT0iMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjMiIGZpbGw9IiNlY2VjZWMiPjwvcmVjdD4KPC9zdmc+");
+}
+.section {
+	background-color: white;
+}
 .header {
 	background: linear-gradient( to bottom, $primary-color, $primary-color 3.0rem, white 3.0rem);
 }
@@ -62,10 +67,10 @@ $primary-grey-light: #C3B2AE;
 .card--tabbed.focus {
 	background-color: $contrast-light;
 }
-.tab {
+.tab, .tab--large {
 	background-color: $primary-color;
 }
-.tab.focus {
+.tab.focus, .tab--large.focus {
 	background-color: $contrast-color;
 }
 .footer, hr .dark-footer {
