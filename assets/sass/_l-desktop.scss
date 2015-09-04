@@ -1,0 +1,49 @@
+.hero {
+	background: url(../img/landing-desktop.jpg) no-repeat center center;
+	background-size: cover;
+}
+hr {
+	margin: 1rem 0;
+}
+.island--hero {
+	width: 62%;
+	padding: 5% 0;
+	hr {
+		margin: 1.5 rem;
+	}
+	h5 {
+		margin-bottom: 0;
+	}
+}
+.media {
+	padding: 3rem 0;
+}
+.parallax .container {
+	transform: translateY(40%);
+}
+.activities {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.activity {
+	flex-basis: 400px;
+}
+.island {
+	height: 38%;
+	padding: 1rem 0;
+	.media {
+		padding: 1rem 0;
+	}
+}
+.card {
+	height: 40rem;
+}
+.pricing .card {
+	padding-top: 5rem;
+}
+.blog img {
+	max-width: 100%;
+}	

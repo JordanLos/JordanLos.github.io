@@ -1,5 +1,9 @@
 @import "compass";
 @import "pure-skeleton";
 @import "l-mobile";
+@media (min-width: 550px) {
+	@import "l-desktop"
+}
 @import "normalize";
+
 @import "themes";

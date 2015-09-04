@@ -1,4 +1,10 @@
 @import "global-variables";
+.overflow-x-hidden {
+	width: 100%;
+	overflow-x: hidden;
+
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -9,53 +15,83 @@ html {
 hr {
 	margin: 1;
 }
-
-body {
-	width: 100vw;
-	overflow-x: hidden;
+body, html {
+	overflow-x: hidden ;
 }
 /*=====Objects=====*/
 .section {
 	padding: 0;
 }
-.banner {
-	> p {	margin-bottom: 0;
-			padding-top: 0.6rem; }
+.header {
+	padding-top: 0.5rem;
+	img {
+		max-width: 48px;
+		padding: 0.5rem 0;
+	}
 }
-.banner--img {
-	padding: 1.2rem 0;
+.banner {
+	p, a {
+		display: inline-block;
+	}
+	p {
+		width: 60%;
+		margin-bottom: 0.5rem;
+	}
+	a {
+		width: 30%;
+	}
 }
 .hero {
 	background: url('../img/landing-mobile.jpg') no-repeat center center;
 	background-size: cover;
-	height: calc(100vh - 72px);
+	height: calc(100vh - 55px);
 }
 
 .island--hero {
 	position: absolute;
-	z-index: 1;
 	bottom: 12% ;
-	left: 7.5%;
-	padding: 1.5rem 0;
+	left: 0%;
+	padding: 7.5% 0;
+}
+@media (max-width: 550px) {
+	.island--hero {
+	width: 90%;
 	h5 {
-		margin-left: -1rem;
-		margin-bottom: 0rem;
-		width: 110%;
-		text-align: justify;
+		margin-bottom: 0;
 	}
 	hr {
-		margin: 1.0rem 0;
+		width: 90%;
+		margin: 1rem;
 	}
-	p {
-		margin-top: 1rem;
-		margin-bottom: 2rem;
 	}
 }
 #learn-more > img {
 	border-radius: 50%;
 }
+@media (max-width: 550px) {
+	.icon {
+		max-width: 48px;
+		margin-right: 2rem;
+	}
+	#learn-more {
+		width: 85%;
+		margin: 0 auto;
+	}
+	#learn-more > img {
+		width: 45%;
+		margin-right: 2rem;
+		vertical-align: middle;
+		position: relative;
+		top: 0;
+		transform: translateY(50%);
+	}
+	#learn-more-text {
+		width: 45%;
+		text-align: justify;
+	}
+}
 .parallax {
-	height: 420px;
+	margin-top: 6rem;
 	width: 100%;
 	background: url('../img/govt.jpg') no-repeat center center fixed;
 	background-size: auto 100%;
@@ -72,26 +108,50 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	> p {
-		margin: 0;
+	p {
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 550px) {
+	.card {
+		padding: 24px;
 	}
 }
 .card {
-}
-.card--tabbed {
 	border-radius: 0 5px 5px 5px;
 	border-radius: 5px;
 	background-color: #eee;
-	padding: 24px;
-	margin-bottom: 3rem;
+	margin-bottom: 6rem;
 }	
-.tab {
+.tab, .tab--large {
 	text-align: center;
 	border-radius: 5px 5px 0 0;
-	background-color: #888;
 	height: 4rem;
 	margin-bottom: 0;
-	padding-top: 0.5rem;
+	padding-top: 0rem;
+}
+@media (max-width: 550px) {
+
+	.tab, .tab--large {
+		margin-right: 5%;
+	}
+	.tab {
+		width: 25%;
+	}
+	.tab--large {
+		width: 100%;
+	}
+	.is-hidden--mobile {
+		display: none;
+	}
+	.pricing {
+		margin: 0 10%
+	}
+}
+@media (min-width: 550px) {
+	.is-hidden--desktop {
+		display: none;
+	}
 }
 .mod--img {
 	> img {
@@ -104,7 +164,11 @@ body {
 .mod--features {
 	text-align: center;
 	padding-top: 2.4rem;
+}
+@media (max-width: 550px) {
+	.mod--features {
 	position: relative;
+	}
 }
 .price {
 	strong {
@@ -115,14 +179,8 @@ body {
 		font-size: 1.2rem;
 	}
 }
-
-#landing  .island {
-	left: calc(-4% - 20px);
-	padding-left: calc(4% + 20px);
-	top: 55%;
-}
 .section--header {
-	margin: 3.6rem 0;
+	margin: 3.6rem 0 6rem 0;
 	> h4 {	margin-bottom: 0.6rem;
 			text-align: center; }
 	> img { margin: 0 auto 0.6rem auto; }
@@ -130,14 +188,19 @@ body {
 
 .activity {
 	position: relative;
-	> img { max-width: 100%; 
+	img { width: 100%; 
 			display: block; }
 	border-radius: 5px;
 }
-.activity .island {
+.island {
 	position: absolute;
-	height: 90px;
 	bottom: 0px;
+	padding: 2rem 0;
+}
+.activity .media--img {
+	max-width: 48px;
+	height: auto;
+	margin-right: 2rem;
 }
 .bottom > img {
 	height: 48px;
@@ -161,11 +224,20 @@ body {
 	margin-bottom: 2.4rem;
 }
 
-.cal :first-child {
-	text-align: right;
-}
 .cal {
-	padding: 1.2rem 0;
+	.date, .excerpt {
+		display: inline-block;
+		padding-top: 1rem;
+	}
+	.date {
+		width: 25%;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+	.excerpt {
+		width: 75%;
+		text-align: justify;
+	}
 }
 
 .contact {
@@ -185,12 +257,10 @@ body {
 	width: 72px;
 	border-radius: 50%;
 }	
-footer {
+#footer-hr {
+	margin: 10px 0;
 }
 .copyright {
 	margin-bottom: 0.5rem; 
 	font-size: 1.2rem;
-}
-hr {
-	margin: 0.25rem;
 }

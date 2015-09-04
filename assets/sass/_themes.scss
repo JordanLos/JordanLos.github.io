@@ -12,6 +12,7 @@ $compliment-color: #ffdf8c;
 $primary-grey-dark: #505F66;
 $primary-grey-light: #C3B2AE;
 
+
 .header {
 	background: linear-gradient( to bottom, $primary-color, $primary-color 3.0rem, white 3.0rem);
 }
@@ -22,29 +23,38 @@ $primary-grey-light: #C3B2AE;
 .button.button-primary:hover {
 	background-color: darken($contrast-color, 10%); 
 }
-
+/*
 .island--hero:before {
-	content: "";
-	background-color: rgba($primary-color, 0.5);
-	display: block;
-	height: 100%;
 	z-index: -1;
 	top: 0;
 	margin-left: -1500px;
 	padding-left: calc(1500px + 91.33333333%);
 	position: absolute;
+}*/
+@mixin island-background {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
 }
-
-.island.primary {
+.island--hero.primary:before {
+	@include island-background;
 	background-color: rgba($primary-color, 0.5);
 }
-.island.contrast {
+.island.primary:before {
+	@include island-background;
+	background-color: rgba($primary-color, 0.5);
+}
+.island.contrast:before {
+	@include island-background;
 	background-color: rgba($contrast-color, 0.5);
 }
-.island.compliment {
+.island.compliment:before {
+	@include island-background;
 	background-color: rgba($compliment-color, 0.5);
 }
-
 
 .card--tabbed {
 	background-color: $primary-light;
@@ -53,19 +63,19 @@ $primary-grey-light: #C3B2AE;
 	background-color: $contrast-light;
 }
 .tab {
-	background-color: $primary-dark;
+	background-color: $primary-color;
 }
 .tab.focus {
-	background-color: $contrast-dark;
+	background-color: $contrast-color;
 }
-.footer {
+.footer, hr .dark-footer {
 	background-color: $primary-grey-dark;
 }
 .contact {
-	background-color: $contrast-dark;
+	background-color: $contrast-color;
 }
 .circle {
-	background-color: $contrast-dark;
+	background-color: $contrast-color;
 }
 .copyright {
 	color: $light-text;
@@ -85,3 +95,4 @@ a {
 h1, h2, h3, h4, h5, h6 {
 	color: $dark-text;
 }
+
