@@ -1,43 +1,29 @@
 $( document ).ready(function() {
 
-	$('.clickTab').click(function() {
-		$( this ).addClass( "focus" );
-		$( '.clickTab' ).not( $( this ) ).removeClass( 'focus' );
-		
-		var self  = $( this ).index();
-		var	matchedTarget = $( '.clickTarget' ).eq(self);
+	$('.clickTab1').hover(function() {
 
-		matchedTarget.css("display", "block" );
-
-		if ($( this ).index() <= 2)
-			$( '#park, #beach, #zoo' ).not(matchedTarget).css("display", "none");
-		else 
-			$( '#mon, #tues, #wed' ).not(matchedTarget).css("display", "none");
-		
-
-	//need to refactor the HTML
-
+		$( '.clickTab1' ).removeClass( 'focus' );
+		$( this ).addClass( 'focus' );	
 
 	});
 
-	$('.clickTab').hover(function() {
-		$( this ).addClass( "focus" );
-		$( '.clickTab' ).not( $( this ) ).removeClass( 'focus' );
-		
-		var self  = $( this ).index();
-		var	matchedTarget = $( '.clickTarget' ).eq(self);
+	$('.clickTab2').hover(function() {
 
-		matchedTarget.css("display", "block" );
-
-		if ($( this ).index() <= 2)
-			$( '#park, #beach, #zoo' ).not(matchedTarget).css("display", "none");
-		else 
-			$( '#mon, #tues, #wed' ).not(matchedTarget).css("display", "none");
-		
-
-	//need to refactor the HTML
-
+		$( '.clickTab2' ).removeClass( 'focus' );
+		$( this ).addClass( 'focus' );	
 
 	});
 
+	$('.clickTab1').hover(function() {
+
+		$( '.clickTarget1' ).css( "display", "none" );
+		$( '.clickTarget1' ).eq( $( this ).index() ).css( "display", "block" );
+
+	});
+	$('.clickTab2').hover(function() {
+
+		$( '.clickTarget2' ).css( "display", "none" );
+		$( '.clickTarget2' ).eq( $( this ).index() ).css( "display", "block" );
+
+	});
 });

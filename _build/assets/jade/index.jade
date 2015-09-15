@@ -20,9 +20,9 @@ include mixins.jade
         h4 #[strong Why Foundations Dayhome?]
         img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
     .container
-        .row#learn-more
-            img.five.columns#learn-more-image(src='assets/img/provider.jpg')
-            .one-half.column.offset-by-one#learn-more-text
+        .row.media
+            img.five.columns.media-img-large.u-circle(src='assets/img/provider.jpg')
+            .one-half.column.offset-by-one
                 h4 My Philosophy
                 p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu.
         .row.media
@@ -40,7 +40,7 @@ include mixins.jade
             .nine.columns.offset-by-one
                 h3 Trust
                 p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
-    .parallax
+    .parallax.u-full-width
         .container
             .row
                 h3 Government Approved Dayhome
@@ -56,73 +56,69 @@ include mixins.jade
         .island.primary
             .container
                 .row.media
-                    img.media--img.two.columns(src='assets/img/art.png')
+                    img.icon.two.columns(src='assets/img/art.png')
                     p.eight.columns.offset-by-one "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
     .activity
         img(src='assets/img/play.jpg')
         .island.contrast
             .container
                 .row.media
-                    img.media--img.two.columns(src='assets/img/play.png')
+                    img.icon.two.columns(src='assets/img/play.png')
                     p.eight.columns.offset-by-one "Play is not a luxury. Play is a necessity." Kay Redfield Jamison
     .activity
         img(src='assets/img/carebare-dress.jpg')
         .island.compliment
             .container
                 .row.media
-                    img.media--img.two.columns(src='assets/img/dress-up.png')
+                    img.icon.two.columns(src='assets/img/dress-up.png')
                     p.eight.columns.offset-by-one "Pretend play allows the ability to integrate emotion with cognition" Psychology Today 
     .activity
         img(src='assets/img/learning.jpg')
         .island.primary
             .container
                 .row.media
-                    img.media--img.two.columns(src='assets/img/learning.png')
+                    img.icon.two.columns(src='assets/img/learning.png')
                     p.eight.columns.offset-by-one "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
     .activity
         img(src='assets/img/tree.jpg')
         .island.contrast
             .container
                 .row.media
-                    img.media--img.two.columns(src='assets/img/tree.png')
+                    img.icon.two.columns(src='assets/img/tree.png')
                     p.eight.columns.offset-by-one "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
     .activity
         img(src='assets/img/eat.jpg')
         .island.compliment
             .container
                 .row.media
-                    img.media--img.two.columns(src='assets/img/eat.png')
+                    img.icon.two.columns(src='assets/img/eat.png')
                     p.eight.columns.offset-by-one "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
 .section.example    
     .section--header
         h4 #[strong A Day at Foundations]
         img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
-    .container
-        .row
-            h4.two.columns.tab.focus.clickTab Park
-            h4.two.columns.tab.clickTab Beach
-            h4.two.columns.tab.clickTab Zoo
 
-            h4.two.columns.tab.focus.is-hidden--mobile.clickTab Mon
-            h4.two.columns.tab.is-hidden--mobile.clickTab Tue
-            h4.two.columns.tab.is-hidden--mobile.clickTab  Wed
-        .row
-            .card.six.columns
-                #park.clickTarget
-                    img.mod--img(src='assets/img/playground.jpg')
+    .card-container
+        .card-tabbed
+            h4.tab.focus.clickTab1 Park
+            h4.tab.clickTab1 Beach
+            h4.tab.clickTab1 Zoo
+            .card-content
+                #park.clickTarget1
+                    img.u-max-full-width(src='assets/img/playground.jpg')
                     p Lorem ipsum dolor sit amet, zril postulant ea per, ut quo rebum denique adversarium. Ne placerat efficiantur vix, eu integre perpetua intellegat nec, accumsan quaerendum vim ad. Mea an viris tibique liberavisse, in pro delenit persecuti. Ea qui saepe ceteros urbanitas. An ipsum reprimique vim, est te nostro adolescens adipiscing
-                #beach.clickTarget
-                    img.mod--img(src='assets/img/auburn.jpg')
+                #beach.clickTarget1
+                    img.u-max-full-width(src='assets/img/auburn.jpg')
                     p Libris mediocritatem at usu. Ad simul phaedrum nec. Te animal eligendi vim, virtute utroque contentiones mel ex. Eos doctus scripserit ei, hinc dicit ne vel. Scripta assentior eu sea.
-                #zoo.clickTarget
-                    img.mod--img(src='assets/img/zoo.jpg')
+                #zoo.clickTarget1
+                    img.u-max-full-width(src='assets/img/zoo.jpg')
                     p Probatus vituperata in ius. Dictas voluptaria instructior eum in, omnis vocent latine cum ex, te mei tritani mandamus. Vis clita doming reprimique id, vim ad dolorem ceteros referrentur. 
-
-            h4.two.columns.tab.focus.is-hidden--desktop Mon
-            h4.two.columns.tab.is-hidden--desktop Tue
-            h4.two.columns.tab.is-hidden--desktop  Wed
-            .card.six.columns
-                #mon.mod--text.clickTarget
+        .card-tabbed       
+            h4.tab.focus.clickTab2 Mon
+            h4.tab.clickTab2 Tue
+            h4.tab.clickTab2  Wed
+            .card-content
+                .mon.mod--text.clickTarget2
                     h3 Morning Snack
                     p Yogurt and Blueberries 
                     hr
@@ -131,7 +127,7 @@ include mixins.jade
                     hr
                     h3 Afternoon Snack
                     p Carrot sticks with dip
-                #tues.mod--text.clickTarget
+                .tues.mod--text.clickTarget2
                     h3 Morning Snack
                     p Cheese and apples
                     hr
@@ -140,7 +136,7 @@ include mixins.jade
                     hr
                     h3 Afternoon Snack
                     p Peanut butter raisin celery sticks
-                #wed.mod--text.clickTarget
+                .wed.mod--text.clickTarget2
                     h3 Morning Snack
                     p Fruit salad
                     hr
@@ -149,7 +145,7 @@ include mixins.jade
                     hr
                     h3 Afternoon Snack
                     p Veggies with humus dip
-
+        
 .section.pricing
     .section--header
         h4 #[strong Pricing]
@@ -223,7 +219,7 @@ include mixins.jade
     .container
         | {% for posts in site.posts %}
         .post.four.columns
-              img(src='{{ posts.img }}')
+              img.u-max-full-width(src='{{ posts.img }}')
               .cal
                   p.date  {{ posts.date | date: '#[strong %d] #[br] %B' }}
                   p.excerpt #[strong {{ posts.title }}]

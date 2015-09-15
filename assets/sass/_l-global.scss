@@ -1,0 +1,160 @@
+@import "global-variables";
+
+
+body, html {
+	overflow-x: hidden ;
+}
+/*=====OBJECTS=====*
+* Media - in INFO
+* Card - in EXAMPLE
+* Circle - in FOOTER
+*/
+
+/*=====UTILITIES=====*/
+.u-circle {
+	border-radius: 50%;
+}
+
+
+/*=====HEADER=====*/
+.header {
+	padding-top: 0.5rem;
+	img {
+		padding: 0.5rem 0;
+	}
+}
+
+
+/*===== LANDING =====*/
+.island--hero {
+	position: absolute;
+	bottom: 12% ;
+	left: 0%;
+	padding: 7.5% 0;
+}
+.parallax {
+	background: url('../img/govt.jpg') no-repeat center center fixed;
+	height: 500px;
+	> .container {
+		top: 20%;
+	}
+}
+//media mixin to apply to desktop activities 
+//without adding a class to the HTML
+@mixin media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.media {
+	@include media
+}
+.media-img-large {
+	display: inline-block;
+	width: 45%;
+	margin-right: 2rem;
+}
+
+
+/*=====ACTIVITIES=====*/
+.activity {
+	position: relative;
+	img { 
+		width: 100%; 
+		display: block; 
+	}
+}
+.island {
+	position: absolute;
+	bottom: 0px;
+	padding: 2rem 0;
+}
+
+
+/*=====EXAMPLE=====*/
+
+.card, .card-content {
+	margin-bottom: 6rem;
+	padding: 3rem;
+}	
+.card-content {
+}
+.card {
+	border-radius: 0 0 5px 5px;
+}
+.card-content {
+	border-radius: 0 5px 5px 5px;
+}
+.tab, .tab--large {
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 0;
+}
+#beach,
+#zoo,
+.tues,
+.wed {
+	display: none;
+}
+
+
+/*=====PRICING=====*/
+.mod--features {
+	padding-top: 2.4rem;
+}
+
+.section {
+	max-width: 960px;
+	overflow-x: none;
+	margin: 0 auto;
+}
+.section--header {
+	margin: 0 auto;
+	padding: 4rem 0 6rem 0;
+	> img { 
+		margin: 0 auto 0.6rem auto; 
+	}
+	max-width: 85%;
+}
+
+
+/*======POST======*/
+
+.post {
+	margin-bottom: 2.4rem;
+}
+.date, .excerpt {
+	display: inline-block;
+	padding-top: 1rem;
+}
+.date {
+	width: 25%;
+	margin-bottom: 1.5rem;
+}
+.excerpt {
+	width: 75%;
+}
+
+
+/*=====FOOTER=====*/
+.contact {
+	padding-top: 3.6rem;
+	padding-bottom: 3.6rem;
+	margin-bottom: 5rem;
+	position: relative;
+}
+.circle {
+	@extend .media;
+	img { 
+		max-height: 48px;
+	}
+	position: absolute;
+	top: -3.6rem;
+	left: calc(50% - 36px);
+	height: 72px;
+	width: 72px;
+	border-radius: 50%;
+}	
+.copyright {
+	margin-bottom: 0.5rem; 
+}

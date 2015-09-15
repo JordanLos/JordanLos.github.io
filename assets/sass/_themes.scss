@@ -11,9 +11,10 @@ $contrast-dark: #FF3904;
 $compliment-color: #ffdf8c; 
 $primary-grey-dark: #505F66;
 $primary-grey-light: #C3B2AE;
-
-body {
-	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSI5Ij4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjkiIGZpbGw9IiNmMmYyZjIiPjwvcmVjdD4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIiIGZpbGw9IiNlN2U3ZTciPjwvcmVjdD4KPHJlY3QgeT0iMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjMiIGZpbGw9IiNlY2VjZWMiPjwvcmVjdD4KPC9zdmc+");
+@media (min-width: 550px) {
+	body {
+		background-image: url("../../assets/img/paisley.png");
+	}
 }
 .section {
 	background-color: white;
@@ -22,21 +23,13 @@ body {
 	background: linear-gradient( to bottom, $primary-color, $primary-color 3.0rem, white 3.0rem);
 }
 .button.button-primary {
-	background-color: $contrast-color;
 	border-color: $contrast-color;
 }
 .button.button-primary:hover {
 	background-color: darken($contrast-color, 10%); 
 }
-/*
-.island--hero:before {
-	z-index: -1;
-	top: 0;
-	margin-left: -1500px;
-	padding-left: calc(1500px + 91.33333333%);
-	position: absolute;
-}*/
-@mixin island-background {
+
+%island-background {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -45,53 +38,57 @@ body {
 	width: 100%;
 }
 .island--hero.primary:before {
-	@include island-background;
+	@extend %island-background;
 	background-color: rgba($primary-color, 0.5);
 }
 .island.primary:before {
-	@include island-background;
+	@extend %island-background;
 	background-color: rgba($primary-color, 0.5);
 }
 .island.contrast:before {
-	@include island-background;
+	@extend %island-background;
 	background-color: rgba($contrast-color, 0.5);
 }
 .island.compliment:before {
-	@include island-background;
+	@extend %island-background;
 	background-color: rgba($compliment-color, 0.5);
 }
-
-.card--tabbed {
-	background-color: $primary-light;
-}
-.card--tabbed.focus {
-	background-color: $contrast-light;
-}
-.tab, .tab--large {
+.card, .card-content {
+	background-color: #eee;
+} 
+.tab, 
+.tab--large {
 	background-color: $primary-color;
 }
-.tab.focus, .tab--large.focus {
+.tab.focus, 
+.tab--large.focus, 
+.contact, .circle, 
+.button.button-primary {
 	background-color: $contrast-color;
 }
-.footer, hr .dark-footer {
+.footer, 
+.footer hr,
+.copy {
 	background-color: $primary-grey-dark;
 }
-.contact {
-	background-color: $contrast-color;
-}
-.circle {
-	background-color: $contrast-color;
-}
+
+.header, 
+.hero, 
+.island--hero h5, 
+a, 
+.button, 
+.parallax, 
+.parallax h3, 
+.activity, 
+.footer, 
+.footer h2,
 .copyright {
 	color: $light-text;
 }
-
-
-
-.header, .hero, .island--hero h5, a, .button, .parallax, .parallax h3, .activity, .footer, .footer h2 {
-	color: $light-text;
-}
-.info, .info .example, .pricing, .blog  {
+.info, 
+.info .example, 
+.pricing, 
+.blog  {
 	color: $dark-text;
 }
 a {

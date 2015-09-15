@@ -1,9 +1,13 @@
 @import "compass";
+@import "normalize";
 @import "pure-skeleton";
-@import "l-mobile";
+
+@import "typography";
+@import "l-global";
+@media (max-width: 550px) {
+	@import "l-mobile" 
+}
 @media (min-width: 550px) {
 	@import "l-desktop"
 }
-@import "normalize";
-
 @import "themes";

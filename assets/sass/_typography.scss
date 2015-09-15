@@ -1,0 +1,28 @@
+/*=====ELEMENT FIXES=====*/
+hr {
+	margin: 1rem 0;
+}
+h4,
+h5 {
+	margin: 0.5rem 0;
+}
+/*=====ALIGNMENT=====*/
+.card, .tab, .tab--large, .section--header, .date, .contact {
+	text-align: center;
+}
+.post, .excerpt {
+	text-align: justify;
+}
+/*=====SIZING=====*/
+.price {
+	strong {
+		font-size: 3.6rem;
+	}
+	sup {
+		vertical-align: 2rem;
+		font-size: 1.2rem;
+	}
+}
+.copyright {
+	font-size: 1.2rem;
+}

@@ -1,46 +1,31 @@
 @import "global-variables";
-.overflow-x-hidden {
-	width: 100%;
-	overflow-x: hidden;
-
+/*===OBJECTS===*/
+.icon {
+	max-width: 48px;
+	margin-right: 2rem;
 }
 
-html {
-	box-sizing: border-box;
+
+/*=====UTILITIES=====*/
+.is-hidden--mobile {
+	display: none;
 }
-*, *:before, *:after {
-	box-sizing: inherit;
+
+
+/*=====BANNER=====*/
+.banner-left {
+	width: 60%;
+	margin-bottom: 0.5rem;
 }
-/*TODO*/
-hr {
-	margin: 1;
+.banner-right {
+	width: 30%;
 }
-body, html {
-	overflow-x: hidden ;
+.banner-left, 
+.banner-right {
+	display: inline-block;
 }
-/*=====Objects=====*/
-.section {
-	padding: 0;
-}
-.header {
-	padding-top: 0.5rem;
-	img {
-		max-width: 48px;
-		padding: 0.5rem 0;
-	}
-}
-.banner {
-	p, a {
-		display: inline-block;
-	}
-	p {
-		width: 60%;
-		margin-bottom: 0.5rem;
-	}
-	a {
-		width: 30%;
-	}
-}
+
+/*===LANDING===*/
 .hero {
 	background: url('../img/landing-mobile.jpg') no-repeat center center;
 	background-size: cover;
@@ -48,226 +33,25 @@ body, html {
 }
 
 .island--hero {
-	position: absolute;
-	bottom: 12% ;
-	left: 0%;
-	padding: 7.5% 0;
+	width: 36rem;
 }
-@media (max-width: 550px) {
-	.island--hero {
-	width: 90%;
-	h5 {
-		margin-bottom: 0;
-	}
-	hr {
-		width: 90%;
-		margin: 1rem;
-	}
-	}
-}
-#learn-more > img {
-	border-radius: 50%;
-}
-@media (max-width: 550px) {
-	.icon {
-		max-width: 48px;
-		margin-right: 2rem;
-	}
-	#learn-more {
-		width: 85%;
-		margin: 0 auto;
-	}
-	#learn-more > img {
-		width: 45%;
-		margin-right: 2rem;
-		vertical-align: middle;
-	}
-	#learn-more-text {
-		width: 45%;
-		text-align: justify;
-	}
-}
-@media (max-width: 550px) {
-	.parallax {
-		margin-top: 6rem;
-		background: url('../img/govt.jpg') no-repeat center center fixed;
-		background-size: auto 100%;
-		height: 500px;
-		width: 100%;
-		> .container {
-			top: 20%;
-		}
-	}
-}
-.wrapper {
-	position: relative;
-}
-.media {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	p {
-		margin-bottom: 0;
-	}
-}
-@media (max-width: 550px) {
-	.card {
-		padding: 24px;
-	}
-}
-.card {
-	border-radius: 0 5px 5px 5px;
-	border-radius: 5px;
-	background-color: #eee;
-	margin-bottom: 6rem;
-}	
+
+
+/*===ACTIVITIES===*/
+
 .tab, .tab--large {
-	text-align: center;
-	border-radius: 5px 5px 0 0;
-	height: 4rem;
-	margin-bottom: 0;
-	padding-top: 0rem;
+	margin-right: 5%;
 }
-@media (max-width: 550px) {
-
-	.tab, .tab--large {
-		margin-right: 5%;
-	}
-	.tab {
-		width: 25%;
-	}
-	.tab--large {
-		width: 100%;
-	}
-	.is-hidden--mobile {
-		display: none;
-	}
-	.pricing {
-		margin: 0 10%
-	}
+.tab {
+	width: 25%;
 }
-@media (min-width: 550px) {
-	.is-hidden--desktop {
-		display: none;
-	}
-}
-.mod--img {
-		max-width: 100%;
-}
-.mod--text {
-	text-align: center;
-}
-.mod--features {
-	text-align: center;
-	padding-top: 2.4rem;
-}
-@media (max-width: 550px) {
-	.mod--features {
-	position: relative;
-	}
-}
-.price {
-	strong {
-		font-size: 3.6rem;
-	}
-	sup {
-		vertical-align: 2rem;
-		font-size: 1.2rem;
-	}
-}
-.section {
-	max-width: 960px;
-	overflow-x: none;
-	margin: 0 auto;
-}
-.section--header {
-	margin: 0 auto;
-	padding: 4rem 0 6rem 0;
-	> h4 {	margin-bottom: 0.6rem;
-			text-align: center; }
-	> img { margin: 0 auto 0.6rem auto; }
-	max-width: 85%;
-	background-color: white;
+.tab--large {
+	width: 100%;
 }
 
-.activity {
-	position: relative;
-	img { width: 100%; 
-			display: block; }
-	border-radius: 5px;
+/*===EXAMPLE===*/	
+.section.example {
+	padding: 0 7.5%;
 }
-.island {
-	position: absolute;
-	bottom: 0px;
-	padding: 2rem 0;
-}
-.activity .media--img {
-	max-width: 48px;
-	height: auto;
-	margin-right: 2rem;
-}
-.bottom > img {
-	height: 48px;
-	width: auto;
-}
-#park {
-	display: none;
-}
-#beach {
-	display: none;
-}
-#tues {
-	display: none;
-}
-#wed {
-	display: none;
-}
-/*======POST======*/
-.post {
-	text-align: justify;
-	margin-bottom: 2.4rem;
-	img {
-		max-width: 100%;
-	}
-}
+/*===FOOTER===*/
 
-.cal {
-	.date, .excerpt {
-		display: inline-block;
-		padding-top: 1rem;
-	}
-	.date {
-		width: 25%;
-		text-align: center;
-		margin-bottom: 1.5rem;
-	}
-	.excerpt {
-		width: 75%;
-		text-align: justify;
-	}
-}
-
-.contact {
-	text-align: center;
-	padding-top: 3.6rem;
-	padding-bottom: 3.6rem;
-	margin-bottom: 5rem;
-	position: relative;
-}
-.circle {
-	@extend .media;
-	img{ max-height: 48px;}
-	position: absolute;
-	top: -3.6rem;
-	left: calc(50% - 36px);
-	height: 72px;
-	width: 72px;
-	border-radius: 50%;
-}	
-#footer-hr {
-	margin: 10px 0;
-}
-.copyright {
-	margin-bottom: 0.5rem; 
-	font-size: 1.2rem;
-}
