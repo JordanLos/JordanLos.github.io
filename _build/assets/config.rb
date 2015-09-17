@@ -6,7 +6,7 @@ http_path = "/"
 css_dir = "style"
 sass_dir = "sass"
 images_dir = "img"
-javascripts_dir = "javascripts"
+javascripts_dir = "js"
 fonts_dir = "type"
 
 # You can select your preferred output style here (can be overridden via the command line):
@@ -24,3 +24,4 @@ fonts_dir = "type"
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+

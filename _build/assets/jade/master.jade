@@ -1,46 +1,10 @@
-include ./mixins.jade
-
 doctype html
 html
     head
         link(rel='stylesheet' href='assets/style/main.css')
         script(type='text/javascript' src='assets/js/jquery-2.1.4.min.js')
         script(type='text/javascript' src='assets/js/script.js')
-      meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
 
     body
-      .section.header
-            .container
-                .row.banner
-                    p.eight.columns.banner-left Foundations Dayhome
-                    a.four.columns.banner-right(href='tel:5874364584') 587.436.4584
-                .row
-                    img.banner--img.two.columns.icon(src='assets/img/baby.png')
-
-
         | {{ content}}
-
-
-    .section.footer
-            .container
-                .contact.six.columns 
-                    .row.circle
-                        a(href='tel:5874364584')
-                            img(src='assets/img/phone.png')
-                    .row 
-                        h2 Contact
-                    .row
-                        a(href='tel:5874364584') 587.436.458
-                .contact.six.columns
-                    .row.circle
-                        a(href='mailto:meaghanlos@gmail.com')
-                            img(src='assets/img/mail.svg')
-                    .row
-                        h2 Email
-                        a(href='mailto:meaghanlos@gmail.com') meaghanlos@gmail.com
-        .container.copy
-                .row
-                    p.copyright icons by Google;  www.flaticon.com is liscensed by CC BY 3.0
-                .row
-                    p.copyright &copy Jordan Los 2015
-

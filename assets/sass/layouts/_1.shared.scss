@@ -1,0 +1,35 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.landing {
+	height: 100vh;
+	x-overflow: hidden;
+	background: url("../img/personal.jpg") no-repeat center top;
+	background-size: cover;
+	position: relative;
+}
+#landing-text {
+	color: white;
+	text-align: center;
+	position: absolute;
+	bottom: 32%;
+	left: 0;
+	width: 100%;
+}
+.contact {
+	color: white;
+	float: right;
+	text-align: center;
+	position: absolute;
+	bottom: 2.5%;
+	width: 100%;
+	a {
+		color: white;
+	}
+	p {
+		margin: 0;
+	}
+}
+
