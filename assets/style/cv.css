@@ -2,6 +2,11 @@
 .panel.landing
   height: auto
 
+@font-face {
+  font-family: "Forum Regular";
+  src: url("../fonts/Forum-Regular.ttf")
+}
+
 body
   //font-family: "trajan-sans-pro", Arial, sans-serif;
   //font-family: "minerva-modern";
