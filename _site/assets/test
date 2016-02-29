@@ -1,0 +1,5 @@
+{% for posts in site.post limit: 2 %}
+	{{ posts.date | date: '%d %B' }}
+  	{{ posts.title }}
+    {{ posts.excerpt }}
+{% endfor %}

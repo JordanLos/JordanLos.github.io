@@ -1,0 +1,111 @@
+// Undoes panel height from main.css
+.panel.landing
+  height: auto
+
+body
+  //font-family: "trajan-sans-pro", Arial, sans-serif;
+  //font-family: "minerva-modern";
+  font-family: "Forum"
+  font-style: normal
+  font-size: 1em
+  line-height: 1.25em
+  max-width: 760px
+  padding: 1.25em
+  margin: 0 auto
+
+h1
+  font-family: inherit
+  font-weight: 400
+  font-style: inherit
+  font-size: 4.1875em
+  line-height: 1.1940298507462686em
+  margin-top: 0.29850746268656714em
+  margin-bottom: 0em
+
+h2
+  font-family: inherit
+  font-weight: 600
+  font-style: inherit
+  font-size: 2.625em
+  line-height: 1.4285714285714284em
+  margin-top: 0.47619047619047616em
+  margin-bottom: 0.47619047619047616em
+
+h3
+  font-family: inherit
+  font-weight: 600
+  font-style: inherit
+  font-size: 1.625em
+  line-height: 1.5384615384615385em
+  margin-top: 0em
+  margin-bottom: 0em
+
+h4
+  font-family: inherit
+  font-weight: 600
+  font-style: inherit
+  font-size: 1em
+  line-height: 1.25em
+  margin-top: 0em
+  margin-bottom: 0em
+
+h5
+  font-family: inherit
+  font-weight: 400
+  font-style: italic
+  font-size: 1em
+  line-height: 1.25em
+  margin-top: 1.25em
+  margin-bottom: 0em
+
+p, ul, ol, pre, table, blockquote
+  margin-top: 0em
+  margin-bottom: 1.25em
+
+ul ul, ol ol, ul ol, ol ul
+  margin-top: 0
+  margin-bottom: 0
+
+hr
+  border: 1px solid
+  margin: -1px 0
+
+b, strong, em, small, code
+  line-height: 1
+
+sup
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+a
+  color: #268ED9
+
+.gridlover-grid
+  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, 0.3) 1px, transparent 1px)
+  background-position: left -1px
+  background-repeat: repeat
+  background-size: 20px 20px
+
+.gridlover-grid body
+  box-shadow: 1px 0px 0px hsla(200, 100%, 50%, 0.3), -1px 0px 0px hsla(200, 100%, 50%, 0.3)
+
+/** GRIDLOVER CHANGES *
+p
+  margin-bottom: 0
+
+h3
+  margin-top: 19px
+
+/** REST OF THE PAGE *
+.indented
+  padding-left: 1.5em
+
+p
+  font-style: normal
+  font-weight: 400
+  font-size: 14px

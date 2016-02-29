@@ -1,0 +1,276 @@
+include ./mixins.jade
+
+doctype html
+html
+    head
+        link(rel='stylesheet' href='assets/style/main.css')
+        script(type='text/javascript' src='assets/js/jquery-2.1.4.min.js')
+        script(type='text/javascript' src='assets/js/script.js')
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    body
+      .section.header
+            .container
+                .row.banner
+                    p.eight.columns Foundations Dayhome
+                    a.four.columns(href='tel:5874364584') 587.436.4584
+                .row
+                    img.banner--img.two.columns(src='assets/img/baby.png')
+
+
+        | {{ content}}
+
+
+      .section.footer
+            .container
+                .contact.six.columns 
+                    .row.circle
+                        a(href='tel:5874364584')
+                            img(src='assets/img/phone.png')
+                    .row 
+                        h2 Contact
+                    .row
+                        a(href='tel:5874364584') 587.436.458
+                .contact.six.columns
+                    .row.circle
+                        a(href='mailto:meaghanlos@gmail.com')
+                            img(src='assets/img/mail.svg')
+                    .row
+                        h2 Email
+                        a(href='mailto:meaghanlos@gmail.com') meaghanlos@gmail.com
+                .row
+                    p.copyright icons by Google;  www.flaticon.com is liscensed by CC BY 3.0
+                .row
+                    p.copyright &copy Jordan Los 2015
+
+| ---
+| layout: master
+| ---
+= '\n'
+include mixins.jade
+
+.section.hero
+    .island--hero.primary
+        .container
+            .row
+                h5.eleven.columns #[strong CHILDCARE BEGINS WITH TRUST]
+            .row
+                hr.nine.columns
+            .row
+                p.ten.columns Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id.
+            .row
+                a.button.button-primary(href='#learn-more') Learn More
+.section.info
+    .section--header
+        h4 #[strong Why Foundations Dayhome?]
+        img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
+    .container
+        .row#learn-more
+            img.five.columns#learn-more-image(src='assets/img/provider.jpg')
+            .one-half.column.offset-by-one#learn-more-text
+                h4 My Philosophy
+                p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu.
+        .row.media
+            img.two.columns.icon(src='assets/img/graduation30.svg')
+            .nine.columns.offset-by-one
+                h3 Competency
+                p Lorem ipsum dolor sit amet, nibh liber ex has, erat consequat vel id. Epicurei suavitate accommodare no est.
+        .row.media
+            img.two.columns.icon(src='assets/img/kindergarden.svg')
+            .nine.columns.offset-by-one
+                h3 Experience
+                p Epicurei suavitate accommodare no est, feugait denique ne sed. Ius ei principes torquatos disputationi.
+        .row.media
+            img.two.columns.icon(src='assets/img/agreement2.svg')
+            .nine.columns.offset-by-one
+                h3 Trust
+                p Lorem feugait denique ne sed. Ius ei principes torquatos disputationi, cum labores sententiae cu
+    .parallax
+        .container
+            .row
+                h3 Government Approved Dayhome
+                p principes aliquando usu, doctus ancillae appellantur duo ei. Ut populo elaboraret qui. Sed eu vulputate scribentur. At duo melius denique, ex bonorum tincidunt per, no facilis perpetua nec. Duo integre lucilius ad. Te mea eirmod mnesarchum, quod vidit nostrum ex vim. Te usu eros scripta indoctum.
+                a.button.button-primary Learn 
+
+.section.activities
+    .section--header
+        h4 #[strong Growth and Development]
+        img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
+    .activity
+        img(src='assets/img/art.jpg')
+        .island.primary
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/art.png')
+                    p.eight.columns.offset-by-one "Every child is an artist. The problem is how to remain an atrist once he grows up." Pablo Picasso	
+    .activity
+        img(src='assets/img/play.jpg')
+        .island.contrast
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/play.png')
+                    p.eight.columns.offset-by-one "Play is not a luxury. Play is a necessity." Kay Redfield Jamison
+    .activity
+        img(src='assets/img/carebare-dress.jpg')
+        .island.compliment
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/dress-up.png')
+                    p.eight.columns.offset-by-one "Pretend play allows the ability to integrate emotion with cognition" Psychology Today 
+    .activity
+        img(src='assets/img/learning.jpg')
+        .island.primary
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/learning.png')
+                    p.eight.columns.offset-by-one "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
+    .activity
+        img(src='assets/img/tree.jpg')
+        .island.contrast
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/tree.png')
+                    p.eight.columns.offset-by-one "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
+    .activity
+        img(src='assets/img/eat.jpg')
+        .island.compliment
+            .container
+                .row.media
+                    img.media--img.two.columns(src='assets/img/eat.png')
+                    p.eight.columns.offset-by-one "Teaching is the art of awakening the natural curiousity of young minds" Anatole France
+.section.example    
+    .section--header
+        h4 #[strong A Day at Foundations]
+        img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
+    .container
+        .row
+            h4.two.columns.tab.focus.clickTab Park
+            h4.two.columns.tab.clickTab Beach
+            h4.two.columns.tab.clickTab Zoo
+
+            h4.two.columns.tab.focus.is-hidden--mobile.clickTab Mon
+            h4.two.columns.tab.is-hidden--mobile.clickTab Tue
+            h4.two.columns.tab.is-hidden--mobile.clickTab  Wed
+        .row
+            .card.six.columns
+                #park.clickTarget
+                    img.mod--img(src='assets/img/playground.jpg')
+                    p Lorem ipsum dolor sit amet, zril postulant ea per, ut quo rebum denique adversarium. Ne placerat efficiantur vix, eu integre perpetua intellegat nec, accumsan quaerendum vim ad. Mea an viris tibique liberavisse, in pro delenit persecuti. Ea qui saepe ceteros urbanitas. An ipsum reprimique vim, est te nostro adolescens adipiscing
+                #beach.clickTarget
+                    img.mod--img(src='assets/img/auburn.jpg')
+                    p Libris mediocritatem at usu. Ad simul phaedrum nec. Te animal eligendi vim, virtute utroque contentiones mel ex. Eos doctus scripserit ei, hinc dicit ne vel. Scripta assentior eu sea.
+                #zoo.clickTarget
+                    img.mod--img(src='assets/img/zoo.jpg')
+                    p Probatus vituperata in ius. Dictas voluptaria instructior eum in, omnis vocent latine cum ex, te mei tritani mandamus. Vis clita doming reprimique id, vim ad dolorem ceteros referrentur. 
+
+            h4.two.columns.tab.focus.is-hidden--desktop Mon
+            h4.two.columns.tab.is-hidden--desktop Tue
+            h4.two.columns.tab.is-hidden--desktop  Wed
+            .card.six.columns
+                #mon.mod--text.clickTarget
+                    h3 Morning Snack
+                    p Yogurt and Blueberries 
+                    hr
+                    h3 Lunch
+                    p Home soup and sandwiches
+                    hr
+                    h3 Afternoon Snack
+                    p Carrot sticks with dip
+                #tues.mod--text.clickTarget
+                    h3 Morning Snack
+                    p Cheese and apples
+                    hr
+                    h3 Lunch
+                    p Shepherds pie
+                    hr
+                    h3 Afternoon Snack
+                    p Peanut butter raisin celery sticks
+                #wed.mod--text.clickTarget
+                    h3 Morning Snack
+                    p Fruit salad
+                    hr
+                    h3 Lunch
+                    p Homemade Pizza
+                    hr
+                    h3 Afternoon Snack
+                    p Veggies with humus dip
+
+.section.pricing
+    .section--header
+        h4 #[strong Pricing]
+        img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
+    .container.is-hidden--desktop
+        h4.tab--large Part Time
+        .row
+            .card.mod--features.four.columns
+                .price             
+                    p #[strong $10#[sup 40]] /hr
+                    p #[strong $65#[sup 00]] /day
+                    p Drop-in Spots Available
+                    hr
+                    p Snacks and Lunch Provided
+                    hr
+                    p Flexible Hours
+        h4.tab--large School Age
+        .row
+            .card.mod--features.four.columns
+                p.price #[strong $10#[sup 40]]/hr
+                    p Drop-in Spots Available
+                    hr
+                    p Close to Bus Routes
+                    hr
+                    p Education Activities
+        h4.tab--large.focus Full-Time
+        .row
+            .card.mod--features.focus.four.columns
+                p.price #[strong $920#[sup 00]]/month
+                    p Field Trips
+                    hr
+                    p Best value!
+                    hr
+                    p Subsidies Available
+                    a.button.button-primary(href='#') Subsidy Info
+    .container.is-hidden--mobile
+        h4.tab--large.is-hidden--desktop Part Time
+        .row
+            h4.four.columns.tab Part Time
+            h4.four.columns.tab School Age
+            h4.four.columns.tab Full-Time
+        .row
+            .card.mod--features.four.columns
+                .price             
+                    p #[strong $10#[sup 40]] /hr
+                    p #[strong $65#[sup 00]] /day
+                    p Drop-in Spots Available
+                    hr
+                    p Snacks and Lunch Provided
+                    hr
+                    p Flexible Hours
+            .card.mod--features.four.columns
+                p.price #[strong $10#[sup 40]]/hr
+                    p Drop-in Spots Available
+                    hr
+                    p Close to Bus Routes
+                    hr
+                    p Education Activities
+            .card.mod--features.focus.four.columns
+                p.price #[strong $920#[sup 00]]/month
+                    p Field Trips
+                    hr
+                    p Best value!
+                    hr
+                    p Subsidies Available
+                    a.button.button-primary(href='#') Subsidy Info
+.section.blog
+    .section--header
+          h4 #[strong Foundations Blog]
+          img.ten.columns.offset-by-one(src='assets/img/baby-header.png')
+    .container
+        | {% for posts in site.posts %}
+        .post.four.columns
+              img(src='{{ posts.img }}')
+              .cal
+                  p.date  {{ posts.date | date: '#[strong %d] #[br] %B' }}
+                  p.excerpt #[strong {{ posts.title }}]
+              | {{ posts.excerpt }}
+        | {% endfor %}
