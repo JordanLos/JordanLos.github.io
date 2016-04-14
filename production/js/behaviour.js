@@ -100,7 +100,7 @@ $( document ).ready(function() {
 		scrollingSpeed: 1000,
 		autoScrolling: true,
 		
-		fixedElements: '.action-button_floating, .page-up, .page-down',
+		fixedElements: '.action-button_floating, .page-up, .page-down, .media',
 		
 		'onLeave': function(index, nextIndex, direction) {
 			var carouselTl = new TimelineLite(),

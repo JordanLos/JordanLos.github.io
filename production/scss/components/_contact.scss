@@ -1,12 +1,25 @@
-#section4 {
-	z-index: 1;
+.contact {
+	position: fixed;
+	bottom: 0;
+	z-index: 2;
+	@include span-columns(8);
+	@include shift(2);
+	bottom: 10%;
+	margin-bottom: 1em;
+	color: $brand-color;
+
 }
-
-
+#section4 {
+	justify-content: flex-start;
+	> p {
+		margin-top: 1em;
+	}
+}
 .media {
 	text-decoration: none;
 	color: inherit;
 	@include flex-row-center-center;
+	justify-content: flex-start;
 	width: 100%;
 }
 
@@ -14,7 +27,8 @@
 	display: inline-block;
 	height: 2.5em;
 	width: 2.5em;
-	margin-right: 2em;
+	margin-right: 1em;
+	margin-top: 0.5em;
 }
 
 @media(min-width: 450px) and (min-height: 1080px) {

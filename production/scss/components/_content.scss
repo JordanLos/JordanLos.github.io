@@ -10,7 +10,7 @@
 	color: darken($brand-color, 5%);
 	height: 56%;
 	padding: 5%;
-	position: fixed;
+	position: absolute;
 	top: 44%;
 	// top: 34%; the height of header + .page* + 1% margin and will be set by JS
 	overflow-y: hidden;
