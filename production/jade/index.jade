@@ -28,6 +28,15 @@ html(lang="en")
 		script(src="https://use.typekit.net/sjx5bzx.js")
 		script try{Typekit.load({ async: true });}catch(e){}
 		script(src='js/main.min.js')
+		script.
+			// detect if mobile safari to fix url problem at bottom;
+			var userAgent = window.navigator.userAgent;
+			if (userAgent.match(/iPhone/i) || userAgent.match(/iPad/i)) {
+				$('.header').css("margin-top","-3%");
+				$('.content').css("transform","translateY(5%)");
+				$('.content').css("height","53%");
+
+			};
 		meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, shrink-to-fit=no")
 		meta(name='description' content='Norstar recycles contaminated soil.  Remediate contaminated clay and dispose of impacted soil while protecting the environment and avoiding costly landfills.')
 	body
