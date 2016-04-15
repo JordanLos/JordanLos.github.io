@@ -1,0 +1,23 @@
+.media {
+	@include span-columns(10);
+	text-decoration: none;
+	color: inherit;
+	@include flex-row-center-center;
+	justify-content: flex-start;
+}
+
+.media-img {
+	display: inline-block;
+	height: 2.5em;
+	width: 2.5em;
+	margin-right: 2em;
+	margin-left: -1em;
+}
+
+@media(min-width: 450px) and (min-height: 1080px) {
+	.media-img {
+		height: 4em;
+		width: 4em;
+	}
+}
+
