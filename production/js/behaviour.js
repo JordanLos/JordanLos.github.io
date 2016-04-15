@@ -7,10 +7,27 @@
 ****************/
 
 $( document ).ready(function() {	
-	var height = window.innerHeight;
-	console.log( $( 'body' ).height());
-	$( 'body' ).css( "height", height);
-	console.log( $( 'body' ).height());
+
+	(function($, window, undefined) {
+    // First check to see if the platform is an iPhone or iPod
+    if(/iP/.test(navigator.platform) && /Safari/i.test(navigator.userAgent)){
+        var mobileSafari = "Safari";
+    }
+
+    // Set the div height
+    function setHeight($rightSidebar) {
+        var new_height = $(this).height();
+        // if mobileSafari add +60px
+        if (typeof mobileSafari === 'string'){ new_height += 60 };
+        $rightSidebar.css('height', new_height);
+    }
+
+    setHeight($('body'));
+    $(window).resize(function() {
+        setHeight.call(this, $('body'));
+    });
+
+	}(jQuery, this));
 /******* COMMON ATTRIBUTES *******/
 	var a1 = { autoAlpha:1 },
 		a0 = { autoAlpha:0 },
