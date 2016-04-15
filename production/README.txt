@@ -72,5 +72,7 @@ novel design that appeared late in the project. It is the most significant
 drawback of the website.
 arose latebbbb
 
+Smaller issues related to accomplishing the goals above can be found in the 
+comments.
 
-
+- Jordan
