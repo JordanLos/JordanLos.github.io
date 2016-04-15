@@ -1,10 +1,18 @@
-/* README: 
+/*
 *
-* tl are used internally for all functions 
 * Section: full window height section of document used by fullpage.js
 * Carousel: Component that, upon scrolling, brings one element to replace another in the same position
 *
 ****************/
+
+/******* ONLOAD FUNCTIONS *******/
+	window.onload = function() {
+		TweenMax.to('.page-down', 0.35, {
+			delay: 0.6,
+			bottom:'0%', 
+			ease: Circ.easeOut
+		});
+	};
 $( document ).ready(function() {	
 	// Mobile Safari's bottom nav bar interferes with the placement of the 
 	// elements causing them to overlap.
@@ -23,17 +31,7 @@ $( document ).ready(function() {
 		dsp = { autoAlpha:1, display:'block' };
 		hd = { autoAlpha:0, display:'none' };
 
-/******* ONLOAD FUNCTIONS *******/
-	window.onload = function() {
-		TweenMax.to('.page-down', 0.35, {
-			delay: 0.6,
-			bottom:'0%', 
-			ease: Circ.easeOut
-		});
-	};
-
-
-/********* OPENING SCENE **********/
+/********* CSS PROPERTY OBJECTS **********/
 	var header = new Object(),
 		section1 = new Object(),
 		actionButton = new Object();
@@ -92,12 +90,6 @@ $( document ).ready(function() {
 		.to('.action-button_floating', 0.3, actionButton.positioned, "enterContent")
 		.to('.action-button_floating', 0.2, actionButton.image)
 		.to('.page-up', 0.3, { top:'0%' }, "enterContent")}
-
-
-	
-/********** FULLPAGE FUNCTIONS *********/	
-	
-
 
 /********** FULLPAGE OPERATION *********/	
 	var openingScene	= new TimelineLite({paused:true} );
