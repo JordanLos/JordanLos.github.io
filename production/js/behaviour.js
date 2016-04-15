@@ -5,29 +5,13 @@
 * Carousel: Component that, upon scrolling, brings one element to replace another in the same position
 *
 ****************/
-
 $( document ).ready(function() {	
 
-	(function($, window, undefined) {
-    // First check to see if the platform is an iPhone or iPod
-    if(/iP/.test(navigator.platform) && /Safari/i.test(navigator.userAgent)){
-        var mobileSafari = "Safari";
-    }
-
-    // Set the div height
-    function setHeight($rightSidebar) {
-        var new_height = $(this).height();
-        // if mobileSafari add +60px
-        if (typeof mobileSafari === 'string'){ new_height += 60 };
-        $rightSidebar.css('height', new_height);
-    }
-
-    setHeight($('body'));
-    $(window).resize(function() {
-        setHeight.call(this, $('body'));
-    });
-
-	}(jQuery, this));
+	// detect if mobile safari to fix url problem at bottom;
+	var userAgent = window.navigator.userAgent;
+	if (userAgent.match(/iPhone/i) || userAgent.match(/iPad/i)) {
+		$('.body').height(-60);
+	};
 /******* COMMON ATTRIBUTES *******/
 	var a1 = { autoAlpha:1 },
 		a0 = { autoAlpha:0 },
