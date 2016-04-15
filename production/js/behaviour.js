@@ -6,7 +6,9 @@
 *
 ****************/
 $( document ).ready(function() {	
-	// detect if mobile safari to fix url problem at bottom;
+	// Mobile Safari's bottom nav bar interferes with the placement of the 
+	// elements causing them to overlap.
+	// The function below targets only mobile safari, and adjusts the styles.
 	var userAgent = window.navigator.userAgent;
 	if (userAgent.match(/iPhone/i) || userAgent.match(/iPad/i)) {
 		$('.header').css("margin-top","-3%");

@@ -6,7 +6,7 @@ production:
 	make min-cat-css min-cat-js img-min
 
 watch-sass:
-	sass --watch scss/main.scss:css/main.css scss/noJS.scss:css/noJS.css scss/mobileSafari.scss:css/mobileSafari.css
+	sass --watch scss/main.scss:css/main.css scss/noJS.scss:css/noJS.css
 
 render-jade:
 	jade -o ./ --watch jade/index.jade
