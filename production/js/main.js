@@ -19369,7 +19369,10 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
 ****************/
 
 $( document ).ready(function() {	
-
+	var height = window.innerHeight;
+	console.log( $( 'body' ).height());
+	$( 'body' ).css( "height", height);
+	console.log( $( 'body' ).height());
 /******* COMMON ATTRIBUTES *******/
 	var a1 = { autoAlpha:1 },
 		a0 = { autoAlpha:0 },
