@@ -19368,12 +19368,15 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
 *
 ****************/
 $( document ).ready(function() {	
-
 	// detect if mobile safari to fix url problem at bottom;
 	var userAgent = window.navigator.userAgent;
 	if (userAgent.match(/iPhone/i) || userAgent.match(/iPad/i)) {
-		$('.body').height(-60);
+		$('.header').css("margin-top","-3%");
+		$('.content').css("transform","translateY(5%)");
+		$('.content').css("height","53%");
+
 	};
+
 /******* COMMON ATTRIBUTES *******/
 	var a1 = { autoAlpha:1 },
 		a0 = { autoAlpha:0 },
